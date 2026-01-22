@@ -1,0 +1,15 @@
+
+## Make A Thing
+
+This was interesting, i didnt want to do something too complicated for this to make a thing as I mainly overthink and overstressed. Mentioned in class that Gb studios was one of the recommendations as you don't need to code or program and its very new user friendly. With the idea of a drag and drop room style, I was thinking of something that I could make which was small but with some idea of a concept. Mainly stupid, quirky and hinting at a comedic idea, I thought of making a sibling concept. I have siblings myself, one twin and older sister and I have seen this joke which is like “ when you go to your sibling's room and just push something on the floor or close their lights and then walk away for no reason.” so i decided to make this small scenario to make a thing.
+
+ I decided to add some extra rooms so you can explore but they don't really do much. I also took the original background of the small house and wide house and I brought it into photoshop to add more doorways. So I used the sample backgrounds and added to it to make the background I needed for my house. I also downloaded some free assets for gb studios for house items. I usually love drawing my own assets but because of time and the fact that I never have done some for these types of games which I found had some very specific colour and size criterias i thought it was safer to utilize online assets, I had to crop them for each item I decided to use. I also made the character move with an exemple so it wasn't hard to actually make. I wish I could have learned more about something more specific because I enjoyed it and wished I could dive deeper into what I could've made the character do.  But I wanted to have something first. I found that GB studios were very easy and interesting to use. After I figured out what each thing did, like moving from Game World to sprites or images it became easier. I downloaded the guide which helped. I still wasn't sure how to add sprites so I tried saving it in the same folder as others and it worked. 
+
+The way to use the program is very intuitive and I found myself thinking that it would be fun to actually dive deeper into what you could do with it as I kept it very basic. My idea did not change much during the process as it was very simple to begin with. I did come across a problem which was that at a certain point after my computer crashed some of my sprites started to distort or glitch. They didn't used to but now they do. I tried to check online but many reasons were given but I couldn't find the solution. The game still worked so I didn't have the time to fix that error. Anyway, I loved that I was able to try gb studio. The only weird thing is that the key was “alt gr” on my windows computer to interact with the object because that is how it was in the example.
+
+
+
+![Image 1](reference_documentation/All_Items.png)
+![Image 2](reference_documentation/BitsAndBobs(no_scale).png)
+![Image 3](reference_documentation/house-wide.png) 
+![Image 4](reference_documentation/house.png) 
