@@ -1,5 +1,7 @@
+# Bianca's Journal 
 
-## Make A Thing
+## Context Statement (Week 1) 2026-01-22
+### Make A Thing
 
 This was interesting, i didnt want to do something too complicated for this to make a thing as I mainly overthink and overstressed. Mentioned in class that Gb studios was one of the recommendations as you don't need to code or program and its very new user friendly. With the idea of a drag and drop room style, I was thinking of something that I could make which was small but with some idea of a concept. Mainly stupid, quirky and hinting at a comedic idea, I thought of making a sibling concept. I have siblings myself, one twin and older sister and I have seen this joke which is like “ when you go to your sibling's room and just push something on the floor or close their lights and then walk away for no reason.” so i decided to make this small scenario to make a thing.
 
@@ -9,7 +11,7 @@ The way to use the program is very intuitive and I found myself thinking that it
 
 
 
-![Image 1](reference_documentation/All_Items.png)
-![Image 2](reference_documentation/BitsAndBobs(no_scale).png)
-![Image 3](reference_documentation/house-wide.png) 
-![Image 4](reference_documentation/house.png) 
+![Image 1](Media/All_Items.png)
+![Image 2](Media/BitsAndBobs(no_scale).png)
+![Image 3](Media/house-wide.png) 
+![Image 4](Media/house.png) 
