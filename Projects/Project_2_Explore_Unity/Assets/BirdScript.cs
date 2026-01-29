@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class BirdScript : MonoBehaviour
 {
+    public Rigidbody2D myRigidbody;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameObject.name = "New Bird Name";
+        
     }
 
     // Update is called once per frame
