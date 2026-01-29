@@ -27,14 +27,19 @@ I had started at first just doing the turtorial that comes with unity.
 - I also started the third tutorial where in a Kitchen we can add the audio to a boiling kitchen pot and make it loop
 
 
--I decided to stop and started fallowing a Tutorial thaT I was suggested to try by my friend and classmate. It's this Flappy Bird 2d unity turotial. video link:https://www.youtube.com/watch?v=XtQMytORBmM 
+- I decided to stop and started fallowing a Tutorial thaT I was suggested to try by my friend and classmate. It's this Flappy Bird 2d unity turotial. video link:https://www.youtube.com/watch?v=XtQMytORBmM 
 
--It started rough as I was still having some difficulties with my .gitignore not working and keep on ending up with over 3460 things to commit. it took way to long but i finally got it to work.
+- It started rough as I was still having some difficulties with my .gitignore not working and keep on ending up with over 3460 things to commit. it took way to long but I finally got it to work.
 
--The next problem was that the script for Input(GetKeyDown) wasnt working for me and then it took a while to figure out that because of the update i had the new Input package in unity but using the old version in my script. So then i was able to allow the use of both and now it started to work 
+- The next problem was that the script for Input(GetKeyDown) wasnt working for me and then it took a while to figure out that because of the update I had the new Input package in unity but using the old version in my script. So then I was able to allow the use of both and now it started to work 
 
-- So i learned how to add a sprite renderer to add assets images, i also dicovered that you can color the backgroudn of the main camera. that was also difficult as my unity camera couldnt find flag propreties, so i had to do another search to figure it out. 
+- So I learned how to add a sprite renderer to add assets images, I also dicovered that you can color the backgroudn of the main camera. that was also difficult as my unity camera couldnt find flag propreties, so I had to do another search to figure it out. 
 
--now we have the bird going up if i press on the space bar and it falling if i dont press.
--we just added the pipes and and also discovered how to parent object 
--just learned about prefabs 
+- now we have the bird going up if I press on the space bar and it falling if I dont press.
+- we just added the pipes and and also discovered how to parent object 
+- just learned about prefabs. we did it for the pipes. we made pipes and frm there we added the up pipe and down pipe therefore the pipe became a parent. After we drag the pipe into the assets and it made a prefab. Very interesting.
+-We have now made it that the pipes appear in different hights and also that they delete themsleves after leaving the screen. 
+
+- Just started making a UI, to make a score, I have never made a UI before. It wa svery interesting. The tutorial is very informational and gave good explanation to why and how of each thing he did. 
+
+
