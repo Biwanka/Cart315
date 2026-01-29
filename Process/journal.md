@@ -15,3 +15,25 @@ The way to use the program is very intuitive and I found myself thinking that it
 ![Image 2](Media/BitsAndBobs(no_scale).png)
 ![Image 3](Media/house-wide.png) 
 ![Image 4](Media/house.png) 
+
+
+
+## Play Around In Unity (Week 2) 2026-01-29
+
+I had started at first just doing the turtorial that comes with unity.
+
+- I had done the playroom one where you add a bed and other bedroom objects. and then we added a rubber ball and a ramp. I discovered how to creat a material from within unity itslef and you can change the roughness and metalic slide of the material. I also added an extra component that gave it bounciness and gravity so it would fall and roll off the ramp.
+
+- I also started the third tutorial where in a Kitchen we can add the audio to a boiling kitchen pot and make it loop
+
+
+-I decided to stop and started fallowing a Tutorial thaT I was suggested to try by my friend and classmate. It's this Flappy Bird 2d unity turotial. video link:https://www.youtube.com/watch?v=XtQMytORBmM 
+
+-It started rough as I was still having some difficulties with my .gitignore not working and keep on ending up with over 3460 things to commit. it took way to long but i finally got it to work.
+
+-The next problem was that the script for Input(GetKeyDown) wasnt working for me and then it took a while to figure out that because of the update i had the new Input package in unity but using the old version in my script. So then i was able to allow the use of both and now it started to work 
+
+- So i learned how to add a sprite renderer to add assets images, i also dicovered that you can color the backgroudn of the main camera. that was also difficult as my unity camera couldnt find flag propreties, so i had to do another search to figure it out. 
+
+-now we have the bird going up if i press on the space bar and it falling if i dont press.
+-we just added the pipes and and also discovered how to parent object 
