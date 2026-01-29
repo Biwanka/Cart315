@@ -38,8 +38,10 @@ I had started at first just doing the turtorial that comes with unity.
 - now we have the bird going up if I press on the space bar and it falling if I dont press.
 - we just added the pipes and and also discovered how to parent object 
 - just learned about prefabs. we did it for the pipes. we made pipes and frm there we added the up pipe and down pipe therefore the pipe became a parent. After we drag the pipe into the assets and it made a prefab. Very interesting.
--We have now made it that the pipes appear in different hights and also that they delete themsleves after leaving the screen. 
+- We have now made it that the pipes appear in different hights and also that they delete themsleves after leaving the screen. 
+-We also made a middle box in between the pipe to be able to do a score 
 
 - Just started making a UI, to make a score, I have never made a UI before. It wa svery interesting. The tutorial is very informational and gave good explanation to why and how of each thing he did. 
 
+- I added a Game Over Screen, also used the UI Button and Now if the Character dies the Game restart 
 
