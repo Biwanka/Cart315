@@ -37,3 +37,4 @@ I had started at first just doing the turtorial that comes with unity.
 
 -now we have the bird going up if i press on the space bar and it falling if i dont press.
 -we just added the pipes and and also discovered how to parent object 
+-just learned about prefabs 
