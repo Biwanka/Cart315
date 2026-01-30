@@ -35,9 +35,17 @@ public class BasketScript : MonoBehaviour {
 	private void OnCollisionEnter2D(Collision2D other) {
 		Debug.Log(other.gameObject.tag);
 
-		if (other.gameObject.tag == "Mall") score += 1;
-		else score -= 1;
-        
+		//get the value of the building points
+		int pointValue;
+		if (other.gameObject.tag == "Mall") pointValue = 1;
+		// else if ()
+		else pointValue = -1;
+
+		//tell the UIManager to chnage the score by
+		UIManager.S.UpdateScore(pointValue);
+		
+		
+		
 		Destroy(other.gameObject);
 
 	}
