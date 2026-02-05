@@ -104,7 +104,7 @@ I think my first approach was just spitballing ideas. What different variations 
 I quite like the idea of the colour Switch. It would add an extra concentration aspect that would be great. Even would bring an easy way of taunting between players. I think that it could create a very fun, interesting idea. The way of switching colours needs to be figured out. Should it be more than one key, or should each player have their own colour key and they have to repeatedly click it until they get the right colour? Should I make it so that each player is not asked to have the same colour? Should it be the ball changing colour and the paddle needs to match, or should it be the words appearing or being voiced? There are many ways that I could implement this idea or even build on it. I feel like I need to make a more playable prototype to experience what people prefer or how people are playing based on the different mechanics 
 
 
-![Image 2](Media/prototype_Sketch.jpeg)
+![Image 2](Media/prototype_Sketch.jpeg){ width=300 }
 
 I think that I would love to test intensity and concentration. Like having to follow the ball to score on the other player, but you always have to be alert or on edge to make sure you pay attention to the colour switch. I also think adding an extra key or even the stressful idea of clicking the same key multiple times to make sure you get the right colour is stressful, and when you over-click. I feel like it would bring a nice freak-out mechanic. 
 
