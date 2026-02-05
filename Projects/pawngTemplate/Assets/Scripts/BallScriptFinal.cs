@@ -5,38 +5,38 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 
-public class RandomColorChange : MonoBehaviour
-{
-    private Renderer ballRenderer;
-    public float changeInterval = 2f; //Time in seconds between color changes 
-
-    void Start()
-    {
-        //Get the Renderer component of the ball and cache it for performance 
-        ballRenderer = GetComponent < ballRenderer();
-        
-        //Start the Coroutine to change color repeatedly
-        StartCoroutine(ChangeColorRoutine());
-    }
-
-    IEnumerator ChangeColorRoutine()
-    {
-        while (true) //Infinite loop to keep changing color 
-        {
-            //wait for the specific interval
-            yield return new WaitForSeconds(changeInterval);
-            
-            //Generate a random color using Random.ColorHSV()
-            //This function ensures the colors are perceptually balanced 
-            Color randomColor = Random.ColorHSV(0f, 1f, 0.5f, 1f, 0.7f, 1f)
-                // the parameters help generate vibrant colors (full hue,saturated, highvalue/brightness)
-                
-                //Assign the new random color to the material
-                ballRenderer.material.color = randomColor;
-        }
-        
-    }
-}
+// public class RandomColorChange : MonoBehaviour
+// {
+//     private Renderer ballRenderer;
+//     public float changeInterval = 2f; //Time in seconds between color changes 
+//
+//     void Start()
+//     {
+//         //Get the Renderer component of the ball and cache it for performance 
+//         ballRenderer = GetComponent < ballRenderer();
+//
+//         //Start the Coroutine to change color repeatedly
+//         StartCoroutine(ChangeColorRoutine());
+//     }
+//
+//     IEnumerator ChangeColorRoutine()
+//     {
+//         while (true) //Infinite loop to keep changing color 
+//         {
+//             //wait for the specific interval
+//             yield return new WaitForSeconds(changeInterval);
+//
+//             //Generate a random color using Random.ColorHSV()
+//             //This function ensures the colors are perceptually balanced 
+//             Color randomColor = Random.ColorHSV(0f, 1f, 0.5f, 1f, 0.7f, 1f);
+//             // the parameters help generate vibrant colors (full hue,saturated, highvalue/brightness)
+//
+//             //Assign the new random color to the material
+//             ballRenderer.material.color = randomColor;
+//         }
+//
+//     }
+// }
 
 public class BallScriptFinal : MonoBehaviour
 {
@@ -50,44 +50,47 @@ public class BallScriptFinal : MonoBehaviour
     public int leftPlayerScore, rightPlayerScore;
 
 
-    private int[] dirOptions = {-1, 1};
-    private int   hDir, vDir;
-    
+    private int[] dirOptions = { -1, 1 };
+    private int hDir, vDir;
+
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
         rb = GetComponent<Rigidbody2D>();
-        Reset(); 
+        Reset();
     }
 
 
     // Start the Ball Moving
-    private IEnumerator Launch() {
+    private IEnumerator Launch()
+    {
         yield return new WaitForSeconds(1.5f);
-        
+
         // Figure out directions
         hDir = dirOptions[Random.Range(0, dirOptions.Length)];
         vDir = dirOptions[Random.Range(0, dirOptions.Length)];
-        
+
         // Add a horizontal force
         rb.AddForce(transform.right * ballSpeed * hDir); // Randomly go Left or Right
         // Add a vertical force
         rb.AddForce(transform.up * ballSpeed * vDir); // Randomly go Up or Down
-        
+
         yield return null;
     }
 
-    public void Reset() {
+    public void Reset()
+    {
         rb.linearVelocity = Vector2.zero;
         ballSpeed = 2;
         transform.position = new Vector2(0, -2);
         StartCoroutine("Launch");
     }
-    
+
     // if the ball goes out of bounds
     private void OnCollisionEnter2D(Collision2D other)
     {
-        
-        
+
+
         // did we hit a wall?
         if (other.gameObject.tag == "Wall")
         {
@@ -105,14 +108,14 @@ public class BallScriptFinal : MonoBehaviour
             blip.Play();
             SpeedCheck();
         }
-        
+
         // did we hit the left Wall?
         if (other.gameObject.name == "leftWall")
         {
             rightPlayerScore += 1;
             Reset();
         }
-        
+
         // did we hit the right Wall?
         if (other.gameObject.name == "rightWall")
         {
@@ -121,8 +124,9 @@ public class BallScriptFinal : MonoBehaviour
         }
     }
 
-    private void SpeedCheck() {
-        
+    private void SpeedCheck()
+    {
+
         // Prevent ball from going too fast
         if (Mathf.Abs(rb.linearVelocity.x) > maxSpeed) rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.99f, rb.linearVelocity.y);
         if (Mathf.Abs(rb.linearVelocity.y) > maxSpeed) rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.99f);
@@ -141,16 +145,18 @@ public class BallScriptFinal : MonoBehaviour
 
 
         // Prevent too shallow of an angle
-        if (Mathf.Abs(rb.linearVelocity.x) < minSpeed) {
+        if (Mathf.Abs(rb.linearVelocity.x) < minSpeed)
+        {
             // shorthand to check for existing direction
             rb.linearVelocity = new Vector2((rb.linearVelocity.x < 0) ? -minSpeed : minSpeed, rb.linearVelocity.y);
         }
 
-        if (Mathf.Abs(rb.linearVelocity.y) < minSpeed) {
+        if (Mathf.Abs(rb.linearVelocity.y) < minSpeed)
+        {
             // shorthand to check for existing direction
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, (rb.linearVelocity.y < 0) ? -minSpeed : minSpeed);
         }
-        
+
         Debug.Log(rb.linearVelocity);
 
     }
