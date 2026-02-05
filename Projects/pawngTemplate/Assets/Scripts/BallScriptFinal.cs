@@ -4,6 +4,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+
+public class RandomColorChange : MonoBehaviour
+{
+    private Renderer ballRenderer;
+    public float changeInterval = 2f; //Time in seconds between color changes 
+
+    void Start()
+    {
+        //Get the Renderer component of the ball and cache it for performance 
+        ballRenderer = GetComponent < ballRenderer();
+        
+        //Start the Coroutine to change color repeatedly
+        StartCoroutine(ChangeColorRoutine());
+    }
+
+    IEnumerator ChangeColorRoutine()
+    {
+        while (true) //Infinite loop to keep changing color 
+        {
+            //wait for the specific interval
+            yield return new WaitForSeconds(changeInterval);
+            
+            //Generate a random color using Random.ColorHSV()
+            //This function ensures the colors are perceptually balanced 
+            Color randomColor = Random.ColorHSV(0f, 1f, 0.5f, 1f, 0.7f, 1f)
+                // the parameters help generate vibrant colors (full hue,saturated, highvalue/brightness)
+                
+                //Assign the new random color to the material
+                ballRenderer.material.color = randomColor;
+        }
+        
+    }
+}
+
 public class BallScriptFinal : MonoBehaviour
 {
     private Rigidbody2D rb;
