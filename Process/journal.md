@@ -53,7 +53,7 @@ I had started at first just doing the turtorial that comes with unity.
 
 ## Prototype Pawng Ideas (Week 3) (2026-02-05)
 
-# Pawng Ideas 
+### Pawng Ideas 
 
 
 So I decided to just think of ideas and see if any stick with me or if I wanted to explore deeper.
@@ -72,7 +72,7 @@ Power-ups: slowing down, negative points, bombs, stunned, longer paddle, Faster 
 - Time-based block letter: a letter appears on the screen on your paddle. You need to click that letter on the Keyboard so it disappears and you can move your paddle again.
 
 
-# Theme or similar to other games idea : 
+### Theme or similar to other games idea : 
 
 - Foosball machine: having added a paddle in the middle. If you have to interact physically with it, like foosball. If we don't interact with the middle ones than it could be like paddles passing through the path like cars. The adding of bad paddle and a good paddle would be interesting and could bring a point system. Or if you hit a car, your paddle is stunned for a bit, or it grows shorter. 
 
@@ -94,7 +94,7 @@ Other ideas: I thought maybe approaching it as a theme-based concept. Like, inst
 
 
 
-# Reviewing
+### Reviewing
 
 I made some designs for the look and idea. I didnt have much time this week to try implementation as much as just talking about ideas and drawing images. 
 
