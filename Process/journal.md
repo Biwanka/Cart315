@@ -115,3 +115,4 @@ The idea of that freakout moment in 1v1 games is fun, you tunt and sometimes end
 
 
 I now would need to actually make a playable prototype idea of the less complicated one, but just the colour switching to start and see how people react. 
+I did try to get into the code, but some things where breaking. It's my first time coding in Unity itslef so there are rules and way of thinking is different. I am not sure how to add it in a already started code. I will need more time but I did look in the code, I tried to add the random ball color change but it's not working 
