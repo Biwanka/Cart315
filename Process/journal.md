@@ -121,10 +121,10 @@ I did try to get into the code, but some things where breaking. It's my first ti
 
 ## Breakout Prototype (Week 4) (2026-02-12)
 
-# Some issues starting 
+### Some issues starting 
 The start of this week was horrible. Unity and Rider where not working or vs code. It said that the code was wrong therefore i couldnt make changes. I couldnt figure out how to pull the teachers changes when i had cloned the repository, so i didnt have any of the new changes from class. after rider and unity didnt wnat to update my scripts or make them work. I searched online for a while trying to figure out how to fix it but i fixed atleast the unity and rider connects but I dont know how to pull changes from the teachers github without needing to redownload everything. Now it works but I still get yellow text as I think it's using an older built and suggestion a new way to write it but it still works.
 
-# Insporation
+### Insporation
 
 ok so Breakout or in my Knowledge (Brick Breaker) as I was first introduced by the game on my dad's blackberry  when I was younger and he always let me play it when we went in the bus. Anyway, Breakout is the game that I had chosen in Pippin's class (loved that class!)  for the variation Jam wheere we needed to make some variations to an already existing game. I had alot of fun with it and had so many idea. Some in the submit where clanky but that because I submited more than the amount of variation needed. I kept them because I thought it was so fun. So for this prototype I wanted to not make changes that were similar to what I had done for his class. So i strated with writing down what I had alredy done and then think of something that would be a complet different approach
 
@@ -155,7 +155,7 @@ view the Code : https://github.com/Biwanka/CART253/tree/main/topics/Bianca_Gauth
 - Throw Breaker: I dedcide to make a version that will be the contrary of the concept of the original game. instead of bouncing a ball on a paddle to break the bricks, instead the player will need to trow the bricks to hit the ball that is moving in the top screen. the player will have a pile of bricks and need to trow them so it hits the ball and the brick breaks. if the brick hits nothing gravity will do its thing and come back down in the hands of the player. 
 
 
-# Thinking/Idea  
+### Thinking/Idea  
 So I was trying to implement something that is completely different then the ideas I had before. I also wanted to have different ideas than the ones that I have seen in brick breaker.
 
 - I have seen power ups falling after certain bricks got hit 
@@ -184,7 +184,7 @@ So the one that I ended up going with was the ring circle, i feel like not needi
 
 
 
-# Mechanic Idea 
+### Mechanic Idea 
 Hitting a special-colored brick gives the player a “circle ring” (like a timing indicator).
 
 The player must press the space bar at the right timing to break a really hard brick.
@@ -208,7 +208,7 @@ Trying to introduce: - Player skill timing
 
 - Need to think/consider. I have to see if the ball pauses when the skill-base mechanic appears or does it continue and you need to double task. I prefer the idea of double tasking, however only when testing could I see if it is impossible or even fun or engaging. Or am I trying to have this almost impossible challenge, again there is acouple small directions/changes I could make to have the same skill-based mechanic but different outcomes or experience.
 
-# Optional Enhancements
+### Optional Enhancements
 
 - Make hard bricks require multiple successful hits (use an HP variable).
 - Or different Hp areas : like the small red dots is the automatic kill 
@@ -217,23 +217,30 @@ Trying to introduce: - Player skill timing
 
 - Add sound effects for success/failure.
 
-# Process
+### Process
 
 ok so I am familiar but not familiar with coding. For me p5js was great and I started to undertsand, then vanilla javascript brought me bakc to zero, I feel like i can understand in concept what needs to happen or kind of like some of the theory but how to fully implement or write the code and am not as famailiar/secure in it. I dont have many classes that needed it or teaches so i cant seem to become familiar or comfortable. so I searched a bit on a reating a skill-based timing ring in Unity. It mentions the UI and a Timing script. 
 
 so I started with a adding a UI canvas and adding to that UI images, one for the ring and the other for the pointer. 
 I also created an empty in the canvas and named it TimingUI. then to the TimingUi i added a component for a new script that I labled TimingManager. in the script a call the public gameobject timingUI and the pointer. I also added two public floats one for rotate speed and one for succesRange, I then made sure to drag the timingUI and the pointer on the inspector tab of the script in unity to mention what it should effect. i needed to create a section where we add the code to start the timing and also to see if the timing is active : true or false. i also made it that current brick equals current brick.
 
+I had some difficulties in implementing this in already existing code as sometimes I did not connect them well, but thats also becasue im not as used in unity
+
+I got it to show on screen, and rotate only when the ball comes in contact (right now only with the first bricks as it dosent reapear after hitting other bricks), also that when pressed space bar, it disapears.
 
 
-# Things that still need to be implemented 
+What I have working right now 
+<img src="Media/Breakout_prototype.gif" alt="showing implementation of ring" width="500" height="300" />
+
+### Things that still needs to be implemented 
 
 - I need to actually connect hardBrick with one of the coloured bricks. Just like we added the the point value of the brick if they are a new Color in the BrickLayer script, I would need to add a way to then say that those one is normal Brick and the other is Hard Brick. 
 
 - Right now the bricks dont dissapears but it may be because all bricks are checked as hardBricks.
 
+- also that there needs to be a specific area that needs to be the hitbox area where if you presse space bar on the pointer was on that area then brick disapears. and if you press soace bar but the pointer was not in the hitbox area than that means you missed so the brick stays and you need to try another time. 
 
+- I also need to have the ring only appear when the "hardbrick" is hit and can appear again when another "hardbrick" is hit by ball.
 
-<img src="Media/Breakout_prototype.gif" alt="showing implementation of ring" width="500" height="300" />
 
 
