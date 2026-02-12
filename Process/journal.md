@@ -124,7 +124,7 @@ I did try to get into the code, but some things where breaking. It's my first ti
 # Some issues starting 
 The start of this week was horrible. Unity and Rider where not working or vs code. It said that the code was wrong therefore i couldnt make changes. I couldnt figure out how to pull the teachers changes when i had cloned the repository, so i didnt have any of the new changes from class. after rider and unity didnt wnat to update my scripts or make them work. I searched online for a while trying to figure out how to fix it but i fixed atleast the unity and rider connects but I dont know how to pull changes from the teachers github without needing to redownload everything. 
 
-# Ideas
+# Insporation
 
 ok so Breakout or in my Knowledge (Brick Breaker) as I was first introduced by the game on my dad's blackberry  when I was younger and he always let me play it when we went in the bus. Anyway, Breakout is the game that I had chosen in Pippin's class (loved that class!)  for the variation Jam wheere we needed to make some variations to an already existing game. I had alot of fun with it and had so many idea. Some in the submit where clanky but that because I submited more than the amount of variation needed. I kept them because I thought it was so fun. So for this prototype I wanted to not make changes that were similar to what I had done for his class. So i strated with writing down what I had alredy done and then think of something that would be a complet different approach
 
@@ -138,27 +138,21 @@ view the Code : https://github.com/Biwanka/CART253/tree/main/topics/Bianca_Gauth
 
 - Falling Breaker: where when the ball hits the bricks, the bricks will fall instead of breaking and dissapearing. When the brick is hit they will fall and you need to catch the brick with your paddle, if you do not catch the brick, they will freeze at the bottom of your screen and therefore blocking your paddle. So this makes the area where your paddles moves become smaller if the bricks becomes an obsticles. it could also end up fulling blocking your paddle making it that you cant get to your ball with your paddle on time when the ball hits a brick
 
-- 4 corners. the concept of the original game is that the paddle is only at the bottom.but with this variation the paddle will be able to go on all the 4 size.depending on the coding it will only be one paddle that can move to all 4 sides or if not its that there will be 4 paddle one on each side that can be move seperatly. the ball will now not be able to bounce of any of the sides.and the brick will be placed in the middle of the screen
+- Four Side Breaker: the concept of the original game is that the paddle is only at the bottom.but with this variation the paddle will be able to go on all the 4 size.depending on the coding it will only be one paddle that can move to all 4 sides or if not its that there will be 4 paddle one on each side that can be move seperatly. the ball will now not be able to bounce of any of the sides.and the brick will be placed in the middle of the screen
 
-- Aim Paddle. the concept of the original game is that the paddle is only at the bottom.but i decided to make it that we have a horizontal and vertical paddle, in addition i decided to give free aim to the paddle.as the plus sign fallows the mouse cursor alsmot like the aim of a gun.
+- Aim Paddle Breaker: the concept of the original game is that the paddle is only at the bottom.but i decided to make it that we have a horizontal and vertical paddle, in addition i decided to give free aim to the paddle.as the plus sign fallows the mouse cursor alsmot like the aim of a gun.
 
-- Bounce Breaker. I dedcide to make a version that will be the contrary of the concept of the original game. instead of bouncing a ball on a paddle to break the bricks, instead the player will need to bounce a brick to a ball. like a brick on a trampoline that is moving in the top screen. basic idea i thought it would be funny to have a brick on a trampoline.
+- Bounce Breaker: I dedcide to make a version that will be the contrary of the concept of the original game. instead of bouncing a ball on a paddle to break the bricks, instead the player will need to bounce a brick to a ball. like a brick on a trampoline that is moving in the top screen. basic idea i thought it would be funny to have a brick on a trampoline.
 
 - Bulldozer Breaker: there is no actual physics. the ball dosent bouce off after hitting a brick. like its a bulldozer or lawnmower.
 
 - Drunk Breaker: this one focuses on the concept of horizontal and veritcal but you cant move the paddle in the direction you would expect.the brick on the vertical can only move rigth and left with the mouse. and the horizontal brick can only move up and down with the mouse cursor. and then i decided to add the key board arrow to fill in what direction the paddle couldnt move with. very difficult to win I think i only did it once but that the point. its like your drunk and slow cant seem to understand your movement.
 
-- DvD Breaker. because the game i chose had to do with something from my past i decided to all add another aspect that touches on that. I am going to use the boucing DVD logo. it was a common thing if you ever owned a DVD that when it was left on pause for long the logo would appear and start bouching on the 4 sides of the screen. The main Hype was when the logo actually finally hit the corner of the screen it was the biggest satisfaction. so i will change the ball to be the DvD logo and the ball will be able to hit the side of the screen. there will be bricks blocking the top right corner.Even if the player gets ride of all the bricks they will not win the game they need to continue until the DVD logo hits one of the corners. I have tested and it is possible 
+- DvD Breaker: because the game i chose had to do with something from my past i decided to all add another aspect that touches on that. I am going to use the boucing DVD logo. it was a common thing if you ever owned a DVD that when it was left on pause for long the logo would appear and start bouching on the 4 sides of the screen. The main Hype was when the logo actually finally hit the corner of the screen it was the biggest satisfaction. so i will change the ball to be the DvD logo and the ball will be able to hit the side of the screen. there will be bricks blocking the top right corner.Even if the player gets ride of all the bricks they will not win the game they need to continue until the DVD logo hits one of the corners. I have tested and it is possible 
 
-- Falling Breaker: 
-
-- Multi_Duo Breaker : this one focuses on the concept of horizontal and veritcal but you cant move the paddle in the direction you would expect.the brick on the vertical can only move rigth and left with the mouse. and the horizontal brick can only move up and down with the mouse cursor.
+- Multi_Duo Breaker: this one focuses on the concept of horizontal and veritcal but you cant move the paddle in the direction you would expect.the brick on the vertical can only move rigth and left with the mouse. and the horizontal brick can only move up and down with the mouse cursor.
 
 - Throw Breaker: I dedcide to make a version that will be the contrary of the concept of the original game. instead of bouncing a ball on a paddle to break the bricks, instead the player will need to trow the bricks to hit the ball that is moving in the top screen. the player will have a pile of bricks and need to trow them so it hits the ball and the brick breaks. if the brick hits nothing gravity will do its thing and come back down in the hands of the player. 
-
-
-
-
 
 
 # Thinking/Idea  
