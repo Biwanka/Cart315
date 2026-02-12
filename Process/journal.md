@@ -229,7 +229,10 @@ I got it to show on screen, and rotate only when the ball comes in contact (righ
 
 
 What I have working right now 
+
+
 <img src="Media/Breakout_prototype.gif" alt="showing implementation of ring" width="500" height="300" />
+
 
 ### Things that still needs to be implemented 
 
