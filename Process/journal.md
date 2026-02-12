@@ -116,3 +116,124 @@ The idea of that freakout moment in 1v1 games is fun, you tunt and sometimes end
 
 I now would need to actually make a playable prototype idea of the less complicated one, but just the colour switching to start and see how people react. 
 I did try to get into the code, but some things where breaking. It's my first time coding in Unity itslef so there are rules and way of thinking is different. I am not sure how to add it in a already started code. I will need more time but I did look in the code, I tried to add the random ball color change but it's not working 
+
+
+
+## Breakout Prototype (Week 4) (2026-02-12)
+
+# Some issues starting 
+The start of this week was horrible. Unity and Rider where not working or vs code. It said that the code was wrong therefore i couldnt make changes. I couldnt figure out how to pull the teachers changes when i had cloned the repository, so i didnt have any of the new changes from class. after rider and unity didnt wnat to update my scripts or make them work. I searched online for a while trying to figure out how to fix it but i fixed atleast the unity and rider connects but I dont know how to pull changes from the teachers github without needing to redownload everything. 
+
+# Ideas
+
+ok so Breakout or in my Knowledge (Brick Breaker) as I was first introduced by the game on my dad's blackberry  when I was younger and he always let me play it when we went in the bus. Anyway, Breakout is the game that I had chosen in Pippin's class (loved that class!)  for the variation Jam wheere we needed to make some variations to an already existing game. I had alot of fun with it and had so many idea. Some in the submit where clanky but that because I submited more than the amount of variation needed. I kept them because I thought it was so fun. So for this prototype I wanted to not make changes that were similar to what I had done for his class. So i strated with writing down what I had alredy done and then think of something that would be a complet different approach
+
+The project
+[View this project online](https://biwanka.github.io/CART253/topics/Bianca_Gauthier_Variation_Jam/index.html)
+view the Code : https://github.com/Biwanka/CART253/tree/main/topics/Bianca_Gauthier_Variation_Jam 
+
+<img src="Media/brick_breaker.png" alt="Description of image" width="600" height="600">
+
+- so the variations that I had made where: 
+
+- Falling Breaker: where when the ball hits the bricks, the bricks will fall instead of breaking and dissapearing. When the brick is hit they will fall and you need to catch the brick with your paddle, if you do not catch the brick, they will end up staying at the bottom of your screen and therefore blocking your paddle. So this makes the area where your paddles moves become smaller if the bricks becomes an obsticles. it could also end up fulling blocking your paddle making it that you cant get to your ball with your paddle on time 
+
+- 4 corners. the concept of the original game is that the paddle is only at the bottom.but with this variation the paddle will be able to go on all the 4 size.depending on the coding it will only be one paddle that can move to all 4 sides or if not its that there will be 4 paddle one on each side that can be move seperatly. the ball will now not be able to bounce of any of the sides.and the brick will be placed in the middle of the screen
+
+- Aim Paddle. the concept of the original game is that the paddle is only at the bottom.but i decided to make it that we have a horizontal and vertical paddle, in addition i decided to give free aim to the paddle.as the plus sign fallows the mouse cursor alsmot like the aim of a gun.
+
+- Reverse Breaker. I dedcide to make a version that will be the contrary of the concept of the original game. instead of bouncing a ball on a paddle to break the bricks, instead the player will need to bounce a brick to a ball. like a brick on a trampoline that is moving in the top screen. the player will have a pile of bricks ( still need to implement these visual later). i Have other ideas with different balls or maybe certain bricks need to only hit the top of the ball but thats for later. basic idea i thought it would be funny to have a brick on a trampoline.
+
+- Bulldozer Breaker: there is no actual physics. the ball dosent bouce off after hitting a brick. like its a bulldozer or lawnmower.
+
+- Drunk Breaker: this one focuses on the concept of horizontal and veritcal but you cant move the paddle in the direction you would expect.the brick on the vertical can only move rigth and left with the mouse. and the horizontal brick can only move up and down with the mouse cursor. and then i decided to add the key board arrow to fill in what direction the paddle couldnt move with. very difficult to win I think i only did it once but that the point. its like your drunk and slow cant seem to understand your movement.
+
+- DvD Breaker. because the game i chose had to do with something from my past i decided to all add another aspect that touches on that. I am going to use the boucing DVD logo. it was a common thing if you ever owned a DVD that when it was left on pause for long the logo would appear and start bouching on the 4 sides of the screen. The main Hype was when the logo actually finally hit the corner of the screen it was the biggest satisfaction. so i will change teh ball to be the DvD logo and the ball will be able to hit the side of the screen. there will be bricks blocking the top right corner.Even if the player gets ride of all the bricks they will not win the game they need to continue until the DVD logo hits one of the corners. I have tested and it is possible 
+
+- Falling Breaker: when the ball hits a brick, teh brick dosent break but starts to fall downwards. if the player dosent catch the falling bricks with the paddle the bricks will freeze at the bottom and sty there. this will block the paddle. so if alot of bricks are not cought it could block the player from moving the paddle. 
+
+
+
+
+
+
+# Thinking/Idea  
+So I was trying to implement something that is completely different then the ideas I had before. I also wanted to have different ideas than the ones that I have seen in brick breaker.
+
+- I have seen power ups falling after certain bricks got hit 
+- I have seen that some bricks are steel so you cant break them 
+- I have seen that some darker bricks need more than one hit to break them.
+
+I liked the idea of the idea of having different brick than just the normal ones, but I didt want something that was passive in context, like the brick needs to be hit more than once or unbreakable, dosent have the player need to do anything or is not as stimulating.
+
+- then I got the idea of wanting to add a timing mechanic , i feel like reaction type ideas are interesting to add in traditional comfort games. 
+
+- I got to thinking of the different types of time/skill- based reaction mechanic:
+              - Like hiting a circle that appears randomly on screen
+
+              - Letter keys or arrows appear on screen that you have to press on the keyboards almost like a guitar hero. ex : a , c, a , d 
+
+              - press and release. where those circle you press adn the circle shrinks and then you release when it reaches the size indicated. (but that one I crossed out because it feels like to long except if i make them small)
+
+              - ring circles where a point rotates on the circle and you need to press when the point lands/ passover the section that is indicated
+
+              - a point that when you clicks it kind of loads in a circle. like if you have a ring and you need to press and the border of the ring loads and you need to release or press when it reaches the indicated area. 
+
+there are others but these are the ones that came to mind in the moment.
+
+So the one that I ended up going with was the ring circle, i feel like not needing to keep your finger on a key would be a smarter idea as you are still needing to keeping look of the ball. I also thought that it could go well with the different colour bricks that we already implemented in class.
+
+- Need to think/consider. I have to see if the ball pauses when the skill-base mechanic appears or does it continue and you need to double task. I prefer the idea of double tasking, however only when testing could I see if it is impossible or even fun or engaging. Or am I trying to have this almost impossible challenge, again there is acouple small directions/changes I could make to have the same skill-based mechanic but different outcomes or experience.
+
+
+
+# Mechanic Idea 
+Hitting a special-colored brick gives the player a “circle ring” (like a timing indicator).
+
+The player must press the space bar at the right timing to break a really hard brick.
+adding a skill-based timing mechanic into Breakout instead of just "ball hits → brick dies."
+
+Mechanic Idea
+When: The ball hits a special hard brick (specific color)
+
+Then: - A circular timing ring UI appears
+      - A marker rotates around the ring
+      - Player must press Space at the correct moment
+      - If timed correctly → brick breaks
+      - If missed → brick stays + maybe ball bounces normally
+
+Trying to introduce: - Player skill timing
+                     - Risk vs reward
+                     - Game pacing variation
+                     - Interaction beyond paddle control
+
+
+Optional Enhancements
+
+
+- Make hard bricks require multiple successful hits (use an HP variable).
+- Or different Hp areas : like the small red dots is the automatic kill 
+
+Animate the ring visually (color change or radial fill for timing feedback).
+
+Add sound effects for success/failure.
+
+# Process
+
+ok so I am familiar but not familiar with coding. For me p5js was great and I started to undertsand, then vanilla javascript brought me bakc to zero, I feel like i can understand in concept what needs to happen or kind of like some of the theory but how to fully implement or write the code and am not as famailiar/secure in it. I dont have many classes that needed it or teaches so i cant seem to become familiar or comfortable. so I searched a bit on a reating a skill-based timing ring in Unity. It mentions the UI and a Timing script. 
+
+so I started with a adding a UI canvas and adding to that UI images, one for the ring and the other for the pointer. 
+I also created an empty in the canvas and named it TimingUI. then to the TimingUi i added a component for a new script that I labled TimingManager. in the script a call the public gameobject timingUI and the pointer. I also added two public floats one for rotate speed and one for succesRange, I then made sure to drag the timingUI and the pointer on the inspector tab of the script in unity to mention what it should effect. i needed to create a section where we add the code to start the timing and also to see if the timing is active : true or false. i also made it that current brick equals current brick.
+
+Right now the bricks dont dissapears but it may be 
+
+
+# Things that still need to be implemented 
+
+- I need to actually connect hardBrick with one of the coloured bricks. Just like we added the the point value of the brick if they are a new Color in the BrickLayer script, I would need to add a way to then say that those one is normal Brick and the other is Hard Brick. 
+
+- 
+
+<img src="Media/Breakout_prototype.gif" alt="showing implementation of ring" width="500" height="300" />
+
+
