@@ -122,7 +122,7 @@ I did try to get into the code, but some things where breaking. It's my first ti
 ## Breakout Prototype (Week 4) (2026-02-12)
 
 # Some issues starting 
-The start of this week was horrible. Unity and Rider where not working or vs code. It said that the code was wrong therefore i couldnt make changes. I couldnt figure out how to pull the teachers changes when i had cloned the repository, so i didnt have any of the new changes from class. after rider and unity didnt wnat to update my scripts or make them work. I searched online for a while trying to figure out how to fix it but i fixed atleast the unity and rider connects but I dont know how to pull changes from the teachers github without needing to redownload everything. 
+The start of this week was horrible. Unity and Rider where not working or vs code. It said that the code was wrong therefore i couldnt make changes. I couldnt figure out how to pull the teachers changes when i had cloned the repository, so i didnt have any of the new changes from class. after rider and unity didnt wnat to update my scripts or make them work. I searched online for a while trying to figure out how to fix it but i fixed atleast the unity and rider connects but I dont know how to pull changes from the teachers github without needing to redownload everything. Now it works but I still get yellow text as I think it's using an older built and suggestion a new way to write it but it still works.
 
 # Insporation
 
@@ -181,7 +181,6 @@ there are others but these are the ones that came to mind in the moment.
 
 So the one that I ended up going with was the ring circle, i feel like not needing to keep your finger on a key would be a smarter idea as you are still needing to keeping look of the ball. I also thought that it could go well with the different colour bricks that we already implemented in class.
 
-- Need to think/consider. I have to see if the ball pauses when the skill-base mechanic appears or does it continue and you need to double task. I prefer the idea of double tasking, however only when testing could I see if it is impossible or even fun or engaging. Or am I trying to have this almost impossible challenge, again there is acouple small directions/changes I could make to have the same skill-based mechanic but different outcomes or experience.
 
 
 
@@ -206,15 +205,17 @@ Trying to introduce: - Player skill timing
                      - Interaction beyond paddle control
 
 
-Optional Enhancements
 
+- Need to think/consider. I have to see if the ball pauses when the skill-base mechanic appears or does it continue and you need to double task. I prefer the idea of double tasking, however only when testing could I see if it is impossible or even fun or engaging. Or am I trying to have this almost impossible challenge, again there is acouple small directions/changes I could make to have the same skill-based mechanic but different outcomes or experience.
+
+# Optional Enhancements
 
 - Make hard bricks require multiple successful hits (use an HP variable).
 - Or different Hp areas : like the small red dots is the automatic kill 
 
-Animate the ring visually (color change or radial fill for timing feedback).
+- Animate the ring visually (color change or radial fill for timing feedback).
 
-Add sound effects for success/failure.
+- Add sound effects for success/failure.
 
 # Process
 
@@ -223,14 +224,15 @@ ok so I am familiar but not familiar with coding. For me p5js was great and I st
 so I started with a adding a UI canvas and adding to that UI images, one for the ring and the other for the pointer. 
 I also created an empty in the canvas and named it TimingUI. then to the TimingUi i added a component for a new script that I labled TimingManager. in the script a call the public gameobject timingUI and the pointer. I also added two public floats one for rotate speed and one for succesRange, I then made sure to drag the timingUI and the pointer on the inspector tab of the script in unity to mention what it should effect. i needed to create a section where we add the code to start the timing and also to see if the timing is active : true or false. i also made it that current brick equals current brick.
 
-Right now the bricks dont dissapears but it may be 
 
 
 # Things that still need to be implemented 
 
 - I need to actually connect hardBrick with one of the coloured bricks. Just like we added the the point value of the brick if they are a new Color in the BrickLayer script, I would need to add a way to then say that those one is normal Brick and the other is Hard Brick. 
 
-- 
+- Right now the bricks dont dissapears but it may be because all bricks are checked as hardBricks.
+
+
 
 <img src="Media/Breakout_prototype.gif" alt="showing implementation of ring" width="500" height="300" />
 
