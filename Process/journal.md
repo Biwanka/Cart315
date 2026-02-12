@@ -167,21 +167,20 @@ I liked the idea of the idea of having different brick than just the normal ones
 - then I got the idea of wanting to add a timing mechanic , i feel like reaction type ideas are interesting to add in traditional comfort games. 
 
 - I got to thinking of the different types of time/skill- based reaction mechanic:
-              - Like hiting a circle that appears randomly on screen
 
-              - Letter keys or arrows appear on screen that you have to press on the keyboards almost like a guitar hero. ex : a , c, a , d 
+  - Like hiting a circle that appears randomly on screen
 
-              - press and release. where those circle you press adn the circle shrinks and then you release when it reaches the size indicated. (but that one I crossed out because it feels like to long except if i make them small)
+  - Letter keys or arrows appear on screen that you have to press on the keyboards almost like a guitar hero. ex : a , c, a , d 
 
-              - ring circles where a point rotates on the circle and you need to press when the point lands/ passover the section that is indicated
+  - press and release. where those circle you press adn the circle shrinks and then you release when it reaches the size indicated. (but that one I crossed out because it feels like to long except if i make them small)
 
-              - a point that when you clicks it kind of loads in a circle. like if you have a ring and you need to press and the border of the ring loads and you need to release or press when it reaches the indicated area. 
+  - ring circles where a point rotates on the circle and you need to press when the point lands/ passover the section that is indicated
+
+  - a point that when you clicks it kind of loads in a circle. like if you have a ring and you need to press and the border of the ring loads and you need to release or press when it reaches the indicated area. 
 
 there are others but these are the ones that came to mind in the moment.
 
 So the one that I ended up going with was the ring circle, i feel like not needing to keep your finger on a key would be a smarter idea as you are still needing to keeping look of the ball. I also thought that it could go well with the different colour bricks that we already implemented in class.
-
-
 
 
 ### Mechanic Idea 
