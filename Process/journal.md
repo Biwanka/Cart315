@@ -253,9 +253,23 @@ I really did not have any idea this week on what to do. I was sick majority of t
 
 One big thing that for me was jarring in the game we made in class was the visuals. it wouldnt make the game more existing in a different play style but it changes the experience. Like the mention of animation a canon on the pirate ship. we could even have a canon  that was rotating back and forth like those bubble pop games. so we would have to aim oursleve. 
 
+
+I thought about adding a fire animation when we lose, like the boat is on fire. I was having some problem pulling the repo and the unity file didnt work but i worked in a new unity just to learn how I would implement a sprite and then animation loop. 
+
+I did not make the fire myself i downloaded it and fallowed a tutorial but I did sucessfully implement a sprite and then cut it to make an animation, which is fun!
+
+download sprite : https://brullov.itch.io/fire-animation 
+tutorial : https://www.youtube.com/watch?v=87cF8jqVpBA 
+
+<img src="Media/fire_sprite_animation.gif" alt="showing implementation of ring" width="500" height="300" /> 
+
+
+
 - the game we we where working on had the pirate ship and the birds, Im more art oriented. 
 I was looking at somthing i never did before. I have never made pixel art before. I have made it in like idea but to fallow the actual correct procedures to have pixal art sprites that you could implement in like gb studios or stuff like that I havent.
 My darwing pen died when i started and I had to buy a knew one which I was so sad about, so I couldnt dive deeper into it, but i will be sharing some of the links and notes that I had taken down when I had first started looking into it and learning more about what is needed for pixel art : 
+
+
 
 #### Key Steps for Pixel Art in Procreate
 
