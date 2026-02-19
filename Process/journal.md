@@ -246,3 +246,153 @@ What I have working right now
 
 
 
+## Week 5 (2026-02-19)
+
+
+I really did not have any idea this week on what to do. I was sick majority of the week, so its been weird. I was thinking of things that I wanted to learn more about or maybe would look at. towards game making 
+
+One big thing that for me was jarring in the game we made in class was the visuals. it wouldnt make the game more existing in a different play style but it changes the experience. Like the mention of animation a canon on the pirate ship. we could even have a canon  that was rotating back and forth like those bubble pop games. so we would have to aim oursleve. 
+
+- the game we we where working on had the pirate ship and the birds, Im more art oriented. 
+I was looking at somthing i never did before. I have never made pixel art before. I have made it in like idea but to fallow the actual correct procedures to have pixal art sprites that you could implement in like gb studios or stuff like that I havent.
+My darwing pen died when i started and I had to buy a knew one which I was so sad about, so I couldnt dive deeper into it, but i will be sharing some of the links and notes that I had taken down when I had first started looking into it and learning more about what is needed for pixel art : 
+
+#### Key Steps for Pixel Art in Procreate
+
+- Canvas Setup: Go to Actions (wrench icon) > Canvas > Crop and Resize. Set a small size, such as 
+or pixels for better pixel control.
+
+- Grid Setup: Enable Drawing Guide in the Actions menu, then tap "Edit Drawing Guide". Set the grid size to pixel to act as a guide.
+
+- Brush Creation: Use a monoline brush, or create a custom one by setting the grain to "blank" and ensuring anti-aliasing is turned off. In brush settings, turn off Apple Pencil pressure opacity and set rendering to "Intense Blending" for sharp, non-blurry, single-pixel lines.
+
+- Transformation & Export: When resizing, change the interpolation setting from "Bilinear" to "Nearest Neighbor" to prevent blurriness. Export as PNG for the best quality.
+
+Essential Tips: 
+- Density: Using a px or smaller canvas is ideal, as very low resolutions allow for time-lapse saving.
+
+- Color Profile: Select sRGB if you plan to share on the web.
+Alternatives: For more advanced, native pixel art tools, consider specialized apps like Pixaki.
+
+links : 
+https://www.youtube.com/shorts/18W9WC-H24w 
+https://www.youtube.com/shorts/Jf-YYPur5q0  
+https://www.youtube.com/watch?v=tKMtPgNij2c&t=18s
+https://www.youtube.com/watch?v=tPQTGC5-_Is 
+https://www.youtube.com/watch?v=xPD_FRNjTKQ 
+https://www.youtube.com/watch?v=QoyYE0PS0jY 
+
+
+I had also checked into the sprites, animation. I have never made a sprite sheet before and inclass we had looked into the animation in Unity so I checked more information on sprite sheet animation and how we implement that in unity. 
+
+#### Steps to Make and Animate a Sprite Sheet
+1. Create the Sprite Sheet: Organize all individual frames of an animation in a horizontal or grid format into one image file, ensuring equal spacing (often padding) to make slicing easy.
+
+2. Import and Slice (Game Engine):
+  - Unity: Import the image, change the Texture Type to "Sprite (2D and UI)," set Sprite Mode to "Multiple," and use the Sprite Editor to "Slice" by grid size.
+  - Phaser: Use this.load.spritesheet with frame width/height, then this.add.sprite to place it.
+
+3. Create the Animation:
+  - Unity: Drag the sliced sprites into the scene, which opens the Animation window to create an animation clip.
+  - Code (CSS/JS): Use CSS keyframes to shift the background-position of a container, showing one frame at a time.
+
+4. Refine the Animation: Adjust the frame rate (frames per second) for speed and set the animation to loop.
+
+
+> Essential Tools
+- Asset Creation: Aseprite, Photoshop, Figma.
+- Sheet Packing: TexturePacker.
+- Game Engines: Unity, Godot, Phaser, GameMaker. 
+
+>Tips for Better Animation
+- Consistency: Keep all frames the same size.
+- Transparency: Use PNG format to maintain transparent backgrounds.
+- Optimization: Use tools to remove extra whitespace and minimize memory usage
+
+links: 
+https://www.youtube.com/watch?v=ENFsozagLto 
+https://virtuall.pro/blog/how-to-make-a-sprite-sheet 
+https://www.youtube.com/watch?v=4anybMv9CJc&t=54
+https://www.codeandweb.com/texturepacker/tutorials/how-to-create-a-sprite-sheet#:~:text=The%20disadvantage%20is%20that%20the,Click%20to%20play%20this%20video 
+https://medium.com/@victormct/damage-vfx-using-animated-sprites-in-unity-adding-impact-to-your-game-d818dfffd632
+https://www.youtube.com/watch?v=OOaIxx-q58Y  
+https://www.youtube.com/watch?v=OOaIxx-q58Y
+https://levelup.gitconnected.com/animating-sprites-with-a-sprite-sheet-in-unity-920ce21af865  
+
+
+#### Danganronpa 
+Another thing that I was interesting in learning in the placement of background for one of my favorite game. Danganronpa has a very specific art layout that in my opinion give it alot of character. It has very specific stylistic choices that makes it unique. I wanted to search more into the process of building scene in that universe 
+
+Creating the background style animation in Danganronpa, often referred to as "2.5D motion graphics," involves compositing 2D assets (characters, backgrounds) within a 3D space, primarily using Adobe After Effects. The style relies on layering, parallax movement, and high-contrast, pop-art designs. 
+
+They even had some tutorial for specifically using it in Unity. But I also checked out the other ways people have shown. 
+
+Making a Danganronpa style game in Unity requires a structured approach to replicate its core components: a visual novel segment, exploration, and unique minigames during class trials. While challenging, you can leverage existing tools and tutorials to streamline the process. 
+
+0. Recommended Tools and Resources
+- Danganronpa Editor (DREditor): An open-source Unity plugin specifically designed for creating Danganronpa style fan games ("fanganronpas"). It simplifies the back-end development for the court case mechanics.
+
+- Official Unity Tutorials/Documentation: Use Unity Learn and official documentation to learn the basics of the engine, C# scripting, and creating 2D/3D environments.
+
+- Video Tutorials: Follow dedicated tutorial series such as the "Danganronpa-like game Unity Tutorial" playlist by Greg Dev Stuff, which covers editor setup, exploration, dialogue, and character interactions. 
+
+
+Step-by-Step Approach of how you would go about making a game simialr to danganronpa 
+
+1. Plan the Story and Assets: The majority of a Danganronpa game is the narrative.
+- Write the script: Develop your story, characters, dialogue, and murder cases.
+- Create or source assets: This includes character sprites, backgrounds, sound effects (SFX), and music. Remember to make your own assets or use non-copyrighted ones, especially if you plan to share the game.
+
+2. Set up the Development Environment:
+- Consider importing the DREditor plugin if you plan to use its framework for class trials.
+
+3. Implement Core Game Loops:
+- Visual Novel (Daily Life/Deadly Life): Create a dialogue system that displays text, character sprites, and choices.
+- Exploration: Implement a first-person or 3D movement system for navigating the school grounds. Use sprites for interactable characters and objects within the scene.
+- Class Trials: This is the most complex part. Use an editor extension or design a node-based system within Unity to structure the trial logic. You'll need to manage "truth bullets" (evidence), non-stop debates, and minigames.
+
+4. Develop Unique Mechanics (Minigames):
+- Danganronpa features several unique minigames (e.g., Non-Stop Debate, Logic Dive, Closing Argument).
+- These will require custom C# scripts and UI work. You might need to simplify some mechanics, such as using a user-provided video for the "Punishment Time" animation.
+
+5. Test and Refine: The process of making a polished game is difficult and requires extensive testing. Solicit feedback and incrementally improve each section of the game.
+
+links: 
+https://www.youtube.com/watch?v=oCkYKddvli8
+https://www.youtube.com/playlist?list=PL0GUZtUkX6t6BD84mhhSSAj_KTciuI40j#:~:text=Greg%20Dev%20Stuff,14:04 
+
+
+Here is a guide based on techniques used to create this style:
+specifically like the background 
+
+1. Essential Tools and Setup
+- Software: Adobe After Effects (recommended), Hitfilm Pro, or Blender for 3D staging.
+- Asset Preparation: Split your background into multiple layers (e.g., foreground, midground, background) in a program like Photoshop or Clip Studio Paint to allow for parallax, where closer objects move faster than distant ones.
+- Resolution: Use a canvas size divisible by 4, as this is standard for game engines. 
+
+2. Achieving the "2.5D" Effect (After Effects)
+- 3D Layers: Turn all 2D asset layers into 3D layers in After Effects by toggling the 3D cube icon.
+- Camera Movement: Add a Camera to your composition. Use keyframes to move the camera across the 3D space, creating a "panning" or "fly-through" effect.
+- Parallax: Place your layers at different Z-depths (distance from the camera). As the camera pans, the layers will move at different speeds, creating depth.
+- Scaling: Adjust the scale of layers to maintain their size in the frame as they move in 3D space. 
+
+3. Creating Animated Background Effects
+- Motion Tile & Patterns: Create a simple background, such as a pattern of symbols (e.g., letters, logos). Use the "Motion Tile" effect to repeat this, and keyframe the "Tile Center" to move the pattern across the screen.
+- Distortion & Wave: Apply the "Turbulent Displace" effect to create a wavy, pulsating effect on the background. Adjust the complexity and size for a more dynamic look.
+- 4-Color Gradient: Use the "4-Color Gradient" effect to create a vibrant, pop-art color scheme. 
+
+4. Danganronpa-Specific Techniques
+- Layer Separation: During dialogue, keep the background, mid-ground (decorations), and foreground (character sprites) separated, animating them at different speeds.
+- Alpha Channel Cut-ins: Use transparent video overlays (Alpha Channels) for "Counter" or "Break" effects that pop up over the screen.
+- Text/Symbol Overlays: Add high-contrast symbols or text in the background that move independently of the main scene, often pulsating or fading in/out. 
+
+5. Workflow Tips
+- Storyboard: Map out your scene before editing, as the 2.5D style requires precise planning for how elements will move in 3D space.
+- Reference: Keep gameplay footage from Danganronpa open to study camera transitions, pacing, and sound effect timing.
+- Performance: For complex scenes, pre-compose layers to keep your main timeline organized and prevent the software from lagging. 
+
+For Beginners, using Sony Vegas is a simpler alternative to After Effects, while Hitfilm Express offers free, robust compositing features. 
+links: 
+https://dev.to/djalilhebal/using-svg-as-a-camera-danganronpa-back-and-forth-2gbj#:~:text=Danganronpa%20F:%20Cancel.,Panning. 
+https://www.youtube.com/watch?v=y2JRqq6Yo7I&t=39s 
+youtube.com/watch?v=CAhVTBm5gX4&t=2 
