@@ -254,12 +254,12 @@ Essential Tips:
 Alternatives: For more advanced, native pixel art tools, consider specialized apps like Pixaki.
 
 links :
-<https://www.youtube.com/shorts/18W9WC-H24w>
-<https://www.youtube.com/shorts/Jf-YYPur5q0>  
-<https://www.youtube.com/watch?v=tKMtPgNij2c&t=18s>
-<https://www.youtube.com/watch?v=tPQTGC5-_Is>
-<https://www.youtube.com/watch?v=xPD_FRNjTKQ>
-<https://www.youtube.com/watch?v=QoyYE0PS0jY>
+- <https://www.youtube.com/shorts/18W9WC-H24w>
+- <https://www.youtube.com/shorts/Jf-YYPur5q0>  
+- <https://www.youtube.com/watch?v=tKMtPgNij2c&t=18s>
+- <https://www.youtube.com/watch?v=tPQTGC5-_Is>
+- <https://www.youtube.com/watch?v=xPD_FRNjTKQ>
+- <https://www.youtube.com/watch?v=QoyYE0PS0jY>
 
 I had also checked into the sprites, animation. I have never made a sprite sheet before and inclass we had looked into the animation in Unity so I checked more information on sprite sheet animation and how we implement that in unity.
 
@@ -292,14 +292,14 @@ I had also checked into the sprites, animation. I have never made a sprite sheet
 - Optimization: Use tools to remove extra whitespace and minimize memory usage
 
 links:
-<https://www.youtube.com/watch?v=ENFsozagLto>
-<https://virtuall.pro/blog/how-to-make-a-sprite-sheet>
-<https://www.youtube.com/watch?v=4anybMv9CJc&t=54>
-<https://www.codeandweb.com/texturepacker/tutorials/how-to-create-a-sprite-sheet#:~:text=The%20disadvantage%20is%20that%20the,Click%20to%20play%20this%20video>
-<https://medium.com/@victormct/damage-vfx-using-animated-sprites-in-unity-adding-impact-to-your-game-d818dfffd632>
-<https://www.youtube.com/watch?v=OOaIxx-q58Y>  
-<https://www.youtube.com/watch?v=OOaIxx-q58Y>
-<https://levelup.gitconnected.com/animating-sprites-with-a-sprite-sheet-in-unity-920ce21af865>  
+- <https://www.youtube.com/watch?v=ENFsozagLto>
+- <https://virtuall.pro/blog/how-to-make-a-sprite-sheet>
+- <https://www.youtube.com/watch?v=4anybMv9CJc&t=54>
+- <https://www.codeandweb.com/texturepacker/tutorials/how-to-create-a-sprite-sheet#:~:text=The%20disadvantage%20is%20that%20the,Click%20to%20play%20this%20video>
+- <https://medium.com/@victormct/damage-vfx-using-animated-sprites-in-unity-adding-impact-to-your-game-d818dfffd632>
+- <https://www.youtube.com/watch?v=OOaIxx-q58Y>  
+- <https://www.youtube.com/watch?v=OOaIxx-q58Y>
+- <https://levelup.gitconnected.com/animating-sprites-with-a-sprite-sheet-in-unity-920ce21af865>  
 
 #### Danganronpa
 
@@ -344,8 +344,8 @@ Step-by-Step Approach of how you would go about making a game simialr to danganr
 1. Test and Refine: The process of making a polished game is difficult and requires extensive testing. Solicit feedback and incrementally improve each section of the game.
 
 links:
-<https://www.youtube.com/watch?v=oCkYKddvli8>
-<https://www.youtube.com/playlist?list=PL0GUZtUkX6t6BD84mhhSSAj_KTciuI40j#:~:text=Greg%20Dev%20Stuff,14:04>
+- <https://www.youtube.com/watch?v=oCkYKddvli8>
+- <https://www.youtube.com/playlist?list=PL0GUZtUkX6t6BD84mhhSSAj_KTciuI40j#:~:text=Greg%20Dev%20Stuff,14:04>
 
 Here is a guide based on techniques used to create this style:
 specifically like the background
@@ -383,9 +383,10 @@ specifically like the background
 
 For Beginners, using Sony Vegas is a simpler alternative to After Effects, while Hitfilm Express offers free, robust compositing features.
 links:
-<https://dev.to/djalilhebal/using-svg-as-a-camera-danganronpa-back-and-forth-2gbj#:~:text=Danganronpa%20F:%20Cancel.,Panning>.
-<https://www.youtube.com/watch?v=y2JRqq6Yo7I&t=39s>
-youtube.com/watch?v=CAhVTBm5gX4&t=2
+- <https://dev.to/djalilhebal/using-svg-as-a-camera-danganronpa-back-and-forth-2gbj#:~:text=Danganronpa%20F:%20Cancel.,Panning>.
+- <https://www.youtube.com/watch?v=y2JRqq6Yo7I&t=39s>
+- youtube.com/watch?v=CAhVTBm5gX4&t=2
+
 
 # Prototype Ideation (week 6)
 
@@ -411,13 +412,34 @@ i was thinking of a bar or cafe, maybe nighclub would be better or you could hav
 
 I was also thinking thta you could have minigames, to upgrade them or to see if they did good. like matching games or rhythm games or merging games. rhythm game would be smart though i didnt know how I could make some variation maybe towards the instrument but i thought it would be a nice addition to a more visual novel type idea.
 
-im going to show some of the game that i was thinking of or styles
+im going to show some of the game that i was thinking of or styles 
 
-<img src="Media/Bar-Games.jpg" wdth="300" height="200" /><img src="Media/arcade-machines.jpg"  width="300" height="250" />
+environment could be nice 
 
-<img src="Media/fire_sprite_animation.gif" wdth="300" height="200" /><img src="Media/fire_sprite_animation.gif"  width="300" height="250" />
+<img src="Media/Bar-Games.jpg" wdth="300" height="250"/> <img src="Media/arcade-machines.jpg"  width="300" height="250" />
 
-<img src="Media/fire_sprite_animation.gif" wdth="300" height="200" /><img src="Media/fire_sprite_animation.gif"  width="300" height="250" />
+
+I was also thinking about the concept of character stats. a profile. maybe you could hve it like a collecting thing or a story base where you have a paths in a story novel which will effect the direction or type of intstrument character  like those dating visual novel but more in like building your staff , but the idea of it being similar in ceratin game mechanics as HuniePop or doki doki litreture club 
+
+<img src="Media/character stats.jpg" wdth="300" height="250" /><img src="Media/template.jpg"  width="300" height="250" />
+
+
+A game that I had thought of that i like some aspect of it. of course the dating multiple girls is not something i am interested in but there are aspect that i liked from huniepop. they also did huniecam which turned it intp a point and click game. I found it interesting 
+
+<img src="Media/huniepop.png" wdth="300" height="250" /><img src="Media/huniecam2.jpg"  width="300" height="250" />
+
+<img src="Media/huniecam 3.jpg" wdth="300" height="250" /><img src="Media/huniecam 4.jpg"  width="300" height="250" />
+
+
+this idea of variety or categories, with character traits. I dont know the maid cafe game but doki doki literature club has the idea of path and also small games (just my version would be not as messed up)
+
+<img src="Media/maid_cafe.png" wdth="300" height="250" /><img src="Media/Doki_Doki_Literature_Club_Cover.jpg"  width="300" height="250" />
+
+I was also thinking of the minigames or in a way to make a vidual novel be more active then just reading and making some choices. I was thinking the idea of Rhythm games would be on themes and interesting to integrate 
+<img src="Media/rhythm.jpg" wdth="300" height="250" /><img src="Media/rhythm_game_exemple.png"  width="300" height="250" />
+
+<img src="Media/rhythm 2.jpeg"  width="300" height="250" /><img src="Media/exemple.png"  width="300" height="250" />
+
 - Words: ZOMBIE AND CRAZY
 
 the idea that if our friend became a zombie or took a cure but still has crazy urges. therefore you are trying to stop or manuveaur the zmobie away from causing problems. like if they are trying to go on about their daily life or incognito and you as player (are like a god ) that needs to move objcet and stop the character of acting on his killing urges. It hard to explain, but if you have to move object to block the character or you have to click objects that scares surrounding baystanders so they run away or moves which clears the path. Like a moving point and click game. Like you have to go from the store to hoema dn make sure the character arrives there without harming others around him. You cannot touch the character but can touch or move certain object in the surroundung area that can help block the character.
@@ -426,3 +448,10 @@ More top view
 make me think of more mobile game
 
 (make a physical prototype to showcase the mechanics or moving object around the character)
+
+
+
+the other idea whihc is the one I had in the begining is in mixing it with another class. This idea was not even something I had in mind for a while but intsead I got the idea the class riht before (my 1:15 to 5:15 class, class 498 generative AI with Gabriel).
+
+I am not as interesting in ai so i had no idea on what to do for the final prject adn even less had much motivation. I also have four studio classes so its alot. one class that i am interested in more is the game prototype and  i thought that the implementation of ai in a game towards the concept of npc or choice or probability would be a more acceptable way of using ai. 
+- the first base concept that I had started with was maybe the dialogue. having an ai turning text to audio or having dialogue be none fully planned could be a way to implement ai without fully overshadowing the game. I have to do a presentation on a ai. So i looked at Tortoise whihc is a text to audio opensource ai, 
