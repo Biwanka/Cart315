@@ -413,7 +413,7 @@ I was also thinking thta you could have minigames, to upgrade them or to see if 
 
 im going to show some of the game that i was thinking of or styles
 
-<img src="Media/Bar-Games.jpg width="45%" >
+<img src="Media/fire_sprite_animation.gif" wdth="250" height="150" /><img src="Media/fire_sprite_animation.gif"  width="250" height="150" />
 
 - Words: ZOMBIE AND CRAZY
 
