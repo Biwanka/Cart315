@@ -398,7 +398,7 @@ idea that appeared during the ideation worshop
 
 at first we had idea of busking or the typical idea that you have music and need to perform to make money. Then i jokingly mention that we are a buiding manager and the tenants are instruments and they need to pay. This idea morphed and arrive to the concept of a strip club.  The idea of huminazing the instrument. the idea of a strip club randomly appeared with the idea of paying for a service and this time is the service of the instruments itself. This made me think of huniepop the game
 
-we had a very bing idea towards transforming the instruments to be more humanoid but thinking how certain aspects of there original form. so like drums i came up with them being masochist because we usually hit drums, or like electric keyboard are roleplayers because you can add different digital sound or instrument on a electric keyboards
+we had a very big idea towards transforming the instruments to be more humanoid but thinking how certain aspects of there original form. so like drums i came up with them being masochist because we usually hit drums, or like electric keyboard are roleplayers because you can add different digital sound or instrument on a electric keyboards
 
 -ideas i thought that maybe we cna have it like those fighing games or games where the character that you have you can upgrade them or eahc have their own stats and they are better at specific areas specal to them
 
@@ -426,14 +426,14 @@ I was also thinking about the concept of character stats. a profile. maybe you c
 
 A game that I had thought of that i like some aspect of it. of course the dating multiple girls is not something i am interested in but there are aspect that i liked from huniepop. they also did huniecam which turned it intp a point and click game. I found it interesting 
 
-<img src="Media/huniepop.png" wdth="300" height="250" /><img src="Media/huniecam2.jpg"  width="300" height="250" />
+<img src="Media/huniepop.png" wdth="500" height="300" /><img src="Media/huniecam2.jpg"  width="500" height="300" />
 
-<img src="Media/huniecam 3.jpg" wdth="300" height="250" /><img src="Media/huniecam 4.jpg"  width="300" height="250" />
+<img src="Media/huniecam 3.jpg" wdth="500" height="300" /><img src="Media/huniecam 4.jpg"  width="500" height="300" />
 
 
 this idea of variety or categories, with character traits. I dont know the maid cafe game but doki doki literature club has the idea of path and also small games (just my version would be not as messed up)
 
-<img src="Media/maid_cafe.png" wdth="300" height="250" /><img src="Media/Doki_Doki_Literature_Club_Cover.jpg"  width="300" height="250" />
+<img src="Media/maid_cafe.png" wdth="500" height="300" /><img src="Media/Doki_Doki_Literature_Club_Cover.jpg"  width="500" height="300" />
 
 I was also thinking of the minigames or in a way to make a vidual novel be more active then just reading and making some choices. I was thinking the idea of Rhythm games would be on themes and interesting to integrate 
 <img src="Media/rhythm.jpg" wdth="300" height="250" /><img src="Media/rhythm_game_exemple.png"  width="300" height="250" />
@@ -453,5 +453,83 @@ make me think of more mobile game
 
 the other idea whihc is the one I had in the begining is in mixing it with another class. This idea was not even something I had in mind for a while but intsead I got the idea the class riht before (my 1:15 to 5:15 class, class 498 generative AI with Gabriel).
 
-I am not as interesting in ai so i had no idea on what to do for the final prject adn even less had much motivation. I also have four studio classes so its alot. one class that i am interested in more is the game prototype and  i thought that the implementation of ai in a game towards the concept of npc or choice or probability would be a more acceptable way of using ai. 
-- the first base concept that I had started with was maybe the dialogue. having an ai turning text to audio or having dialogue be none fully planned could be a way to implement ai without fully overshadowing the game. I have to do a presentation on a ai. So i looked at Tortoise whihc is a text to audio opensource ai, 
+I am not as interesting in ai so I had no idea on what to do for the final prject adn even less had much motivation. I also have four studio classes so its alot. one class that I am interested in more is the game prototype and  I thought that the implementation of ai in a game towards the concept of npc or choice or probability would be a more acceptable way of using ai. 
+- the first base concept that I had started with was maybe the dialogue. having an ai turning text to audio or having dialogue be none fully planned could be a way to implement ai without fully overshadowing the game. I have to do a presentation on a ai. So I looked at Tortoise whihc is a text to audio opensource ai, 
+I had to make a demo and thought of trying to see how it could be implemented in a game in any way. first was just to see what the ai did. I downloaded a couple of 
+
+- Github to the repo : https://github.com/Biwanka/CART498-GenAI/tree/main/Tortoise 
+
+
+process in creating the demo 
+Demo of the original way to use Tortoise. Here’s a clean way to generate 3 showcase WAVs (redaction, voice latent, advanced knobs), with exact settings + prompts so you can present “input → output”.
+
+0) Prep
+conda activate tortoise
+cd "C:\Users\gauth\OneDrive\Desktop\GitHub\CART498-GenAI\Tortoise"
+$env:PYTHONPATH = "$PWD;$PWD\tortoise"
+
+1) Prompt Redaction (emotion control)
+- Goal: same spoken text, different emotional tone.
+
+python tortoise\do_tts.py --text "[I am terrified,] We should not go in there." --voice train_empire --preset fast --candidates 1 --output_path results\redaction
+
+- expecting:
+Bracketed text influences emotion but is not spoken.
+Output should sound fearful but only says “We should not go in there.”
+
+2) Voice Latent System (mixing voices)
+- Goal: show blended voice (voice A + voice B).
+python tortoise\do_tts.py --text "The council will hear your case now." --voice train_dotrice&train_lescault --preset fast --candidates 1 --output_path results\voice_mix
+
+- expecting:
+& blends two voices.
+Output sounds like an “average” of the two speakers.
+
+3) Advanced Knobs (quality vs speed)
+- Goal: same sentence, different quality levels.
+
+  - Fast (lower quality, faster):
+python tortoise\do_tts.py --text "The gate opens at dawn, no sooner." --voice train_dotrice --preset ultra_fast --candidates 1 --output_path results\knobs
+  - High quality (slower, cleaner):
+python tortoise\do_tts.py --text "The gate opens at dawn, no sooner." --voice train_dotrice --preset high_quality --candidates 1 --output_path results\knobs
+
+- expecting:
+The preset changes number of samples + diffusion steps.
+High quality is slower but more natural.
+
+
+ DEMO ORDER
+ 1) START WITH OFFLINE WAV SHOWCASE (8‑second clips)
+   - Purpose: show Tortoise’s quality + range using its intended workflow
+   - redaction (emotion control)
+   - voice mix (latent blending)
+   - knobs (quality vs speed)
+   - This proves what Tortoise is “known for”: high‑quality offline WAV generation.
+
+ 2) BASIC LIVE TTS (manual input → Tortoise)
+   - Script: tts_cli_player_basic.py
+   - Purpose: show how Tortoise can be used interactively in a project
+   - Input: you type a line, it speaks it
+   - This is the “baseline live integration.”
+
+ 3) LLM + TTS (your input → AI response → Tortoise speaks)
+   - Script: tts_cli_player_llm.py
+   - Purpose: show how Tortoise can be connected to a text‑generating AI (Ollama)
+   - Input: you type a line, LLM responds, Tortoise speaks the response
+   - This demonstrates NPC‑style dialogue generation.
+
+ 4) MULTI‑NPC VOICES (role-based voices)
+   - Script: tts_cli_player_llm_roles.py
+   - Purpose: show how different NPCs can have different voices
+   - Input format: "merchant: hello" / "guard: halt"
+   - This demonstrates character identity + voice mapping.
+
+5) OPTIONAL: VOICE PICKER VERSION
+   - Script: tts_cli_player_llm_pick.py
+   - Purpose: show manual voice selection per line
+
+6) NOTES:
+ - Offline WAVs = best quality but slower
+ - Live demo = faster but lower fidelity (fewer samples/shorter output)
+ - NVIDIA GPU required for usable speed
+ - No paid API for Tortoise itself; only if using external LLM APIs
