@@ -413,8 +413,11 @@ I was also thinking thta you could have minigames, to upgrade them or to see if 
 
 im going to show some of the game that i was thinking of or styles
 
-<img src="Media/fire_sprite_animation.gif" wdth="250" height="150" /><img src="Media/fire_sprite_animation.gif"  width="250" height="150" />
+<img src="Media/Bar-Games.jpg" wdth="300" height="200" /><img src="Media/arcade-machines.jpg"  width="300" height="250" />
 
+<img src="Media/fire_sprite_animation.gif" wdth="300" height="200" /><img src="Media/fire_sprite_animation.gif"  width="300" height="250" />
+
+<img src="Media/fire_sprite_animation.gif" wdth="300" height="200" /><img src="Media/fire_sprite_animation.gif"  width="300" height="250" />
 - Words: ZOMBIE AND CRAZY
 
 the idea that if our friend became a zombie or took a cure but still has crazy urges. therefore you are trying to stop or manuveaur the zmobie away from causing problems. like if they are trying to go on about their daily life or incognito and you as player (are like a god ) that needs to move objcet and stop the character of acting on his killing urges. It hard to explain, but if you have to move object to block the character or you have to click objects that scares surrounding baystanders so they run away or moves which clears the path. Like a moving point and click game. Like you have to go from the store to hoema dn make sure the character arrives there without harming others around him. You cannot touch the character but can touch or move certain object in the surroundung area that can help block the character.
