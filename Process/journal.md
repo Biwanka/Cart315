@@ -453,9 +453,32 @@ make me think of more mobile game
 
 the other idea whihc is the one I had in the begining is in mixing it with another class. This idea was not even something I had in mind for a while but intsead I got the idea the class riht before (my 1:15 to 5:15 class, class 498 generative AI with Gabriel).
 
+This is an idea that me and Sean had and also worked together on as we both did the oral presentation together and want to make the final game prototype together. 
+this is the research we did in seeing if we could use this ai for an npc in a futhure project and also the presentation, but i did make the ai prompt make it that they are more npc. 
+- presentation slides : https://docs.google.com/presentation/d/1a7vhVnTERsJ7BrqbDOIpUsaOg12oATS3dn0-uRKrsEY/edit?usp=sharing 
+
 I am not as interesting in ai so I had no idea on what to do for the final prject adn even less had much motivation. I also have four studio classes so its alot. one class that I am interested in more is the game prototype and  I thought that the implementation of ai in a game towards the concept of npc or choice or probability would be a more acceptable way of using ai. 
+
+
+
 - the first base concept that I had started with was maybe the dialogue. having an ai turning text to audio or having dialogue be none fully planned could be a way to implement ai without fully overshadowing the game. I have to do a presentation on a ai. So I looked at Tortoise whihc is a text to audio opensource ai, 
-I had to make a demo and thought of trying to see how it could be implemented in a game in any way. first was just to see what the ai did. I downloaded a couple of 
+I had to make a demo and thought of trying to see how it could be implemented in a game in any way. 
+
+We thought of a more quest adventure rpg game, as the improbability of ai reminded me of dnd which would be interesting aspect to make take insporation or keep in mind. 
+
+we didnt do much for the visual but more research on what ai or how we could implement it. I didnt want ai to be the main aspect of the game. 
+
+we had ideas of improbability in like the order of event. quest or situation will not always play in the same order.
+
+we had some similarities to Jonathan lessard games that he has worked on. we find that this idea of more like npc minds or actions like sims or something is a more fun way to have the incorporation of ai but we still havent made a final decision or conreate idea of how it should be implemented. 
+
+- first was just to see what the ai did. I downloaded a couple of wav files that I will leave in my media process folder as you cannot hear anything in markdown but it showed how you could modify and the wide range that the original tortoise had.
+
+- then i made a .py file so I could be able to write in the terminala and tortoise would read(voice it) outloud live. the first one toook time as ut was slow but it was smoother after the frist start.
+
+- then I decided to see what else I could do to make it more game usable. I mixed it with Ollama a text generation ai. so we could make it more like a npc having a converstation instead of the ai just reading waht i wrote down. 
+
+- I then made further modification
 
 - Github to the repo : https://github.com/Biwanka/CART498-GenAI/tree/main/Tortoise 
 
@@ -467,6 +490,10 @@ Demo of the original way to use Tortoise. Here’s a clean way to generate 3 sho
 conda activate tortoise
 cd "C:\Users\gauth\OneDrive\Desktop\GitHub\CART498-GenAI\Tortoise"
 $env:PYTHONPATH = "$PWD;$PWD\tortoise"
+
+This is the demo Wav file that we tested at first: 
+https://drive.google.com/drive/folders/1uP9p2K1BkQDW5OjerQ6cqzp0De5XXlKd?usp=sharing 
+
 
 1) Prompt Redaction (emotion control)
 - Goal: same spoken text, different emotional tone.
@@ -533,3 +560,46 @@ High quality is slower but more natural.
  - Live demo = faster but lower fidelity (fewer samples/shorter output)
  - NVIDIA GPU required for usable speed
  - No paid API for Tortoise itself; only if using external LLM APIs
+
+
+
+This is some exemple of what we did and coded. The first two videos shows the Ollama ai generating a text and then Tortoise reading, sadly i cannot have the audio working in markdown but you can check in the Media folder in process if you want to hear 
+
+<video width="500" height="300" controls>
+  <source src="Media/tortoise 4.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="500" height="300" controls>
+  <source src="Media/tortoise 5.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+We implemented a small memory system where the ai trys to remember the 3 last text so there response make more sense. We also added a reset. if the convo went nowhere or over the amount we could reset its memory. 
+
+<video width="500" height="300" controls>
+  <source src="Media/tortoise 6.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+We also have a quest state in place. it more like, if a specific word is used in my lines when talking to a npc. 
+the code : 
+def update_quest_state(role: str, user_text: str):
+    text = user_text.lower()
+    if any(k in text for k in ["quest", "help me", "job", "task"]):
+        quest_state_by_role[role] = "started"
+    if any(k in text for k in ["completed", "done", "finished"]):
+        quest_state_by_role[role] = "completed"
+
+and that is what i show in the image 
+ 
+<img src="Media/quest.png" alt="showing implementation of ring" width="500" height="300" />
+
+### conclusion/Reflection 
+
+- In conclusion: I dont know if this is the way that we will implement the ai in the game but i found it to be interesting, if it was used it would only be for like a very small section. Further experiemntation is needed. 
+
+- I did like the other ideas, however, they will not be the choice but I will keep it in mind and I have this journal to look back at it. 
+
