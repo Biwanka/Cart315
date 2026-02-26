@@ -394,6 +394,8 @@ So I was thinking of the ideas tHa i got during the ideation workshop. I had a s
 
 idea that appeared during the ideation worshop
 
+
+### IDEA 1
 - Words: INSTUMENT AND BILLS
 
 at first we had idea of busking or the typical idea that you have music and need to perform to make money. Then i jokingly mention that we are a buiding manager and the tenants are instruments and they need to pay. This idea morphed and arrive to the concept of a strip club.  The idea of huminazing the instrument. the idea of a strip club randomly appeared with the idea of paying for a service and this time is the service of the instruments itself. This made me think of huniepop the game
@@ -440,6 +442,8 @@ I was also thinking of the minigames or in a way to make a vidual novel be more 
 
 <img src="Media/rhythm 2.jpeg"  width="300" height="250" /><img src="Media/exemple.png"  width="300" height="250" />
 
+
+### IDEA 2
 - Words: ZOMBIE AND CRAZY
 
 the idea that if our friend became a zombie or took a cure but still has crazy urges. therefore you are trying to stop or manuveaur the zmobie away from causing problems. like if they are trying to go on about their daily life or incognito and you as player (are like a god ) that needs to move objcet and stop the character of acting on his killing urges. It hard to explain, but if you have to move object to block the character or you have to click objects that scares surrounding baystanders so they run away or moves which clears the path. Like a moving point and click game. Like you have to go from the store to hoema dn make sure the character arrives there without harming others around him. You cannot touch the character but can touch or move certain object in the surroundung area that can help block the character.
@@ -447,17 +451,51 @@ the idea that if our friend became a zombie or took a cure but still has crazy u
 More top view
 make me think of more mobile game
 
-(make a physical prototype to showcase the mechanics or moving object around the character)
+So I will show a video giving the idea of how it would work. Exemple that this is in a staright path or hallway maybe, which is shown by the two drawn pink line. There is a corridor with a red bottle cap, the bottle cap would represent a bystander/a person. and in the first video the white bottle cap (that i move with my hand) is the character that is a zombie or taht has crazy urges and that constantly moves/walks. in the first video he has access to the other bystander, so both bottle cap could meet, which is like the main characetr biting or harming the other human ( game over your cover is blown). So we as player would be a able to move objects in the environment to block th
+
+
+<video width="500" height="300" controls>
+  <source src="Media/IMG_5295.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+So we as player would be a able to move objects in the environment to block the character or the other bystanders to keep them safe. it could be moving a vase that crashes and scares the bystanders or moving an object to block the way, like in the video where the lipgloss i move represent a movable object like a bench or a cabinet and sucessively avoid a craze encounter. 
+
+so you are trying to help your friend walk from one area to another like store to house, and while the characer cannot stop walking you need to affect the surrounding environment to stop the friend in action on thsoe crazy urges and make sure he arrives to his destination without getting find out or causing harm. 
 
 
 
-the other idea whihc is the one I had in the begining is in mixing it with another class. This idea was not even something I had in mind for a while but intsead I got the idea the class riht before (my 1:15 to 5:15 class, class 498 generative AI with Gabriel).
+
+<video width="500" height="300" controls>
+  <source src="Media/IMG_5296.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+### IDEA 3 
+
+the other idea which is the one I had in the begining is in mixing it with another class. This idea was not even something I had in mind for a while but intsead I got the idea the class riht before (my 1:15 to 5:15 class, class 498 generative AI with Gabriel).
 
 This is an idea that me and Sean had and also worked together on as we both did the oral presentation together and want to make the final game prototype together. 
 this is the research we did in seeing if we could use this ai for an npc in a futhure project and also the presentation, but i did make the ai prompt make it that they are more npc. 
 - presentation slides : https://docs.google.com/presentation/d/1a7vhVnTERsJ7BrqbDOIpUsaOg12oATS3dn0-uRKrsEY/edit?usp=sharing 
 
 I am not as interesting in ai so I had no idea on what to do for the final prject adn even less had much motivation. I also have four studio classes so its alot. one class that I am interested in more is the game prototype and  I thought that the implementation of ai in a game towards the concept of npc or choice or probability would be a more acceptable way of using ai. 
+
+in class cart 498 we had to do a class activity on getting ideas for the project funny enough same day as the ideation for 315. anyway these are some of the main point and idea that sean and I wrote down 
+
+> Fantasy RNG DND Generator, you play as a village hero that has to defend his village from a variety of task.
+
+> These can include raids, enemy encampments, or even something as simple as getting fruit or rescuing cats or something
+
+> The key is that AI will be usedto generate them, what scenarios they're in, and what is done when.
+
+>Each villager in the encampment will have certain levels of either paranoia, their own personality (AI generated), relationship with others, all figured out by AI.
+
+>Our personal guide, Chet Gipiti, will be our companion that either informs us on what we have to do, or provide commentary towards our journey.
+
+>We also have another guy, music man, who will be providing AI generated music that changes every single time, either calming, alerting, or hunting (something like that)
 
 
 
