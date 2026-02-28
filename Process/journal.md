@@ -675,4 +675,18 @@ I gave that idea and it was something that I was very interesting in. \
 
 
 
+
+
+
+### what are the question that need to be answered (prototype)
+When we arrived at a place where we kind of agreed on the overall idea. I decdied that we should stop trying to dig deeper or detail it more. We should just figure out what are the question that we need to figure out for the first iteration prototype. 
+
+> For me was what would the figure that we need to temped look like (human, ghostly, 2d, 3d, humanoid, shadows)
+
+> I mention that one prototyper should have. what does the concept of luring/tempting the figure function 
+
+> how will the ai conversation (with the theropy or whole sitatuin that sean had in mind) work ? will it work well ? will it make sense enough to use?
+
+> what will the 3d environment look like 
+
 Here’s what we got: a mad god has placed you within a mansion for an unclear reason, joining upon you as a companion. The mansion is littered with soldiers of war, suffering from some hard strain of PTSD. Your job is to talk to them, convincing them to follow you within this “briefing room” of sorts, where they would then explain their life story. You find cracks and clues within this gods trickery, and ultimately either save or kill tjem, where killing them would likely cause them to flee into the outer mansion, forcing you to roam around the location to hunt them down
