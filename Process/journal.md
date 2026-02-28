@@ -651,7 +651,27 @@ some of the problems that arrised
 
 - some of the difficulties that we had when getting ideas was the amount of word that is devided. The two other team members had many ideas that where heavy story based but it always ended up with very heavy art but very easy programing, like character walk, interact with object and dialogue pop-up. it didnt make sense to have only 2 programmers and 1 artist. They wanted a full map and world to explore and characters to talk to therefore, I would have to make alot by myself. 
 
-- 
+- another problem was that we were not all fully commited or into the idea, like, we all liked it but we  were not inspired
+
+- I also wanted to do it in 3d or a mix or 3d and 2d as i have already made 2d games assets before and wnated to do 3d as its good variety for portfolio. 
+
+- we were having a hard time finding something that we all : 
+> liked 
+> that the ai npc made sense 
+> could be in a 3d world (or some mix of 2d and 3d)
+> prefered if it happeded inside a house as interiour 3d environment sounds better and is easier to duplicate hallways or rooms if we need to make it bigger
+> that the amount of work is equally enoygh devided ( as i have made all assets for a game and programmed the character walking, blocking, react to text and switch seens all by myself before) so the amount of programmers in the theme needed to work that necessitate that amount and not just very art heavy ideas
+
+
+- We talked fo a very long time diving ideas. there is one moment that i got the idea that we had a companion who got visions, like if they entered a room or touched object it would get vision and start telling them randonly and in detail as if it talked about the past. This brought a need to the ai, as we could have the ai itself conjure what the past of things or people are. it would be different each playthrough but would be a very interesting addition to the ai element.
+
+I gave that idea and it was something that I was very interesting in. \
+
+- Then the topic of war ptsd or the timeline being during the war. I did not want it to be inside the battle field because that would  be hard to make just killing someone and when you past there ghost you learn about them and then its just rinse and repeat.
+
+- i had thought maybe to be a war veteran that comes back to the mansion and get ptsd episode where he kills or that it mixes someone reliving what he has done onto his workers inside his mansion.
+
+- the team liked the idea of war, but also of information/memory. Sean also wnated to have this mad man god, and the idea of intrapment. 
 
 
 
