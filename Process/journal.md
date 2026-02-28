@@ -641,3 +641,18 @@ and that is what i show in the image
 
 - I did like the other ideas, however, they will not be the choice but I will keep it in mind and I have this journal to look back at it. 
 
+
+
+# Week 7 
+
+We  had different ideas at the start. As mentioned we had the idea of the rpg game. the main idea of rpg came from thinking that the addition of an ai would work well with this concept. Last week, I made with code a merge of tortoise and Ollama. I wanted to see if there was a way we could implement an ai as an npc. however we were not fully decided about the full idea of the game 
+
+some of the problems that arrised 
+
+- some of the difficulties that we had when getting ideas was the amount of word that is devided. The two other team members had many ideas that where heavy story based but it always ended up with very heavy art but very easy programing, like character walk, interact with object and dialogue pop-up. it didnt make sense to have only 2 programmers and 1 artist. They wanted a full map and world to explore and characters to talk to therefore, I would have to make alot by myself. 
+
+- 
+
+
+
+Here’s what we got: a mad god has placed you within a mansion for an unclear reason, joining upon you as a companion. The mansion is littered with soldiers of war, suffering from some hard strain of PTSD. Your job is to talk to them, convincing them to follow you within this “briefing room” of sorts, where they would then explain their life story. You find cracks and clues within this gods trickery, and ultimately either save or kill tjem, where killing them would likely cause them to flee into the outer mansion, forcing you to roam around the location to hunt them down
