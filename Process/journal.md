@@ -689,4 +689,6 @@ When we arrived at a place where we kind of agreed on the overall idea. I decdie
 
 > what will the 3d environment look like 
 
+
+### Concept 
 Here’s what we got: a mad god has placed you within a mansion for an unclear reason, joining upon you as a companion. The mansion is littered with soldiers of war, suffering from some hard strain of PTSD. Your job is to talk to them, convincing them to follow you within this “briefing room” of sorts, where they would then explain their life story. You find cracks and clues within this gods trickery, and ultimately either save or kill tjem, where killing them would likely cause them to flee into the outer mansion, forcing you to roam around the location to hunt them down
