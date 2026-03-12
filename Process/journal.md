@@ -723,6 +723,14 @@ This is my reference/inspo board I was sreaching and seeing ways that I could pr
 <img src="Media/army_3.png" wdth="500" height="300" />
 <img src="Media/army_4.png" wdth="500" height="300" />
 
+I thought of some game : 
+- Danganronpa: with its phsyco episode moment, alot of mental and mind games exist in the game. also moral and what is right and wrong nad how somone value can change when people are given motive are a bug factor that i kept in mind 
+
+- Psychopomp had some character styles going in madness which was interesting. I also liked the sketchy, scribble line style.
+
+- No, I'm not a Human!: was a  game that I also kept in mind. It is made to make you feel uncomforatable and also makes you have to make hard moral choices. The type of monochrome but not monochrom color style is something that i really loved from this game. They have this kind of realistic but simplistic mutated style which suport the game alot. I dont think I wanted to make them as grotest in style but i liked the way you could walk in a house and see these 2d character. the way that it is colored was something i liked
+
+TMI: funny anecdote but I was watching: BOZE vs. the WORLD. A youtuber that reacts to true crime cases and also has a best of body cams. I kind of tried to have content that talked more about certain mindset and manipulation while drawing to stay more in the mindset. I watched mroe body cams so some where not as gruseom, some where drunk drving but had some very manipulative, narcacistic tactics that just made me question behaviour. 
 
 ## Prototype 
 
@@ -731,6 +739,34 @@ This is my reference/inspo board I was sreaching and seeing ways that I could pr
 <img src="Media/soldier_5.jpeg" wdth="500" height="300" /><img src="Media/soldier_6.jpeg" wdth="500" height="300" />
 <img src="Media/soldier_7.jpeg" wdth="500" height="300" /><img src="Media/soldier_8.jpeg" wdth="500" height="300" />
 <img src="Media/soldier_9.jpeg" wdth="500" height="300" /><img src="Media/soldier_10.jpeg" wdth="500" height="300" />
+
+I experiemneted alot and did alot of different itteration with small changes. I did the prototype on physical paper as i prefer to sketch and draw on physical then digital. I prefer beng able to utilise and manipulate easily my medium(pencil,pen) without needing to chnage medium (having to change brushes digitaly). When I dont know what to draw yet for me on physical paper is my go to. 
+
+- I started with the order shown. I wasnt very happy with the first 4 pages. When I started, I was a but overwhelmed. I decided to try different styles or approches. I was thinking of bluring the figure. I wasnt fully into it.
+- I tried other character but they were a bit to cartoon/anime style. I feel like it wouldnt fit the heavy theme. I wasnt feeling it, it just didnt feel right. 
+- I tried a fast more hyper realistic, I will say the moment i added ink to make the graphite darker it started to get muddy. I feel like it was creepy and it could be intese but i just didnt feel much of it. For me i could feel like it wasnt it. 
+- I tried to black out the character, where it is only hard shadows and lines, be more simplistic and minimalistic. Again it was to simple and it didnt feel right either. 
+- I even tried shadow, or outline but nothing felt right. I decided to stop and take a day to not continue working on it and leave it for a bit.
+
+When I came back to it I decided to go for more soldier look. Which is where the colour sketches comes in. I prefer those iterations. I found that the more realistic but not as realitic as pencils sketch felt better. I think it would wrok better with this types of theme. Of course I have no idea how it will look in the 3d environment and I know that I will need to make more iteration and changes and adaptation but i was liking the direction it was going in. I also like the monocromatic vibe. I may end up having more than one colour but I like the minimilistic amoun of colour. A lot of it will be adapted based on all other elements merging together. I also made a point taht I like the brownish, rustic red and purple colour i had, it gave the idea of dirt, rust, old dried blood. I quite liked it and also reminded me of old photograph. 
+
+Whne i made the soldier i had the mask that hwere more soldier accurate. I quite liked the idea of coverage and how the character are harder to distinguish as that is what happens, you get in a war a small part of a big situation. the idea of identity and how it is covered or contained by a new version because of ptsd. This idea of losing yourslef or past self. so i found that the covering was a good option. I decided to approach differently than just army tool and tried to cover it with bandages. I also found it very interesting and liked it alot. I will say that I like it better when they have a hat, as without it they look like injured people or mummys. I also tried to see if the faces are fuly covered or have some parts showing. I also tried it with a mask. i think those idea of mask,face-mask and baddages are the directions to go. I also want to see more of the world and opinion of my teamates but that is the process and idea of how it went.
+
+/
+
+*** also if we do go with the idea of fighting the soldiers first to weaken them so you can bring them to the therepay(talking room) would be better than fighting them at the end of the conversation 
+ 
+***I also think the idea of photagraphy could be interesting to look into or consider. maybe after the word battle or talk you need to take a picture to resend the soldier into the photo. ideas of the past and memory. 
+
+
+/
+
+
+
+Sean still couldnt get tortoise to work on his device. So I decided to search on other local open source TTS. I search for a more faster option i ended up finding XTTS v2 Coquis : https://github.com/coqui-ai/TTS. which is popular and suposedly fast which is something we would need. I dowloaded and got it to work at the same point as I had for the Tortoise. so the terminal and the player choice. It works just like the prototype I did for Tortoise (last week journal). But I have found that it is way faster and is looking to be a better option. 
+https://github.com/Biwanka/CART498-GenAI/tree/main/TTS 
+
+
 
 
 ## Research
