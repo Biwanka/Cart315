@@ -643,7 +643,7 @@ and that is what i show in the image
 
 
 
-# Week 7 
+# Iterative Prototype 2 (Week 7/8) (2026-03-12)
 
 We  had different ideas at the start. As mentioned we had the idea of the rpg game. the main idea of rpg came from thinking that the addition of an ai would work well with this concept. Last week, I made with code a merge of tortoise and Ollama. I wanted to see if there was a way we could implement an ai as an npc. however we were not fully decided about the full idea of the game 
 
@@ -697,6 +697,23 @@ Here’s what we got: a mad god has placed you within a mansion for an unclear r
 
 - I had a lot of idea trying to approach designing the characters that have ptsd. Therefore army soldiers. I had to go through multiple iterations of designing the characters and try to give a variety of styles and approaches. I made a reference/style board to try and get inspiration. Because we want the ai to be able to create the past or history of the people. So I didn’t want to make the people very distinct because I
 Don’t know what the ai could create. I know that we can give ID or prompts so the ai knows to avoid these words or knows which character it’s talking to. But I thought that maybe if we have an ongoing idea of battling many of these characters than having a way to make them less distinguishable would be good. It’s also a as a way of the short amount of time to be able to add more characters . I decided first to try army references and also searched for anguish and terror. The concept of fear and also phsychotic. Like this area that titters between the brinks
+
+
+
+I did some reaserch, before trying to figure out how to design the character. I left the reaserch at the end as it is alot of text of just terms and definitions. 
+
+So the process in trying to design the character of the soldier with ptsd was a bit difficult. I had a hard time as the idea was very wide. I had asked myself alot of questions 
+- can we see them ?
+- how many do we have ?
+- should I make them 3d like the environment or 2d ?
+- do i have the time ?
+- do they have distinct features ?
+- are they foggy or transparent as they come from the past? 
+- what style ?
+- what gender ?
+- will this be a problem with the ai companion ?
+- i have to be carfull to not try to get our concept misread (like we are not targeting a specific race, country, gender) it isnt about those specific people having done horrible things or being effected to the point of effecting their behaviour
+- we have to be carefull on how it reads 
 
 
 ## Research
