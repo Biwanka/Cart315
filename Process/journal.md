@@ -692,3 +692,114 @@ When we arrived at a place where we kind of agreed on the overall idea. I decdie
 
 ### Concept 
 Here’s what we got: a mad god has placed you within a mansion for an unclear reason, joining upon you as a companion. The mansion is littered with soldiers of war, suffering from some hard strain of PTSD. Your job is to talk to them, convincing them to follow you within this “briefing room” of sorts, where they would then explain their life story. You find cracks and clues within this gods trickery, and ultimately either save or kill tjem, where killing them would likely cause them to flee into the outer mansion, forcing you to roam around the location to hunt them down
+
+
+
+- I had a lot of idea trying to approach designing the characters that have ptsd. Therefore army soldiers. I had to go through multiple iterations of designing the characters and try to give a variety of styles and approaches. I made a reference/style board to try and get inspiration. Because we want the ai to be able to create the past or history of the people. So I didn’t want to make the people very distinct because I
+Don’t know what the ai could create. I know that we can give ID or prompts so the ai knows to avoid these words or knows which character it’s talking to. But I thought that maybe if we have an ongoing idea of battling many of these characters than having a way to make them less distinguishable would be good. It’s also a as a way of the short amount of time to be able to add more characters . I decided first to try army references and also searched for anguish and terror. The concept of fear and also phsychotic. Like this area that titters between the brinks
+
+
+## Research
+So I did some reaserch on concept and definition. 
+
+#### PTSD
+> Post-traumatic stress disorder (PTSD) is a mental health condition triggered by experiencing or witnessing terrifying events like abuse, combat, or disasters. Symptoms include flashbacks, nightmares, severe anxiety, and emotional numbness, often causing significant disruption to daily life. Long-term effects can include chronic depression, substance abuse, and relationship issues. Treatment is available through therapy (CBT, EMDR) and medication. Common Symptoms of PTSD
+Symptoms generally fall into four main categories and can start within three months of the event or even years later: 
+
+- Re-experiencing: Flashbacks, nightmares, and disturbing memories.
+- Avoidance: Steering clear of people, places, or situations that remind you of the trauma.
+- Cognitive and Mood Changes: Negative thoughts about oneself, distorted blame, or feeling detached.
+- Arousal and Reactivity: Being easily startled, on edge, angry outbursts, or trouble sleeping. 
+
+Causes of PTSD
+PTSD results from experiencing or witnessing a life-threatening or deeply traumatic event, such as: 
+- Physical or sexual assault.
+- Combat or military exposure.
+- Natural disasters or accidents.
+- Sudden, unexpected death of a loved one. 
+
+Long-Term Effects and Daily Life Impact
+If left untreated, PTSD can severely interfere with daily functioning, leading to: 
+- Mental Health Issues: Chronic depression, anxiety disorders, and increased suicide risk.
+- Physical Health Problems: Constant fatigue, chronic pain, or physical reactions like headaches and tremors.
+- Social and Functional Impairment: Difficulty maintaining relationships, employment issues, and isolation.
+- Substance Abuse: Using alcohol or drugs to cope. 
+
+Types of PTSD and Variations
+While not strictly categorized into "types" in the diagnostic manual, PTSD can manifest differently: 
+- Delayed-Onset PTSD: Symptoms appear six months or more after the event.
+- Complex PTSD (CPTSD): Often results from prolonged or repeated trauma.
+- Childhood/Teen PTSD: May manifest as acting out, losing interest in activities, or becoming hyper-vigilant. 
+
+
+#### moral decay anomi 
+
+The concept of people acting worse during times of peace—or in situations not directly defined by active warfare—than they would during war is a complex sociological and psychological phenomenon often described through moral decay, anomie, or the breakdown of social cohesion. 
+
+While war is often seen as a catalyst for human cruelty, it can also paradoxically create high social solidarity and unity against an external threat. Conversely, when this threat vanishes, society may enter a state of "anomie" (a term coined by Émile Durkheim), where social norms break down, leading to increased internal strife, selfishness, and acts of cruelty. 
+
+Here are the key concepts and reasons behind this phenomenon:
+
+1. Anomie and Social Disintegration
+- Definition: Anomie refers to a breakdown of social bonds and a feeling of alienation within one's own community, leading to a state of normlessness.
+- The Contrast: During war, people often come together in a common defense. In peacetime, that shared purpose vanishes, and attention turns internally, leading to competition, distrust, and fragmented relationships.
+- The Result: Without the "glue" of a common enemy, individuals may turn to greed, ego, and ruthlessness as they pursue self-interest. 
+
+2. Moral Decay (Societal Moral Erosion)
+- Definition: The gradual weakening of shared ethical principles and values within a community.
+- Key Drivers: Increased individualism, materialism, and a decline in trust in institutions.
+- The Process: Behaviors once considered unacceptable become normalized, such as increased dishonesty, online bullying, or a reduction in compassion, leading to a more toxic social environment. 
+
+3. The "Illusion" of Moral Decline
+- Concept: Research by psychologists Adam Mastroianni and Daniel Gilbert suggests that the perception of moral decline is a psychological phenomenon rather than a reality.
+Why it feels worse: Two biases create this illusion:
+- Negative Bias: People notice and remember negative information about others more than positive information.
+- Memory Bias: People forget how bad the past actually was and romanticize it.
+- The Reality: Studies suggest that, in many ways, daily morality is either stable or actually improving over time, despite the widespread perception that it is deteriorating. 
+
+4. Psychological Factors
+- Toxic Leadership: When "toxic leaders" operate in peacetime, they can foster a culture of contempt, paranoia, and cruelty, similar to wartime dynamics but without the justification of survival.
+- Moral Disengagement: When people justify questionable behavior to alleviate the guilt ("everyone else is doing it," or "it’s just business"), they can commit acts that are morally reprehensible.
+- Perpetrator Trauma: Even if they rationalize their actions, individuals often carry deep psychological damage and guilt, proving that such behavior contradicts our natural tendencies, say researchers. 
+
+In summary, the phenomenon of acting "worse" in peace is often a mix of real, increased anomie (societal breakdown) following the loss of shared purpose, and a psychological illusion created by how we perceive and remember negative behaviors.
+
+other reasearch 
+
+The concept of people committing acts worse than they would during war, driven by systemic and group-level mechanisms, is largely rooted in social psychology and the study of mass atrocities. These situations are often described as "atrocity-producing situations" or "systemic violence" rather than merely the result of individual malice. 
+
+In these scenarios, societal structures (institutions, media, or military structures) create environments where extreme cruelty becomes normalized or even demanded, often in "peacetime". 
+
+Here are the key concepts explaining how this occurs:
+
+1. The Atrocity-Producing Situation
+Coined by psychiatrist R.J. Lifton, this describes an environment—such as a prison, a totalitarian state, or a training camp—so morally warped that cruel behavior becomes expected, often "engineered" by the system. 
+
+- Dehumanization: The victim is reduced to an obstacle, a subhuman, or "collateral".
+- Emotional Numbing: Daily exposure to suffering causes individuals to stop feeling empathy, making torture or murder feel routine.
+- Ambiguous Orders: Authority figures provide vague directives like "do what it takes," providing a license for extreme actions. 
+
+2. Deindividuation and Mob Mentality
+When individuals are part of a group, crowd, or in uniform, they often lose their sense of self-awareness and personal responsibility, a state known as deindividuation. 
+
+- Anonymity: Being in a crowd or wearing a uniform reduces the fear of personal accountability, as the individual feels "lost" in the group.
+- Diffusion of Responsibility: People feel less guilty or responsible for their actions because they believe the responsibility is shared among the group. 
+
+3. Systemic and Institutionalized Violence
+This refers to violence embedded in the social, economic, or political systems of a society, rather than just spontaneous, interpersonal conflict. 
+
+- "Us vs. Them" Dynamics: Groups are designed to dehumanize out-groups, making harm seem necessary for the "greater good" or security of the in-group.
+- Normalization: Radical ideologies and hate are normalized by institutions (media, education), causing ordinary citizens to adopt extreme views.
+- Ideological Justification: Atrocities are framed as "security-centric strategies" (e.g., upholding regimes, policing, "cleaning" society), which makes them appear morally justified in the eyes of the perpetrators. 
+
+4. Group Polarization and Groupthink
+Groups often make more extreme, reckless, or unethical decisions than any single individual would on their own. 
+
+- Group Polarization: When people with similar, often prejudiced, views come together, their attitudes strengthen, leading to more extreme actions than they would have taken alone.
+- Groupthink: A phenomenon where the desire for group harmony or conformity overrides the ability to think critically or consider moral consequences. 
+
+5. Obedience to Authority
+As shown in studies like the Milgram experiment, individuals will commit heinous acts if they believe they are following orders from a legitimate authority, shifting the moral burden from themselves to the leader. 
+
+
+These are things that I was researching and reading about. trying to understand concept of ptsd or war crimes or war trauma. Looking at it on a very emotional/mental plane.
