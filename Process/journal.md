@@ -715,6 +715,23 @@ So the process in trying to design the character of the soldier with ptsd was a 
 - i have to be carfull to not try to get our concept misread (like we are not targeting a specific race, country, gender) it isnt about those specific people having done horrible things or being effected to the point of effecting their behaviour
 - we have to be carefull on how it reads 
 
+## Reference 
+
+This is my reference/inspo board I was sreaching and seeing ways that I could proty the soldier characters
+<img src="Media/army.png" wdth="500" height="500" />
+<img src="Media/army_2.png" wdth="500" height="300" />
+<img src="Media/army_3.png" wdth="500" height="300" />
+<img src="Media/army_4.png" wdth="500" height="300" />
+
+
+## Prototype 
+
+<img src="Media/soldier_1.jpeg" wdth="500" height="300" /><img src="Media/soldier_2.jpeg" wdth="500" height="300" />
+<img src="Media/soldier_3.jpeg" wdth="500" height="300" /><img src="Media/soldier_4.jpeg" wdth="500" height="300" />
+<img src="Media/soldier_5.jpeg" wdth="500" height="300" /><img src="Media/soldier_6.jpeg" wdth="500" height="300" />
+<img src="Media/soldier_7.jpeg" wdth="500" height="300" /><img src="Media/soldier_8.jpeg" wdth="500" height="300" />
+<img src="Media/soldier_9.jpeg" wdth="500" height="300" /><img src="Media/soldier_10.jpeg" wdth="500" height="300" />
+
 
 ## Research
 So I did some reaserch on concept and definition. 
