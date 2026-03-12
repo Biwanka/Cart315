@@ -722,6 +722,8 @@ This is my reference/inspo board I was sreaching and seeing ways that I could pr
 <img src="Media/army_2.png" wdth="500" height="300" />
 <img src="Media/army_3.png" wdth="500" height="300" />
 <img src="Media/army_4.png" wdth="500" height="300" />
+<img src="Media/not_human.png" wdth="150" height="150" /><img src="Media/not_human_2.png" wdth="150" height="150" />
+<img src="Media/not_human_3.png" wdth="300" height="300" />
 
 I thought of some game : 
 - Danganronpa: with its phsyco episode moment, alot of mental and mind games exist in the game. also moral and what is right and wrong nad how somone value can change when people are given motive are a bug factor that i kept in mind 
