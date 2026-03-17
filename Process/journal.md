@@ -875,3 +875,81 @@ As shown in studies like the Milgram experiment, individuals will commit heinous
 
 
 These are things that I was researching and reading about. trying to understand concept of ptsd or war crimes or war trauma. Looking at it on a very emotional/mental plane.
+
+
+# Iterive Prototype 3 (week 9)
+
+Companion(Mad God) ideas : small companion, object-prison body, face-like features misplaced, sun-ray crown fragments, fire/light = dangerous “divine” energy.
+
+Here are 4 versions 
+
+- The Reliquary Behelit
+Core shape: cracked egg/relic stone (palm-sized), floating.
+Face: 3-5 tiny eyes and one stitched mouth, not centered.
+Sun rays: broken metal halo shards orbiting like a damaged crown.
+Fire/light: thin light leaking from cracks, like heat in a furnace.
+Mood: silent, watching, ancient.
+
+- The Lantern God
+Core shape: old ceremonial lantern/censer with organic flesh inside.
+Face: eyes appear in the glass openings, then disappear.
+Sun rays: rigid radial frame outside the lantern, like saint icon rays.
+Fire/light: internal flame changes color by emotion (amber = calm, red-white = wrath).
+Mood: companion feels “contained,” but wants out.
+
+- The Mask Seed
+Core shape: red seed/behelit-like pod wrapped in bandage and wax seals.
+Face: features shift position every time it speaks.
+Sun rays: sewn-on gold thorns or bone spikes in uneven lengths.
+Fire/light: bright slit pupils + ash particles drifting downward.
+Mood: pitiful and creepy at once.
+
+- The Camera Idol (fits your memory/photo idea)
+Core shape: broken camera + fossilized heart fused together.
+Face: aperture works like an eye; shutter clicks like blinking.
+Sun rays: flash reflector petals form a distorted halo.
+Fire/light: flash burns silhouettes of “past memories” onto walls.
+Mood: archival horror, memory weapon.
+Quick style rules so it matches your soldier direction:
+
+Keep palette narrow: rust red, dirty gold, charcoal, bone white.
+Use asymmetry everywhere (eyes, rays, cracks, mouth placement).
+Avoid full humanoid torso/limbs; at most tiny dangling vestigial arms.
+Mix sacred + medical + military materials: brass, gauze, soot, insignia fragments.
+Make silhouette readable at distance: one strong core + ray ring + one weird secondary shape.
+
+
+
+Iteration 1 (Silhouette Pass, 20–30 min)
+
+Draw 9 tiny thumbnails in black only.
+Keep same core idea: floating lantern body + ray frame.
+Vary only:
+Lantern proportion (tall, squat, cracked, asymmetrical)
+Ray style (needle rays, plate rays, broken halo rays)
+Hanging bits (chains, cloth strips, tags)
+Pick top 2 by readability from far away.
+Iteration 2 (Face + Containment Pass, 30–45 min)
+
+On the 2 chosen silhouettes, do larger sketches.
+Add “imprisoned god” cues:
+Eyes inside glass vents
+Mouth not centered (on side seam or lower frame)
+Seal marks (wax, sutures, rivets, bandage wraps)
+Add 1 transformation state:
+Idle: dim warm ember
+Triggered: overbright internal flame + rays spread wider
+Iteration 3 (Color + Material Pass, 30–45 min)
+
+Make 2 final variants with limited palette:
+charcoal / soot black
+dirty brass / old gold
+rust red
+bone white accents
+Materials to layer:
+Tarnished metal frame
+Dirty glass
+Burnt cloth or gauze strips
+Add lighting test:
+Flame glow on nearby wall
+Sharp ray-shaped shadows for creepy presence

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <rect width="900" height="900" fill="#130f10"/>
+  <g stroke="#d54e2a" stroke-width="9" stroke-linecap="round">
+    <line x1="450" y1="95" x2="450" y2="215"/>
+    <line x1="595" y1="135" x2="545" y2="255"/>
+    <line x1="710" y1="250" x2="585" y2="315"/>
+    <line x1="760" y1="430" x2="615" y2="430"/>
+    <line x1="710" y1="610" x2="590" y2="540"/>
+    <line x1="595" y1="725" x2="545" y2="605"/>
+    <line x1="450" y1="765" x2="450" y2="645"/>
+    <line x1="305" y1="725" x2="355" y2="605"/>
+    <line x1="190" y1="610" x2="310" y2="540"/>
+    <line x1="140" y1="430" x2="285" y2="430"/>
+    <line x1="190" y1="250" x2="315" y2="315"/>
+    <line x1="305" y1="135" x2="355" y2="255"/>
+  </g>
+  <g>
+    <path d="M330 300 L570 300 L540 555 L360 555 Z" fill="#2a1d1d" stroke="#91604a" stroke-width="6"/>
+    <rect x="390" y="250" width="120" height="50" rx="8" fill="#332423" stroke="#9b6f57" stroke-width="5"/>
+    <line x1="450" y1="330" x2="450" y2="535" stroke="#6d4d41" stroke-width="4"/>
+    <ellipse cx="430" cy="420" rx="58" ry="80" fill="#ff792f" opacity="0.25"/>
+    <ellipse cx="470" cy="430" rx="52" ry="72" fill="#ffc276" opacity="0.2"/>
+    <circle cx="410" cy="395" r="10" fill="#f2ecdd"/>
+    <circle cx="487" cy="415" r="8" fill="#f2ecdd"/>
+    <path d="M395 472 Q430 500 445 470" fill="none" stroke="#d2b39b" stroke-width="4"/>
+    <path d="M460 470 Q485 495 505 468" fill="none" stroke="#d2b39b" stroke-width="4"/>
+    <path d="M350 525 Q300 590 325 655" fill="none" stroke="#7f5947" stroke-width="5"/>
+    <path d="M550 525 Q600 590 575 655" fill="none" stroke="#7f5947" stroke-width="5"/>
+  </g>
+  <text x="35" y="55" fill="#d7b49f" font-size="30" font-family="Georgia">Iteration 5: Split Face Flare Lantern</text>
+</svg>
