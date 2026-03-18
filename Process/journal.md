@@ -883,11 +883,15 @@ These are things that I was researching and reading about. trying to understand 
 
 I was having a difficulty with designing the companion mad God. I already had some starting ideas of certain aspects but I didnt havea full idea or full vision.  There was certain aspect/directions that I wanted 
 
--I felt like the companion shouldnt be a full person. he should be a small character, an object with humanised features 
+-I felt like the companion shouldnt be a full person. he should be a small character, an object with humanised features. Smaller in stature than a human. It could also be a ghost tupe, flame character or a type robot. Anyway I new it shoudlnt look like a person and also should not look normal or be the same size as a regular human. 
+
+When thinking I tried to think of a couple ideas or word connection. Even with that I just coudlnt make any physical depicts, (like when you have just bada drawing days)
+
+-Sean had also mentioned with insparation from behilt from berserk which I vibed with, it also fit my type of derection.
 
 Companion(Mad God) ideas : small companion, object-prison body, face-like features misplaced, sun-ray crown fragments, fire/light = dangerous “divine” energy.
 
-Here are 4 versions 
+Here I tried to write ideas even if I wasnt in to it just to try and write stuff and see if something sticks.
 
 - The Reliquary Behelit
 Core shape: cracked egg/relic stone (palm-sized), floating.
@@ -950,3 +954,33 @@ Keep palette minimal: ink black/blue + rusty red wash.
 
 
 
+
+
+Concept strenghten and laid out : 
+
+Here would be our complete systems:
+
+- Each soldier would be given a specialized personality trait before the war that they would fall back on, but would all answer somewhat similarly.
+
+- When prompted, they will automatically see you as an enemy, but be fighting back within themselves for an arbitrary amount of turns (possibly 5).
+
+- How you answer their 5 questions before they attack will determine their speed, strength, rate of fire, and maybe even their threshold before they give up.
+
+- After the 5th turn, they will stop talking and fight you. You will have a 3-ish second leway before they open fire.
+
+- Once you've staggered them, you can go back and talk to them again. They will not fire back. You can additionally keep firing to kill them, ending the dialogue completely.
+
+- When prompted after staggering, you begin luring, which will involve answering a few questions as best as you can given the insight you have learned through their conversation.
+
+- 1 answer will move them forward, 2 answers will keep them still, and 1 will move them back.
+
+- If moved back enough, they will regain anger and restart the battle.
+
+- If moved forward enough (perhaps 6 steps forward or so), they can be brought to the therapy room.,
+- Once in the therapy room, the rehumanity process begins, where you will discuss with them, helping them through their struggles, and finding fallacies in what they say to fully assist them.
+
+- Once they're in the therapy room, they cannot fight again.
+
+- If you do poorly enough, they will simply leave and never be found again.
+
+- If you succeed, they will be saved over, and the game will progress
