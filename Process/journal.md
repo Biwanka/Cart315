@@ -955,84 +955,50 @@ Flame glow on nearby wall
 Sharp ray-shaped shadows for creepy presence
 
 
-### Companion Redesign Sketch Sheet (style target: soldier_7 + soldier_9)
 
-I decided to restart from scratch for the companion design because the old versions felt too icon/flat.  
-The new direction must match my rough pen style from `soldier_7` and `soldier_9`: sketchy construction lines, uneven contour, heavy hatching, dirty shading, and asymmetrical damage.
 
-#### Version A: Lantern God (Trench Reliquary)
+Reset direction:
 
-Core concept:
-- War lantern + gas-mask relic fused together.
-- Looks like a contained divine thing inside a military object.
-- Creepy, not cute.
+- Lantern God (Trench Reliquary)
+Form: old military field lantern fused with a gas-mask head and wrapped cloth.
+Silhouette: tall oval core, small top cap, dangling torn straps.
+Face: one glass lens-eye, one stitched flesh-eye, mouth hidden behind wrapped filter.
+Rays: broken metal fins like bent bayonet blades, not clean sun spokes.
+Texture: scratched ink lines, cross-hatching, smudged rust-red shadows.
 
-Silhouette notes:
-- Tall oval body (not perfect symmetry).
-- Small rectangular top cap with bent hook.
-- Broken ray blades around it (like bent metal fins, not clean sun icon rays).
-- 2 to 3 hanging strips (bandage/leather/cloth) for movement.
+- Reliquary Behelit (Bandaged Seed Idol)
+Form: cracked egg/heart relic bound in leather straps and medic bandages.
+Silhouette: compact oval with one side heavier (asymmetrical weight).
+Face: features displaced like in Behelit, but drawn with your gritty line style.
+Rays: crown of nail-like spikes + wire loop halo, irregular spacing.
+Texture: deep crack lines, layered wraps, dark pooling shadows under the chin/underside.
+How to sketch so it matches your soldier pages:
 
-Face placement:
-- One eye appears behind dirty glass.
-- Second eye is lower and offset (misplaced).
-- Mouth is stitched seam on lower-right area, not centered.
+Use loose construction first, then one confident dark contour pass.
+Keep 30–40% of lines “wrong/ghosted” for that anxious handmade feel.
+Build form with hatch clusters (not smooth fills).
+Push damage storytelling: dents, stitch marks, torn cloth, rust seams.
+Keep palette minimal: ink black/blue + rusty red wash.
 
-Material language:
-- Tarnished brass + smoked glass + bandage cloth + stitched leather.
-- Add dents, rust seams, rivets, soot, and stress cracks.
 
-Lighting and mood:
-- Internal flame glow (rust orange).
-- In wrath state, rays spread and overlight surrounding walls.
-- Keep shadows harsh and directional.
 
-Drawing workflow (45-60 min):
-1. Gesture silhouette with loose lines (2 min x 6 thumbnails).
-2. Choose 1 and build form with ugly construction lines.
-3. Ink pass: thick contour + broken interior hatching.
-4. Add damage pass: cracks, stitches, dents, soot drips.
-5. Add one color wash (rust red/orange) and keep rest muted.
 
-#### Version B: Camera Idol (Memory Weapon)
+Here are 6 distinct companion prompts you can paste into an image AI.
 
-Core concept:
-- Broken camera body fused with a reliquary heart/seed.
-- It records trauma and flashes memory ghosts into the room.
-- Companion still feels trapped inside object.
+Reliquary Behelit (ancient egg idol)
+Creepy floating companion, cracked relic-egg body, asymmetrical misplaced facial features (3 tiny eyes, stitched off-center mouth), broken metal halo shards orbiting like a damaged crown, thin furnace light leaking from cracks, silent ancient mood, war-worn sacred object, tarnished brass + dried blood rust + gauze remnants, gritty ink-and-pencil sketchbook concept art, rough hand-drawn linework, cross-hatching, smudged shading, unsettling but elegant, white paper background
 
-Silhouette notes:
-- Main body is a boxy camera shell with one bulging organic center.
-- Lens/aperture becomes a living eye.
-- Flash petals form an irregular halo around top/side.
-- Add strap remnants and hanging film strips/wires.
+Lantern God (trench reliquary)
+Small horror companion designed as an old ceremonial lantern fused with organic flesh, dirty glass chamber with face appearing/disappearing inside, bent saint-like sun rays around frame, one eye bright and one hidden, stitched seam mouth low on body, flame emotion states (amber calm / red-white wrath), soot, rivets, bandages, military relic details, grimdark sketch concept art, hand-inked lines, rough anatomy logic, textured shading, sketchbook page presentation
 
-Face placement:
-- Aperture iris = primary eye (can dilate like panic).
-- Tiny second eye appears in cracked housing panel.
-- Mouth seam is vertical under lens (stitched or zip-like).
+Camera Idol (memory weapon)
+Unsettling companion made from broken vintage war camera fused with fossilized heart tissue, aperture lens functioning as a living eye, tiny secondary eye embedded in cracked housing, irregular flash-reflector halo petals, hanging torn strap and burnt film strips, flash emits ghostly memory silhouettes, archival horror vibe, mixed metal + organic textures, gritty hand-drawn concept sketch, ink lines, messy construction marks, muted rust/charcoal palette
 
-Material language:
-- Matte black metal, cracked enamel, exposed screws, scorched leather.
-- Organic inserts: flesh-like membrane around lens ring.
-- Optional chapel feel: small engraved icon plates and wax residue.
+Mask Seed (sealed oracle)
+Companion as a red-black seed relic wrapped in medical bandages and wax seals, mask-like face embedded in front shell, features shift position unnaturally, thorn-like uneven sun crown of bone/metal needles, glowing slit pupils, ash drifting from body, trapped-divinity mood, sacred + surgical + battlefield materials, disturbing but readable silhouette, rough pen sketch style, heavy cross-hatching, dirty paper texture, concept sheet look
 
-Lighting and mood:
-- Flash burst creates white-hot frame + afterimage silhouettes.
-- Idle state has faint cold glow (blue-gray).
-- Triggered state gives burn-orange flash + shadow ghosts on walls.
+Chained Censer Womb (smoke prophet)
+Floating censer companion suspended by broken chains, spherical metal cage with molten inner core, face formed by smoke and embers behind slits, jaw stitched from wire, radial cracked halo made from snapped bayonet-like spokes, cold smoke + hot sparks dual lighting, mood: restrained and dangerous, war chapel aesthetic, tarnished bronze, scorched cloth tassels, highly textured hand-drawn concept art, expressive ink strokes, sketchbook realism
 
-Drawing workflow (45-60 min):
-1. Draw 3 rough camera silhouettes (old box camera, war field camera, hybrid).
-2. Merge with organic core and asymmetrical face map.
-3. Add flash halo pieces (uneven count and spacing).
-4. Build texture with scratch lines, hatch clusters, and smudges.
-5. Test 2 lighting frames: idle and flash attack.
-
-#### Constraints I keep for both versions
-
-- No full humanoid body.
-- No clean vector shapes; always rough and imperfect.
-- Face features must feel displaced/uncomfortable.
-- Palette stays limited: charcoal, rust red, dirty brass, bone white.
-- Keep the same visual family as soldier designs so everything fits together.
+Sun-Heart Reliquary Doll (false saint)
+Small non-humanoid companion, relic doll/object prison containing a burning heart, porcelain fragments and stitched leather shell, multiple tiny off-center eyes opening in different places, fragmented sun-disc crown behind head, light bleeding through fracture seams, old blood/rust tones, psychological horror companion design, inspired by sacred icons and wartime debris, rough realistic sketch style, pen + graphite + wash, asymmetrical silhouette, unsettling emotional presence b
