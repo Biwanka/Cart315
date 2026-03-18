@@ -953,3 +953,86 @@ Burnt cloth or gauze strips
 Add lighting test:
 Flame glow on nearby wall
 Sharp ray-shaped shadows for creepy presence
+
+
+### Companion Redesign Sketch Sheet (style target: soldier_7 + soldier_9)
+
+I decided to restart from scratch for the companion design because the old versions felt too icon/flat.  
+The new direction must match my rough pen style from `soldier_7` and `soldier_9`: sketchy construction lines, uneven contour, heavy hatching, dirty shading, and asymmetrical damage.
+
+#### Version A: Lantern God (Trench Reliquary)
+
+Core concept:
+- War lantern + gas-mask relic fused together.
+- Looks like a contained divine thing inside a military object.
+- Creepy, not cute.
+
+Silhouette notes:
+- Tall oval body (not perfect symmetry).
+- Small rectangular top cap with bent hook.
+- Broken ray blades around it (like bent metal fins, not clean sun icon rays).
+- 2 to 3 hanging strips (bandage/leather/cloth) for movement.
+
+Face placement:
+- One eye appears behind dirty glass.
+- Second eye is lower and offset (misplaced).
+- Mouth is stitched seam on lower-right area, not centered.
+
+Material language:
+- Tarnished brass + smoked glass + bandage cloth + stitched leather.
+- Add dents, rust seams, rivets, soot, and stress cracks.
+
+Lighting and mood:
+- Internal flame glow (rust orange).
+- In wrath state, rays spread and overlight surrounding walls.
+- Keep shadows harsh and directional.
+
+Drawing workflow (45-60 min):
+1. Gesture silhouette with loose lines (2 min x 6 thumbnails).
+2. Choose 1 and build form with ugly construction lines.
+3. Ink pass: thick contour + broken interior hatching.
+4. Add damage pass: cracks, stitches, dents, soot drips.
+5. Add one color wash (rust red/orange) and keep rest muted.
+
+#### Version B: Camera Idol (Memory Weapon)
+
+Core concept:
+- Broken camera body fused with a reliquary heart/seed.
+- It records trauma and flashes memory ghosts into the room.
+- Companion still feels trapped inside object.
+
+Silhouette notes:
+- Main body is a boxy camera shell with one bulging organic center.
+- Lens/aperture becomes a living eye.
+- Flash petals form an irregular halo around top/side.
+- Add strap remnants and hanging film strips/wires.
+
+Face placement:
+- Aperture iris = primary eye (can dilate like panic).
+- Tiny second eye appears in cracked housing panel.
+- Mouth seam is vertical under lens (stitched or zip-like).
+
+Material language:
+- Matte black metal, cracked enamel, exposed screws, scorched leather.
+- Organic inserts: flesh-like membrane around lens ring.
+- Optional chapel feel: small engraved icon plates and wax residue.
+
+Lighting and mood:
+- Flash burst creates white-hot frame + afterimage silhouettes.
+- Idle state has faint cold glow (blue-gray).
+- Triggered state gives burn-orange flash + shadow ghosts on walls.
+
+Drawing workflow (45-60 min):
+1. Draw 3 rough camera silhouettes (old box camera, war field camera, hybrid).
+2. Merge with organic core and asymmetrical face map.
+3. Add flash halo pieces (uneven count and spacing).
+4. Build texture with scratch lines, hatch clusters, and smudges.
+5. Test 2 lighting frames: idle and flash attack.
+
+#### Constraints I keep for both versions
+
+- No full humanoid body.
+- No clean vector shapes; always rough and imperfect.
+- Face features must feel displaced/uncomfortable.
+- Palette stays limited: charcoal, rust red, dirty brass, bone white.
+- Keep the same visual family as soldier designs so everything fits together.
