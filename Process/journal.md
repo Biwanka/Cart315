@@ -880,8 +880,8 @@ These are things that I was researching and reading about. trying to understand 
 # Iterative Prototype 3 (week 9) (2026-03-19)
 
 
-
-I was having a difficulty with designing the companion mad God. I already had some starting ideas of certain aspects but I didnt havea full idea or full vision.  There was certain aspect/directions that I wanted 
+### Companion (mad God design) (Trial/process)
+I was having difficulty with designing the companion mad God. I already had some starting ideas of certain aspects but I didnt havea full idea or full vision.  There was certain aspect/directions that I wanted 
 
 -I felt like the companion shouldnt be a full person. he should be a small character, an object with humanised features. Smaller in stature than a human. It could also be a ghost tupe, flame character or a type robot. Anyway I new it shoudlnt look like a person and also should not look normal or be the same size as a regular human. 
 
@@ -958,13 +958,15 @@ Keep palette minimal: ink black/blue + rusty red wash.
 <img src="Media/companion_sketch_1.jpeg" wdth="500" height="300" />
 
 
-
+### 3D trial (problems)
 
 I also wanted to work on the 3d environment. Fayfay had mentioned that because of the new update for the unity probuilder, It was harder to use and no tutorial videos to fallow as the update was new and they had completely changed the working system. She also found the cathedral assets and had some problem with material. I tried to see if i could dowload an older version of Probuilder so we could use the tutorial videos. I was only able to get the version of 8 instead of 9 but both had the new work system. I tried fallowing other post i found on saying i could install a odler version of probuilder but after many different tries it never worked. I wasnt fully understanding how to approach the 3D and material from the messages, therefore I decided to put that asside and wait for Fayfay to phisicaly show me. I also had a whole problem with my computer. it ended up having no storage left when i tried opening a new projet for probuilder and I had to do a whole cleanup that even just emptying the trash took around 8 hours and I could not use my computer as it would crash, and then I also lost electricity for a whole day the next day, so I decided to leave the digital parts for a break this week as it wasnt going well. i also did not want to start making assets or anything and then later discover that it would not function with the way Fayfay mentioned, as I couldnt fully understand the situation. 
 
 I did end up talking with Anna, (as she i have her in CART 362 for 3D) I was asking about 3d and unity and some of the option whit what I could understand. When my GameJam team tried to bring a object in unity and use the material in unity it didnt work for them. But I had a talk with anna and she mentioned that I am able to. We talked about the uv map and how I should be able to create some of the object inside of blender and bring them to unity without needing to bake each material. Therefore If i am having a hard time building in Unity and i dont have tutorial to fallow I can do it in blender and save by just using unity material so i dont need to bake each small objects. 
 
+Anyway all in all this wasnt a great week for me but I am prepared and have my ideas on what to do for the next week. a
 
+### Game Loop
 
 A more details overview of the Gameplay Loop. 
 
@@ -995,4 +997,17 @@ Here would be our complete systems:
 
 - If you do poorly enough, they will simply leave and never be found again.
 
-- If you succeed, they will be saved over, and the game will progress
+- If you succeed, they will be saved over, and the game will progress. 
+
+
+
+#### mental note 
+
+*** ALso I thought that if we dont like how the 2d characters look in the 3D environment (as we are having a hard time with the 3d environment so i cant check yet). then we can have the soldier be shadow figures that only show there 2d (it human looks) after it is weakened after battle. 
+
+*** also the idea of snapping the camera where the soldier goes back in the picture. fits with the 2d style and the idea that the character appears later 
+
+
+### Companion (Mad God) Revisit 
+
+So I decided to leave it for a While, and randomly I was continuing to think of ideas and insporation and I had thought of the Plague mask before but I wasnt sure How or Why but then the concept that having the mad God have a Plague mask which was used by doctors, would be interesting to put in the mad god that put you in this room, (so evil) but also helps you bring the soldiers to the room for Therapie as if for healing like a doctor. I still wasnt sure what creture to make with the mask. I thought maybe a bird would be ironic but I still was not fully sold on it 
