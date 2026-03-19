@@ -1010,9 +1010,13 @@ Here would be our complete systems:
 
 ### Companion (Mad God) Revisit 
 
-- So I decided to leave it for a While, and randomly I was continuing to think of ideas and insporation and I had thought of the Plague mask before but I wasnt sure How or Why but then the concept that having the mad God have a Plague mask which was used by doctors, would be interesting to put in the mad god that put you in this room, (so evil) but also helps you bring the soldiers to the room for Therapie as if for healing like a doctor. I still wasnt sure what creture to make with the mask. I thought maybe a bird would be ironic but I still was not fully sold on it. But now im starting to think of ideas I have small or key words that came to mind. I started a sketch of just drawing the mask to be more familiar with it and that while drawing some ideas will come to mind which it did 
+- So I decided to leave it for a While, and randomly I was continuing to think of ideas and insporation and I had thought of the Plague mask before but I wasnt sure How or Why but then the concept that having the mad God have a Plague mask which was used by doctors, would be interesting to put in the mad god that put you in this room, (so evil) but also helps you bring the soldiers to the room for Therapie as if for healing like a doctor. I still wasnt sure what creture to make with the mask. I thought maybe a bird would be ironic but I still was not fully sold on it. But now im starting to think of ideas I have small or key words that came to mind. I started a sketch of just drawing the mask to be more familiar with it and that while drawing some ideas will come to mind which it did \
 
-- some key words/ thougths
+new reference/insporation images : 
+
+<img src="Media/inspo_3.png" wdth="500" height="300" />
+
+some key words/ thougths
 - spider body 
 - wires 
 - tubes 
