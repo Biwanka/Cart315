@@ -877,7 +877,7 @@ As shown in studies like the Milgram experiment, individuals will commit heinous
 These are things that I was researching and reading about. trying to understand concept of ptsd or war crimes or war trauma. Looking at it on a very emotional/mental plane.
 
 
-# Iterative Prototype 3 (week 9)
+# Iterative Prototype 3 (week 9) (2026-03-19)
 
 
 
