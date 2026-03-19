@@ -925,11 +925,13 @@ Quick style rules so it matches your soldier direction:
 
 
 
+So I did have some references That I was looking in trying to get some ideas: 
+<img src="Media/inspo.png" wdth="500" height="300" /><img src="Media/inspo2.png" wdth="500" height="300" />
 
 
 
 
-Reset direction:
+I still had nothing comming to mind and got rid of alot of tries as they were a couple lines and then I tried again and again. I decided to leave it. Another day , I decided to write from like memory or idea two of the version that I remembered see maybe if some chnages appeared or new ideas. There where quite similar and i still had a hard time visualising. I did end up making a drawing for the first one but like im not sure about it. I think it looks good and its interesting but it dosent scream to me "This is it or that the compagnion mad god". I decided to leave it and hopefully show the otehr members and get feedback or opinions/ideas on what comes to mind for the companion mad God. 
 
 - Lantern God (Trench Reliquary)
 Form: old military field lantern fused with a gas-mask head and wrapped cloth.
@@ -953,6 +955,7 @@ Push damage storytelling: dents, stitch marks, torn cloth, rust seams.
 Keep palette minimal: ink black/blue + rusty red wash.
 
 
+<img src="Media/companion_sketch_1.jpeg" wdth="500" height="300" />
 
 
 
@@ -963,6 +966,7 @@ I did end up talking with Anna, (as she i have her in CART 362 for 3D) I was ask
 
 
 
+A more details overview of the Gameplay Loop. 
 
 Concept strenghten and laid out : 
 
