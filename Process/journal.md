@@ -1029,3 +1029,27 @@ some key words/ thougths
 So yeah I will continue to experiment more in that direction but i have a feeling that its the right directions, which feels great. 
 
 <img src="Media/Mask.jpeg" wdth="500" height="300" />
+
+
+
+
+
+
+
+
+# Iterative Prototype 4 (week 10) (2026-03-26) 
+
+
+
+
+
+<img src="Media/image00011.png" wdth="500" height="300" /><img src="Media/image00012.png" wdth="500" height="300" />
+<img src="Media/image00010.png" wdth="500" height="300" /><img src="Media/image00009.png" wdth="500" height="300" />
+<img src="Media/image00008.png" wdth="500" height="300" /><img src="Media/image00007.png" wdth="500" height="300" />
+<img src="Media/image00006.png" wdth="500" height="300" /><img src="Media/image00005.png" wdth="500" height="300" />
+<img src="Media/image00004.png" wdth="500" height="300" /><img src="Media/image00003.png" wdth="500" height="300" />
+<img src="Media/image00002.jpeg" wdth="500" height="300" /><img src="Media/image00001.png" wdth="500" height="300" />
+
+
+
+<img src="Media/soldier_transition.gif" wdth="500" height="300" /><img src="Media/Soldier_Walking.gif" wdth="500" height="300" />
