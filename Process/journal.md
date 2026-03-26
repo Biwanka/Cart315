@@ -1048,7 +1048,7 @@ Ok so for this week we had specific goals for our team in what next step needed 
 
 right now the same soldier png will appear for all ghost soldiers 
 
-## Process for the Soldier NPC Design and Implementation
+### Process for the Soldier NPC Design and Implementation
 
 Thoughts or concern in approching a full body character. With the ai we dont want to make a very specific visual character and then it generates any comment on visual would be a problem. Another reason I did not want the character to to look to specific as we are not targeting or zoning in on a specific race, gender, country. its more the overall global concept of ptsd or war efffecting moral or behavior. So I had mentioned before that I had done many different iteration on ways to approach this problem. We ended up selecting the bandages as it fully covered the face wich also hid ones of identity similar to how ptsd and war have changed people and sometimes you cna t recognize the person you once new. Now i needed to take my physical sketches and make them digital. I decided to focus on one version first if i have the time I will make others. I even had a woman version. 
 
