@@ -1088,6 +1088,7 @@ Digital Soldier character
 - After I added the change between Idle and Attack, I wanted to see if I could try to maybe do a very fast and simple walking effect. So I decided to go in Photoshop, I seperated the legs from the bofy of the soldier, and decided to do a fast outline of a bent leg. I then dublicated that outline and flipped it for the other leg. So that gave me two png sprites to see if I could make it look like walking. Because I didnt now know if it would look good and it wasnt someting asked of me, I decided to just check it out with just those two images with the outline leg. It actually dosent look that bad and it didnt take me that long. so base on others opinion. 
 
 <img src="Media/Soldier_walk_left.png" wdth="500" height="300" /> <img src="Media/Soldier_Walking.gif" wdth="500" height="300" />
+<img src="Media/Soldier_floating.gif" wdth="500" height="300" />
 
 I don't know if I will take it off and make it hover and bob like a floating ghost. Im not sure yet.
 
