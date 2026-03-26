@@ -1039,6 +1039,8 @@ So yeah I will continue to experiment more in that direction but i have a feelin
 
 # Iterative Prototype 4 (week 10) (2026-03-26) 
 
+### Recap Last week plan
+
 Ok so for this week we had specific goals for our team in what next step needed to be accomplished for the fallowing week. 
 
 
@@ -1046,23 +1048,73 @@ Ok so for this week we had specific goals for our team in what next step needed 
 
 right now the same soldier png will appear for all ghost soldiers 
 
+## Process for the Soldier NPC Design and Implementation
+
 Thoughts or concern in approching a full body character. With the ai we dont want to make a very specific visual character and then it generates any comment on visual would be a problem. Another reason I did not want the character to to look to specific as we are not targeting or zoning in on a specific race, gender, country. its more the overall global concept of ptsd or war efffecting moral or behavior. So I had mentioned before that I had done many different iteration on ways to approach this problem. We ended up selecting the bandages as it fully covered the face wich also hid ones of identity similar to how ptsd and war have changed people and sometimes you cna t recognize the person you once new. Now i needed to take my physical sketches and make them digital. I decided to focus on one version first if i have the time I will make others. I even had a woman version. 
+
+#### design 
 - so now I was making the digital version of the soldier. I was making sure that the outfit didnt automatically resemble the clothes of a specific army of a country, as I want to have a more generelization. I tried My best to look at references before and when I showed it to a couple of people they didnt automaticaly recognize it as specific country military atire. I also tried to avoid texturing the clothes with the army pattern./ I also wanted to make a more monochromatic red, brown pruple tint. cuase it worked with the poloroid concept but also feels rustic, dirty and like dried blood. 
 
-- I made two different speites one of the soldier standing idle and the other one shooting. I had a hard time finding a reference of a person shooting so face on. Because soldier is shooting at the player I new that I needed the gun to face foward. We did have concern of it it would be easy to realise its a gun from far but if not we can add a 3d gun where he is shooting or i could make the gun a different color. I have to see how it looks in game with the lighting. I havent finished the whole shading for the shooting soldier, as i decided to try implementing them in Unity first, but even so it still looks good. 
+- I made two different sprites one of the soldier standing idle and the other one shooting. I had a hard time finding a reference of a person shooting so face on. Because soldier is shooting at the player I new that I needed the gun to face foward. We did have concern of it it would be easy to realise its a gun from far but if not we can add a 3d gun where he is shooting or i could make the gun a different color. I have to see how it looks in game with the lighting. I havent finished the whole shading for the shooting soldier, as i decided to try implementing them in Unity first, but even so it still looks good. 
 
-- it was hard to make the digital version look similar to my physical drawings, as everyone liked the scratchy style. I did use a photo of my paper of my sketchbook as the base instead of just solid white color for the digital version so it alredy had a more similar texture to the physical ones. 
+- it was hard to make the digital version look similar to my physical drawings, as everyone liked the scratchy style. I did use a photo of my paper of my sketchbook as the base instead of just solid white color for the digital version so it alredy had a more similar texture to the physical ones. I started first by making a fast sketch of the soldier in what I had in mind before doing it digitally just to have a reference of the style it shoudl look like. Also i did use the way use the actual image of the face i did on paper, scanned it and integrated it as a base before i edited and added to it digitally. 
+
+<img src="Media/image00030.jpeg" wdth="500" height="300" />
+
+On one side its the physical sketches and the two standing figures are the digital ones. Trying to replicate the style of the physical drawing. side by side.
+
+<img src="Media/image00019.png" wdth="500" height="300" />
+
+
+Digital Soldier character 
+
+<img src="Media/Soldier.png" wdth="500" height="300" /><img src="Media/Soldier_attack.png" wdth="500" height="300" />
+
+
+
+#### implementation
 
 - I did Implement the png in Unity, I added on the alredy created cylinder that can shoot by ALex.
+
+<img src="Media/soldier_asset.png" wdth="500" height="300" />
+
 
 - I did some test, I had it that I had a Idle soldier and I label the sprite to that in the inspector column for the NPC. and I had an Attack sprite, So when the Soldier shoots back the sprite changes to the Attack Sprite
 
 - I also Had to add that The Sprite is Always facing frontal the camera so The 2d sprite could fit in the 3D world. 
 
+<img src="Media/soldier_transition.gif" wdth="500" height="300" />
 
+- After I added the change between Idle and Attack, I wanted to see if I could try to maybe do a very fast and simple walking effect. So I decided to go in Photoshop, I seperated the legs from the bofy of the soldier, and decided to do a fast outline of a bent leg. I then dublicated that outline and flipped it for the other leg. So that gave me two png sprites to see if I could make it look like walking. Because I didnt now know if it would look good and it wasnt someting asked of me, I decided to just check it out with just those two images with the outline leg. It actually dosent look that bad and it didnt take me that long. so base on others opinion. 
 
+<img src="Media/Soldier_walk_left.png" wdth="500" height="300" /> <img src="Media/Soldier_Walking.gif" wdth="500" height="300" />
 
-<img src="Media/image00019.png" wdth="500" height="300" /><img src="Media/image00030.jpeg" wdth="500" height="300" />
+I don't know if I will take it off and make it hover and bob like a floating ghost. Im not sure yet.
+
+#### extra effects
+- another aspect that I worked on and implemented was as more visible tell that the soldier is injured or that the soldier is now compliant and will fallow you. We had a couple ideas on how to make it know but easy ad simple that I did not need to make more sprites. I suggested, that they flicker when wounded. like those effects they did older games. 
+
+- I also mentioned the change of colour, In my physical sketches, the team and I prefered the rustic brown red characters and the blue one. So I suggested why not Have the colour of the character turn blue when they are compliant and will fallow the player. I decided first to go in photoshop and put both sketches next to each other and see if I could turn only the outlines a different colour. I was able to change the blue sketches to match as similar as possible the red brown ones. 
+
+<img src="Media/image00021.png" wdth="500" height="300" /><img src="Media/image00018.png" wdth="500" height="300" /> 
+
+So now I had two options I could choose.:
+1.  One is that i manually change the sprites just like i did the sketches (reason is that if you just change the hue than the white part of the drawing also becomes blue instead of just the shading) and then have it for the walking sprites. 
+2. Option 2 is that I could do it in Unity and now care about the white becoming blue.
+
+- I decided to keep the manual exemple I did and in Unity do the secodn Option and we can see which one we prefer. 
+
+- So in unity I implemented the flickering effect and the colour change effect. I also later implemented that when he is injured he flickers and the colours switches between the blue and the original (because he could still fight back afterwards if you dont win the words choice) and only when he is compliant then he turns blue.
+
+<img src="Media/soldier_flicker.gif" wdth="500" height="300" />
+
+- i also tried an extra effect, which was to try and make the soldier more ghostly, so I made it that we can tuggle it on and off so we can see if we like it but also, that When we add lighting we may see the soldier differently as we want dark lighting.
+**** I was thinging if ever we have a hard time seeing hte soldier in dark lighting we can add a glow maybe to make it ghostly and more visible (but that is if there is a problem)
+
+<img src="Media/Soldier_Ghost_Mode.gif" wdth="500" height="300" />
+
+### Companion Mad God Design
+The Last thing That I worked on is the Compagnion Mad God. I was designing it and i Basically had some idea through out the process. When drawing the plague mask digitaly. I randomly had the idea of a skull with its jaw open, so I decided to try it, I also wanted to merge it with a spider aspect. I did remember that Some members did not want any human fetures so I also tried different itterations that was more spider. I have kept the versions on my i pad so i can easily go back to any iteration. So I just need the final verdict of the direction I am going to finalize the Drawing. The images are uploaded in the linear process of creation 
 
 <img src="Media/image00011.png" wdth="500" height="300" /><img src="Media/image00012.png" wdth="500" height="300" />
 <img src="Media/image00010.png" wdth="500" height="300" /><img src="Media/image00009.png" wdth="500" height="300" />
@@ -1073,6 +1125,13 @@ Thoughts or concern in approching a full body character. With the ai we dont wan
 
 
 
-<img src="Media/soldier_transition.gif" wdth="500" height="300" /><img src="Media/Soldier_Walking.gif" wdth="500" height="300" />
+### thoughts for future
+- things I want to do, Is finsh the sprites. I also may design the UI, like intro screen or any other visuals that are needed if we realise it.
+- I also want to do the ending screen. where after we battle and we win the soldier will go back into a photo. I would like to have a flash and camera click draw a polaroid with the character in the picture. I am thinking of maybe utilizing my sketches so I could maybe have other photo surounding the environment, giving the idea of other character we could reach in future iterations so. 
 
-<img src="Media/soldier_transition.gif" wdth="500" height="300" /><img src="Media/Soldier_Walking.gif" wdth="500" height="300" />
+
+
+
+
+
+
