@@ -1051,12 +1051,18 @@ Thoughts or concern in approching a full body character. With the ai we dont wan
 
 - I made two different speites one of the soldier standing idle and the other one shooting. I had a hard time finding a reference of a person shooting so face on. Because soldier is shooting at the player I new that I needed the gun to face foward. We did have concern of it it would be easy to realise its a gun from far but if not we can add a 3d gun where he is shooting or i could make the gun a different color. I have to see how it looks in game with the lighting. I havent finished the whole shading for the shooting soldier, as i decided to try implementing them in Unity first, but even so it still looks good. 
 
+- it was hard to make the digital version look similar to my physical drawings, as everyone liked the scratchy style. I did use a photo of my paper of my sketchbook as the base instead of just solid white color for the digital version so it alredy had a more similar texture to the physical ones. 
 
 - I did Implement the png in Unity, I added on the alredy created cylinder that can shoot by ALex.
 
 - I did some test, I had it that I had a Idle soldier and I label the sprite to that in the inspector column for the NPC. and I had an Attack sprite, So when the Soldier shoots back the sprite changes to the Attack Sprite
 
+- I also Had to add that The Sprite is Always facing frontal the camera so The 2d sprite could fit in the 3D world. 
 
+
+
+
+<img src="Media/image00019.png" wdth="500" height="300" /><img src="Media/image00030.jpeg" wdth="500" height="300" />
 
 <img src="Media/image00011.png" wdth="500" height="300" /><img src="Media/image00012.png" wdth="500" height="300" />
 <img src="Media/image00010.png" wdth="500" height="300" /><img src="Media/image00009.png" wdth="500" height="300" />
@@ -1066,5 +1072,7 @@ Thoughts or concern in approching a full body character. With the ai we dont wan
 <img src="Media/image00002.jpeg" wdth="500" height="300" /><img src="Media/image00001.png" wdth="500" height="300" />
 
 
+
+<img src="Media/soldier_transition.gif" wdth="500" height="300" /><img src="Media/Soldier_Walking.gif" wdth="500" height="300" />
 
 <img src="Media/soldier_transition.gif" wdth="500" height="300" /><img src="Media/Soldier_Walking.gif" wdth="500" height="300" />
