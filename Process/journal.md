@@ -1039,7 +1039,22 @@ So yeah I will continue to experiment more in that direction but i have a feelin
 
 # Iterative Prototype 4 (week 10) (2026-03-26) 
 
+Ok so for this week we had specific goals for our team in what next step needed to be accomplished for the fallowing week. 
 
+
+> Final deliverable: 3D world (mansion) that the player navigates to have encounters with ghost soldiers (2 to 3 roaming the house) After inflicting damage on the soliders a dialogue tree is opened which, if you successfuly navigate, lets you bring the soldier to a special room for healing. This healing dialogue is powered by AI and if you succesfully heal them, their spirit goes into a polaroid.
+
+right now the same soldier png will appear for all ghost soldiers 
+
+Thoughts or concern in approching a full body character. With the ai we dont want to make a very specific visual character and then it generates any comment on visual would be a problem. Another reason I did not want the character to to look to specific as we are not targeting or zoning in on a specific race, gender, country. its more the overall global concept of ptsd or war efffecting moral or behavior. So I had mentioned before that I had done many different iteration on ways to approach this problem. We ended up selecting the bandages as it fully covered the face wich also hid ones of identity similar to how ptsd and war have changed people and sometimes you cna t recognize the person you once new. Now i needed to take my physical sketches and make them digital. I decided to focus on one version first if i have the time I will make others. I even had a woman version. 
+- so now I was making the digital version of the soldier. I was making sure that the outfit didnt automatically resemble the clothes of a specific army of a country, as I want to have a more generelization. I tried My best to look at references before and when I showed it to a couple of people they didnt automaticaly recognize it as specific country military atire. I also tried to avoid texturing the clothes with the army pattern./ I also wanted to make a more monochromatic red, brown pruple tint. cuase it worked with the poloroid concept but also feels rustic, dirty and like dried blood. 
+
+- I made two different speites one of the soldier standing idle and the other one shooting. I had a hard time finding a reference of a person shooting so face on. Because soldier is shooting at the player I new that I needed the gun to face foward. We did have concern of it it would be easy to realise its a gun from far but if not we can add a 3d gun where he is shooting or i could make the gun a different color. I have to see how it looks in game with the lighting. I havent finished the whole shading for the shooting soldier, as i decided to try implementing them in Unity first, but even so it still looks good. 
+
+
+- I did Implement the png in Unity, I added on the alredy created cylinder that can shoot by ALex.
+
+- I did some test, I had it that I had a Idle soldier and I label the sprite to that in the inspector column for the NPC. and I had an Attack sprite, So when the Soldier shoots back the sprite changes to the Attack Sprite
 
 
 
