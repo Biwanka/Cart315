@@ -1135,10 +1135,6 @@ The Last thing That I worked on is the Compagnion Mad God. I was designing it an
 
 
 
-
-## Prototype 5 
-
-
 # Iterative Prototype 5 (week 11) (2026-04-03)
 
 ### Recap / What I worked on this week (since UI)
@@ -1151,6 +1147,9 @@ Main focus areas:
 - TTS + RAG pipeline for informed AI dialogue
 - Mad God intro sequence and interaction prototype
 - Scene integration checks so changes do not break existing systems
+
+
+I did alot this week, For the begining of the week I couldnt work much on the ai, as my teamate sean was trying to just get the actual tts a to work on unity. it took him a long time and i couldnt work on the code as modifying it to add to it when it still did not work was not a smart idea. I did design the end of the mad god look, in adition to making the soldier have polaroids images. I also tried to add to the ui but i had a hard time with it. 
 
 ### Prototype Goals / Questions I was trying to answer
 
@@ -1265,63 +1264,42 @@ This week was heavy prototyping and integration rather than final polish, but it
 
 Main challenge was not ideas but consistency across code, scene setup, and team-safe integration. The prototype now has stronger structure for final production.
 
-## Prototype 5 - Personal Voice Draft (Editable)
 
-### What I did this week
-This week I mainly worked on making our dialogue experience feel like our actual game world instead of a default UI, and on making sure the new systems did not break my teammates' code. I focused on the dialogue style, soldier feedback, RAG setup, and the Mad God intro/interaction flow.
 
-### What questions I was trying to answer (goals)
-- Look/feel goal: Can the dialogue feel like a field notebook + old polaroid evidence instead of a plain RPG box?
-- Role goal: Can the Mad God feel like a real narrative guide/companion, not just another NPC?
-- Implementation goal: Can I add these features in a modular way so merges stay safe for the team?
-- AI goal: Can I ground dialogue in real PTSD/war references through RAG so responses feel informed instead of random?
 
-### Type of prototype + fidelity
-- Mostly implementation prototype (systems and behavior)
-- Also look/feel prototype (UI visual direction)
-- Fidelity was mostly mid-fidelity:
-- Visual style had clear direction but not final polish
-- Systems were functional but still tuning-heavy
-- AI/RAG was functional but still experimental in tone control
 
-### What I worked on since the UI phase
-- I explored a stylized dialogue direction (notebook/polaroid, textured overlays, less generic UI).
-- I polished soldier state readability (injured/combat/dialogue/compliant) with flicker and color transitions.
-- I helped set up RAG structure using our research PDFs so dialogue can pull contextual fragments.
-- I implemented and tuned Mad God systems:
-- Intro trigger after player movement
-- Rush toward player
-- Temporary player lock + pre-recorded intro dialogue
-- Retreat sequence after intro
-- Camera framing adjustments so Mad God is visible during confrontation
-- Mouth-open / mouth-closed sprite swap while speaking
-- Direct-talk key prototype for future AI lines in Mad God's voice
+## Prototype 6
 
-### What worked
-- Modular/additive coding approach worked and reduced risk for team merges.
-- The stylized UI direction is much stronger than plain default boxes.
-- Soldier visual state changes communicate behavior better without needing many new sprites.
-- RAG pipeline concept is working and can use local research documents.
-- Mad God intro now functions as a complete interaction loop.
+- Prototyped and tuned the Mad God intro sequence in the 3D scene (rush-in, lock player, dialogue, retreat).
 
-### What did not work / friction points
-- A lot of debugging came from scene wiring/inspector assignments, not only from script logic.
-- Some fields/scripts became confusing after multiple quick iterations.
-- Audio and clip assignment flow needed cleanup to be practical in Unity.
-- Timing/framing needed several passes before it felt intentional.
+- Added camera reframing so Mad God is centered better during confrontation.
 
-### What I learned
-- In Unity, implementation quality depends heavily on scene setup discipline.
-- Safe defaults and fallback behavior are very important during team prototyping.
-- Emotional readability can come from simple effects (flicker/color/pose), not only complex animation.
-- RAG quality depends on data curation and retrieval choices as much as model prompting.
+- Fixed framing so a custom camera anchor can control where camera looks.
 
-### Next steps
-- Finalize dialogue UI texture pass (paper/photo/scratch polish).
-- Continue Mad God timing polish (camera hold, speech rhythm, retreat pacing).
-- Build cleaner assignment workflow/checklist for scene references.
-- Expand Mad God direct-talk interaction and role-consistent AI outputs.
-- Later: implement the therapy-complete flash/camera return-to-photo sequence.
+- Slowed the mouth open/close sprite animation for more natural talking.
 
-### Weekly reflection
-Overall, this week was less about "final art" and more about proving that the core systems can actually work together: style, gameplay readability, AI grounding, and narrative companion behavior. The biggest progress is that the project now has a more coherent direction technically and aesthetically, even if polish is still ongoing.
+- Added direct interaction/talk flow for Mad God (key-based + interact flow support).
+
+- Added skip intro feature: skip key interrupts intro, shows/plays “Impatient, are you?”, then retreats.
+
+- Built a Mad God personality system in the AI prompt pipeline (stronger character tone and role behavior).
+
+- Added a separate editable Mad God lore bible file (mad_god_lore.txt) for personality tuning without code edits.
+
+- Improved AI consistency with short conversation memory per role.
+Kept RAG as knowledge grounding (PDF-informed context) while AI still generates original responses.
+
+- Optimized startup/perf by controlling:
+OLLAMA_AUTO_PULL (skip model pull on start for speed)
+RAG_LAZY_INIT (warmup vs lazy behavior)
+Set RAG to warm during startup so later responses don’t re-index.
+
+- Added speed tuning controls for response time:
+fast/normal reply length
+max speaker reference clips used by XTTS
+
+- Added Unity Inspector toggle in TTSRunner for fast mode (no Python editing needed).
+
+- Added Restart Python TTS utility in TTSRunner to test speed mode live during playtesting.
+
+- Iterated on visual tone and behavior to support your theme: insane/bored/powerful Mad God with coherent, stylized lines.
