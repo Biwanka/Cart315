@@ -1136,3 +1136,190 @@ The Last thing That I worked on is the Compagnion Mad God. I was designing it an
 
 
 
+
+# Iterative Prototype 5 (week 11) (2026-04-03)
+
+### Recap / What I worked on this week (since UI)
+
+This week I focused on making the dialogue and companion systems feel coherent with our theme and also technically stable for team integration.
+
+Main focus areas:
+- Stylized dialogue UI direction (field notebook + polaroid evidence)
+- Soldier behavior polish (state clarity and readability)
+- TTS + RAG pipeline for informed AI dialogue
+- Mad God intro sequence and interaction prototype
+- Scene integration checks so changes do not break existing systems
+
+### Prototype Goals / Questions I was trying to answer
+
+#### 1) Look / Feel questions
+- Can we move away from a generic game UI and make it feel like archival memory (notebook + old photo + scratches)?
+- Can soldier feedback be readable emotionally (injured, hostile, compliant) without needing many new assets?
+- Can Mad God presentation feel cinematic and intentional instead of random spawn behavior?
+
+#### 2) Role / Narrative questions
+- Can the companion (Mad God) communicate role and tone before gameplay opens up?
+- Can we support both pre-recorded intro lines and AI-generated dialogue without changing the whole system later?
+- Can AI responses be better grounded in war/PTSD material (RAG) rather than pure improvisation?
+
+#### 3) Implementation questions
+- Can we add features in additive scripts without breaking team code merges?
+- Can we keep systems modular (UI scripts, Mad God scripts, RAG script) so each part can be toggled/refined independently?
+- Can we keep fallback behavior when references are missing (auto-load clips, auto retreat point, safe defaults)?
+
+### What I implemented
+
+#### A) Dialogue UI prototype (visual layer)
+- Built a stylized dialogue theme system with notebook/polaroid direction.
+- Added support for texture overlays (paper/scratches/grain), not only flat colors.
+- Added helper scripts for layout/hover/reset behaviors.
+- Kept UI updates mostly visual-only so core dialogue logic remains intact.
+
+#### B) Soldier readability + visual states
+- Improved state readability for wounded/combat/dialogue/follow transitions.
+- Added persistent flicker logic behavior and tuned transitions.
+- Added walking and ghost-style visual options with toggles for comparison.
+- Added comments and readability pass in scripts to support iteration by non-programmer teammates.
+
+#### C) TTS + RAG
+- Fixed a compile blocker in `TTSRunner.cs` earlier in process.
+- Added local PDF-based RAG module connected to AI dialogue generation.
+- Indexed research PDFs and injected retrieved fragments into prompt context.
+- Added optional memory glitch/contradiction probabilities for trauma-like texture.
+- Added setup notes so teammates can understand the pipeline.
+
+#### D) Mad God prototype
+- Added Mad God intro controller:
+  - trigger after player movement
+  - rush-in
+  - player lock
+  - pre-recorded dialogue playback
+  - retreat
+  - player unlock
+- Added Mad God companion interaction script for future direct talk.
+- Added mouth-open / mouth-closed sprite switching during speech.
+- Added camera-facing sprite behavior similar to soldier billboard behavior.
+- Added camera reframing during intro confrontation so Mad God is centered in frame.
+- Added direct key talk prototype (`G`) to generate Mad God AI line (`role = mad_god`) when in range.
+
+### Fidelity level I am working at
+
+This week was mostly **mid-fidelity implementation prototype**:
+- Visual direction: mid fidelity (style language is clear, still needs polish textures and spacing)
+- Interaction mechanics: mid fidelity (core sequence works, needs tuning and pacing)
+- Narrative/AI behavior: low-to-mid fidelity (pipeline works, voice/persona consistency still needs curation)
+- Final art polish: not final yet (iterative placeholders + evolving style)
+
+### What worked
+
+- Additive script strategy worked well for team safety.
+- The notebook/polaroid visual direction is stronger than generic dialogue box style.
+- Soldier state effects gave clearer gameplay feedback without creating many new sprites.
+- RAG integration succeeded technically and reads local research PDFs.
+- Mad God intro sequence now has a functional beginning-to-end loop.
+- Mouth sprite switching + camera-facing behavior made 2D in 3D feel more alive.
+
+### What did not work (or was unstable)
+
+- Inspector confusion happened multiple times due field wiring and script refresh.
+- Some auto-edits introduced formatting/syntax artifacts and had to be corrected.
+- Audio asset location (`StreamingAssets`) was inconvenient for drag-and-drop in inspector.
+- Trigger/framing behavior required several tuning passes to avoid abrupt or off-frame moments.
+- Team-merge caution slowed aggressive changes (but this was the right tradeoff).
+
+### What I learned
+
+- In this project, **robust defaults + safe fallbacks** are as important as features.
+- For team workflows, non-invasive modular scripts are better than deep refactors.
+- Visual readability cues (flicker/tint/pose changes) strongly improve player understanding.
+- RAG quality depends heavily on source curation and duplicate handling, not only model choice.
+- In Unity, implementation quality depends as much on **scene wiring discipline** as script quality.
+
+### Next steps
+
+#### Short term (next sprint)
+- Finalize Mad God intro pacing (camera hold, line timing, retreat rhythm).
+- Tune mouth animation speed per clip intensity (not one global speed).
+- Clean scene hierarchy and remove or relabel duplicate/confusing objects (`NPC (1)` cases).
+- Validate all inspector references in `3DEnvironmentSceneTest` with a checklist pass.
+
+#### Mid term
+- Build final dialogue UI texture pass (real paper/photo/scratch assets + consistent spacing).
+- Add a lightweight debug panel for RAG retrieval visibility during testing.
+- Improve Mad God direct-talk system with multiple prompts and cooldown balancing.
+- Introduce event-driven hooks so audio, subtitles, and sprite animation stay synchronized.
+
+#### Long term
+- Finish final photo-return/flash sequence after therapy success.
+- Standardize voice/persona mappings for all roles in AI system.
+- Produce a final art pass for companion + UI + in-world narrative cues.
+
+### Weekly reflection
+
+This week was heavy prototyping and integration rather than final polish, but it answered key questions about feasibility:
+- The stylized visual direction is viable.
+- The hybrid pre-recorded + AI approach is viable.
+- The companion intro and interaction loop is viable.
+
+Main challenge was not ideas but consistency across code, scene setup, and team-safe integration. The prototype now has stronger structure for final production.
+
+## Prototype 5 - Personal Voice Draft (Editable)
+
+### What I did this week
+This week I mainly worked on making our dialogue experience feel like our actual game world instead of a default UI, and on making sure the new systems did not break my teammates' code. I focused on the dialogue style, soldier feedback, RAG setup, and the Mad God intro/interaction flow.
+
+### What questions I was trying to answer (goals)
+- Look/feel goal: Can the dialogue feel like a field notebook + old polaroid evidence instead of a plain RPG box?
+- Role goal: Can the Mad God feel like a real narrative guide/companion, not just another NPC?
+- Implementation goal: Can I add these features in a modular way so merges stay safe for the team?
+- AI goal: Can I ground dialogue in real PTSD/war references through RAG so responses feel informed instead of random?
+
+### Type of prototype + fidelity
+- Mostly implementation prototype (systems and behavior)
+- Also look/feel prototype (UI visual direction)
+- Fidelity was mostly mid-fidelity:
+- Visual style had clear direction but not final polish
+- Systems were functional but still tuning-heavy
+- AI/RAG was functional but still experimental in tone control
+
+### What I worked on since the UI phase
+- I explored a stylized dialogue direction (notebook/polaroid, textured overlays, less generic UI).
+- I polished soldier state readability (injured/combat/dialogue/compliant) with flicker and color transitions.
+- I helped set up RAG structure using our research PDFs so dialogue can pull contextual fragments.
+- I implemented and tuned Mad God systems:
+- Intro trigger after player movement
+- Rush toward player
+- Temporary player lock + pre-recorded intro dialogue
+- Retreat sequence after intro
+- Camera framing adjustments so Mad God is visible during confrontation
+- Mouth-open / mouth-closed sprite swap while speaking
+- Direct-talk key prototype for future AI lines in Mad God's voice
+
+### What worked
+- Modular/additive coding approach worked and reduced risk for team merges.
+- The stylized UI direction is much stronger than plain default boxes.
+- Soldier visual state changes communicate behavior better without needing many new sprites.
+- RAG pipeline concept is working and can use local research documents.
+- Mad God intro now functions as a complete interaction loop.
+
+### What did not work / friction points
+- A lot of debugging came from scene wiring/inspector assignments, not only from script logic.
+- Some fields/scripts became confusing after multiple quick iterations.
+- Audio and clip assignment flow needed cleanup to be practical in Unity.
+- Timing/framing needed several passes before it felt intentional.
+
+### What I learned
+- In Unity, implementation quality depends heavily on scene setup discipline.
+- Safe defaults and fallback behavior are very important during team prototyping.
+- Emotional readability can come from simple effects (flicker/color/pose), not only complex animation.
+- RAG quality depends on data curation and retrieval choices as much as model prompting.
+
+### Next steps
+- Finalize dialogue UI texture pass (paper/photo/scratch polish).
+- Continue Mad God timing polish (camera hold, speech rhythm, retreat pacing).
+- Build cleaner assignment workflow/checklist for scene references.
+- Expand Mad God direct-talk interaction and role-consistent AI outputs.
+- Later: implement the therapy-complete flash/camera return-to-photo sequence.
+
+### Weekly reflection
+Overall, this week was less about "final art" and more about proving that the core systems can actually work together: style, gameplay readability, AI grounding, and narrative companion behavior. The biggest progress is that the project now has a more coherent direction technically and aesthetically, even if polish is still ongoing.
