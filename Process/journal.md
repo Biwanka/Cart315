@@ -1203,6 +1203,20 @@ I did alot this week, For the begining of the week I couldnt work much on the ai
 - Added camera reframing during intro confrontation so Mad God is centered in frame.
 - Added direct key talk prototype (`G`) to generate Mad God AI line (`role = mad_god`) when in range.
 
+<img src="Media/UI_mad_God.gif" wdth="500" height="300" />
+<img src="Media/Mad_God_intro.mp4" wdth="500" height="300" />
+<img src="Media/RAG.gif" wdth="500" height="300" />
+
+
+<img src="Media/mad_god_clean.png" wdth="500" height="300" /><img src="Media/mad_god_clean_2.png" wdth="500" height="300" />
+
+<img src="Media/photo/image00002.png" wdth="500" height="300" /><img src="Media/photo/image00003.png" wdth="500" height="300" />
+
+<img src="Media/photo/image00004.png" wdth="500" height="300" /><img src="Media/photo/image00005.png" wdth="500" height="300" />
+
+<img src="Media/photo/image00006.png" wdth="500" height="300" /><img src="Media/photo/image00007.png" wdth="500" height="300" />
+
+
 ### Fidelity level I am working at
 
 This week was mostly **mid-fidelity implementation prototype**:
