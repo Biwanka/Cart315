@@ -1653,6 +1653,12 @@ a way to test whether different forms of player expression could unlock deeper c
 - More meaningful player agency
 
 
+<img src="Media/soldier_type.png" wdth="500" height="300" /><img src="Media/choices_soldier.png" wdth="500" height="300" />
+
+<img src="Media/board.png" wdth="500" height="300" /><img src="Media/photo_1.png" wdth="500" height="300" />
+<img src="Media/photo_empty.png" wdth="500" height="300" />
+
+<img src="Media/Outro.mp4" wdth="500" height="300" />
 
 
-I still di not fully get it to work completely but I knew that I could then Give the progress I did in this section to Sean and It would help fix his stomp that he had the day before. alot of the work on the Ai section by me and Sean has been knowing when someone is working on a big part of the ai to know when the other shouldnt touch it and work on things that would not break with the changes. It was also to know what the other was working on and if they had some difficulties then I could look through it see if I could find a way to fix it or a way to approach a new fix and even if I didnt figure out the whole Idea it was enough to help Sean 
+I still di not fully get it to work completely but I knew that I could then Give the progress I did in this section to Sean and It would help fix his stomp that he had the day before. alot of the work on the Ai section by me and Sean has been knowing when someone is working on a big part of the ai to know when the other shouldnt touch it and work on things that would not break with the changes. It was also to know what the other was working on and if they had some difficulties then I could look through it see if I could find a way to fix it or a way to approach a new fix and even if I didnt figure out the whole Idea it was enough to help Sean. Alot of changes was made this week as the final week so i did not have the time to explain in detail so i tired to make bullet points when I remembered as I was non stop working on this as it ws for 2 classes . 
