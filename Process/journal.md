@@ -1320,648 +1320,339 @@ max speaker reference clips used by XTTS
 
 
 
+- Refined the Mad God intro encounter in the 3D scene, including his rush-in, player lock, dialogue sequence, and retreat behavior.
 
+- Improved confrontation framing by adding camera reframing and support for a custom look anchor.
 
+- Adjusted Mad God’s talking sprite animation so the mouth movement feels slower and more natural.
 
+- Implemented direct player interaction with Mad God through both key-based and interact-triggered talk flow.
+Added an intro skip system that interrupts the sequence, plays or shows “Impatient, are you?”, and sends Mad God into retreat.
 
+- Expanded the AI prompt pipeline with a stronger Mad God personality and role-driven speaking style.
 
+- Created an editable mad_god_lore.txt lore bible so personality and tone can be tuned without changing code.
 
+- Improved AI response consistency by adding short-term conversation memory per role while keeping RAG as background knowledge grounding.
 
+- Optimized startup and runtime performance by tuning OLLAMA_AUTO_PULL and RAG_LAZY_INIT, and warming RAG during startup to avoid re-indexing later.
 
+- Added response-speed controls for reply length and XTTS speaker reference usage.
 
-Yes, this is doable, and based on your current code it’s actually a pretty good fit for a new separate interaction system.
-
-What you already have:
-
-DialogueManager.cs already supports generated choice sessions and external dialogue sessions.
-TTSRunner.cs already has:
-GenerateChoiceOptions(...)
-GenerateResponse(...)
-spoken AI replies through the Python/Ollama/TTS pipeline
-tts_cli_player_basicv3.py already has:
-role-based prompting
-short reply generation
-choice generation
-RAG memory injection
-So the short answer is: yes, very possible.
+- Exposed fast/normal response mode in the Unity Inspector through TTSRunner so tuning does not require Python edits.
 
-The important design point is this:
-temperature alone will not make the soldier feel meaningfully “more insane.”
-If you only raise temperature, you mostly get noisier output. To make it feel intentional, you want both:
-
-a tracked insanity state in gameplay
-prompt rules that change by insanity stage
-then temperature as a secondary amplifier
-What I’d recommend:
-
-Make this a completely separate system, not a rewrite of the current interaction.
-Add a new manager, something like DebateBattleManager.cs.
-Add a new Python request type or a duplicate Python flow just for debate mode.
-Keep the current dialogue system intact as fallback.
-A strong structure would be:
-
-insanity = 0 to 100
-each player choice has hidden effects like:
-respect: -10 insanity
-listen: -5 insanity
-challenge: +10 insanity
-accuse: +20 insanity
-military command: depends on soldier profile
-define stages:
-0-24: guarded, mostly coherent
-25-49: tense, jumpy, intrusive memories
-50-74: unstable, paranoid, fragmented
-75-99: delusional, aggressive, dissociative
-100: break state -> rehabilitation sequence
-For generation, I’d do this:
-
-pass the AI:
-soldier backstory seed
-current insanity value
-current stage label
-recent dialogue turns
-what the player just chose
-small PTSD/war RAG context
-ask for structured output:
-soldier reply
-3 or 4 next player options
-insanity delta suggestion, or better yet compute this in Unity
-optional flags like is_breaking, mentions_memory_flash, threat_level
-Very important:
-I would not let the model decide the insanity score freely at first.
-Better:
+- Added a Restart Python TTS utility in TTSRunner to support faster live playtesting of speed settings.
 
-Unity owns the score
-AI only writes the dialogue
-your code decides the score changes based on choice tags
-That makes it much more controllable and much faster to tune.
-For speed, I’d avoid generating everything from scratch every round.
-Best fast version:
-
-AI generates only the soldier reply
-your player options come from curated pools based on stage
-or AI generates options only every few turns, not every turn
-That gives you:
-
-more dynamic soldier behavior
-shorter generation time
-more control over pacing
-less chance of broken outputs
-RAG-wise, your instinct is good:
-use it as background texture, not as the source of the story.
-So:
-
-keep RAG small
-use it to inject war trauma, PTSD symptoms, moral injury, dissociation patterns
-do not let it dominate the character voice
-Based on your current code, the safest implementation path is:
-
-new Unity script: DebateBattleManager.cs
-new data class: DebateBattleState.cs
-new Python request type: debate_turn
-reuse DialogueManager.BeginGeneratedChoiceSession(...)
-reuse TTSRunner audio/subtitle playback
-do not replace the current soldier interaction
-So yes, this is both possible and worth doing. And I agree with your instinct that it can feel much more “AI-native” than a normal branching dialogue if the soldier’s state is actually evolving over time.
+- Iterated on Mad God’s overall tone and behavior so he feels insane, bored, powerful, and stylistically coherent.
 
-If you want, I can do the next step as a proper safe MVP:
-
-inspect the current AI request flow in more detail
-then build a brand new debate system beside the old one
-with insanity stages, rehab trigger, and fast generation constraints
-
-
-
-
-
-
-The new debate path is in, and it stays separate from the normal interaction flow.
-
-What changed:
-
-NPCDebateBattle.cs now runs a staged insanity battle instead of the old simple loop. It:
-tracks insanity by stage
-asks the AI for one full debate turn at a time
-shows clickable response options in the existing dialogue UI
-escalates toward a peak break state
-can send the soldier to the rehab scene when peak insanity is hit
-DebateTurnModels.cs adds the structured data models for debate requests/results.
-DialogueManager.cs now supports inline external choices inside an ongoing external dialogue session, so the debate can use clickable options instead of only keyboard picks.
-TTSRunner.cs now has a dedicated debate_turn request path.
-tts_cli_player_basicv3.py now generates:
-a soldier reply
-four dynamic player responses with tones/effects
-a temperature that rises with insanity
-a spoken WAV for that same reply
-a break flag for peak instability
-How it behaves now:
-
-the soldier starts more coherent
-as insanity rises, the backend prompt gets more unstable and the Ollama temperature increases too
-the player’s selected response changes insanity and calm in code, not just by AI whim
-if insanity reaches the peak threshold, the debate can route straight to the therapy room as rehab
-What you’ll want to tune in the inspector on NPCDebateBattle.cs:
-
-Rounds
-Calm Points To Win
-Soldier Insanity Start
-Soldier Insanity Per Round
-Peak Insanity Threshold
-Rehabilitation Scene Name
-Scene Summary
-Soldier Display Name
-I couldn’t run Unity or the Python server here, so this still needs a playtest. The first thing I’d test is one NPC with NPCDebateBattle enabled and confirm:
-
-interact starts the debate
-soldier speaks
-clickable choices appear
-insanity text updates
-peak insanity sends you to rehab
-One note: InputManager.cs was already modified in your worktree and I left it alone. If you want, next I can help you tune the actual debate prompts so each insanity stage feels more distinct and less repetitive.
-
-
-
-
-
-
-
-///////////////////////////////////////////////////
-
-es, very doable, and honestly it’s one of the best directions if you want the interaction to feel less like “AI behind buttons” and more like an actual conversation.
-
-The safest version is not fully free text first. I’d recommend a constrained text system:
-
-player gets a small word bank, phrase bank, or required keyword
-player types a sentence
-code checks:
-which key words were used
-tone category
-whether they included the required anchor word
-maybe sentence length / aggression / empathy markers
-then AI gets:
-the actual typed line
-the detected tags
-the current soldier identity / state / insanity
-then the soldier replies dynamically
-That gives you the feeling of free conversation, but still keeps it gameable and designable.
-
-Why this is better than pure open text:
-
-faster to tune
-easier to prevent nonsense or broken pacing
-you can reward specific emotional strategies
-you still let the player “author” the sentence
-it feels more personal than picking from 4 buttons
-A very strong format would be:
-
-show 6 to 10 words/fragments
-require 1 or 2 key words to be used
-player types a sentence using them
-system tags it as things like:
-grounding
-validating
-accusing
-military
-personal
-threatening
-memory-triggering
-AI responds based on those tags plus current state
-Example:
-word bank:
-
-home
-breathe
-order
-brother
-safe
-blood
-lieutenant
-If the player types:
-
-“You are safe, breathe, your brother is not here.”
-that could tag as:
-grounding
-personal-memory
-empathy
-If they type:
-
-“Take the order and stand down, lieutenant.”
-that could tag as:
-command
-military-role
-dominance
-possible trigger
-That would directly change:
-
-insanity
-trust/calm
-identity cracks
-what memories the soldier reveals next
-And yes, this is a great way to get more backstory out of the soldier.
-Because instead of the AI only reacting to curated choice buckets, it can respond to:
-
-what exact word the player used
-what topic they touched
-whether they reminded him of family, command, guilt, shame, patriotism, betrayal, etc.
-That means the soldier can reveal different parts of his history depending on the player’s language, which is much more interesting.
-
-Best implementation path:
-
-do this as a separate new interaction system
-keep generated choices and debate battle untouched
-make a new mode, something like:
-TypedConversationBattle
-or WordBankDialogue
-I’d structure it with:
-
-a typed input UI
-optional word bank UI
-a sentence analyzer in Unity
-a new AI request type like typed_turn
-same TTS playback pipeline
-same soldier identity fields reused
-The sentence analyzer does not need to be fancy at first.
-MVP could be rule-based:
-
-dictionary of keywords -> tags
-count empathy words / command words / trauma words
-detect required word presence
-send tags + typed sentence to AI
-That gets you:
-
-non-curated player expression
-still enough structure to matter mechanically
-more personal AI responses
-stronger emergence of soldier identity/backstory
-So short answer:
-
-fully possible
-very worth doing
-better to do as constrained free text, not unrestricted chat first
-and yes, it can absolutely be the thing that makes the AI feel more original and less like standard branching dialogue
-If you want, I can design the clean MVP for this next:
-
-UI flow
-data model
-tag system
-how it plugs into your existing AI/TTS pipeline
-without touching the debate system we just built.
-
-
-
-
-
-
-The typed-conversation MVP is in as a separate system.
-
-The main piece is AITypedConversation.cs. It creates its own runtime word-bank/input UI, lets the player type a sentence, tags what they wrote locally, sends that to the AI, and gets back a spoken reply plus a few suggested words for the next turn. The transport for that lives in DebateTurnModels.cs, TTSRunner.cs, and tts_cli_player_basicv3.py under the new typed_turn request path.
-
-I also hooked it in so it stays optional. If you attach AITypedConversation to a soldier NPC, NPC.cs will try that typed mode before the debate path. If you attach it to Mad God, MadGodCompanion.cs will use it instead of the simple clip/TTS talk. If the component is not attached, the old interactions keep working.
-
-A few setup notes:
-
-On a soldier, add AITypedConversation to the same object as NPC.
-Set AI Role to soldier or mad_god.
-Tune openingLine, the identity fields, and the word banks in the inspector.
-For soldiers, it can still resolve into following/combat using the existing NPC methods.
-I couldn’t run Unity or the Python server here, so this still needs a playtest. The first thing I’d test is one soldier with the new component attached and make sure:
-
-interact opens the typed UI,
-word buttons fill the input,
-submit triggers a voiced AI reply,
-the suggested words update across turns.
-If you want, next I can help tune the actual word banks and tag rules so one soldier feels guilt-heavy, another command-heavy, and Mad God feels more manipulative and cosmic.
-
-
-
-//////////////////////////////////
-
-1. Soldier Testimony Bank Structure
-Build your source material as categorized fragments, not one big pile of notes.
-
-For each testimony fragment, tag:
-
-memory_type
-emotion
-trigger
-body_sensation
-moral_wound
-identity_theme
-speech_style
-Example categories:
-
-battlefield_memory
-ambush
-civilians caught in crossfire
-losing squadmates
-following terrible orders
-trigger
-shutter click
-static
-boots on concrete
-metallic bang
-shouting
-body_sensation
-shaking hands
-ringing ears
-smell of blood
-choking smoke
-numbness
-moral_wound
-guilt
-shame
-survival at another’s expense
-obedience vs conscience
-identity_theme
-no longer human
-still in combat
-failed protector
-weapon instead of person
-forgotten self
-speech_style
-clipped military language
-fragmented memory
-looping repetition
-calm but detached
-paranoid scanning
-A fragment entry could look like:
-
-id: S1_MEM_03
-memory_type: battlefield_memory
-emotion: shame
-trigger: metallic_bang
-body_sensation: ringing_ears
-moral_wound: followed_orders_against_conscience
-identity_theme: weapon_instead_of_person
-speech_style: clipped_fragmented
-text: "When the metal slammed shut I could hear the truck door again. I kept counting helmets because if I counted faces I would stop moving."
-That gives you material to feed prompts without copying long testimony verbatim.
-
-2. Character Sheet Template
-Make one for each soldier.
-
-Name:
-Age:
-Military Role:
-War Theater:
-Pre-War Identity:
-Public Persona:
-Hidden Fear:
-Defining Trauma:
-Moral Wound:
-Trigger Stimulus:
-Body Tell:
-Speech Pattern:
-Recurring Images:
-Taboo Topic:
-False Belief:
-What They Want From The Player:
-What They Refuse To Admit Early:
-What They Reveal Midway:
-What They Reveal Late:
-Collapse Mode:
-Recovery Path:
-Example:
-
-Name: Elias Mercer
-Military Role: Radio operator
-War Theater: Korean War
-Pre-War Identity: Quiet mechanic who wrote letters home for other men
-Public Persona: Controlled, obedient, observant
-Hidden Fear: That he kept people alive only to send them into worse deaths
-Defining Trauma: Relayed coordinates that led to civilian deaths
-Moral Wound: Obedience over conscience
-Trigger Stimulus: Static and camera clicks
-Body Tell: Freezes, listens to sounds no one else hears
-Speech Pattern: Precise at first, then slips into fragments
-Recurring Images: Wires, mud, cold metal, breath in winter
-Taboo Topic: Being called heroic
-False Belief: “I was never a man, just a signal.”
-What They Refuse To Admit Early: He knows exactly which order broke him
-What They Reveal Midway: He still hears the last transmission
-What They Reveal Late: He gave the order because he was afraid to disobey
-Collapse Mode: Treats the player like command and relives the event
-Recovery Path: Gets grounded through names, present tense, and non-military language
-3. Better Prompt Template
-The prompt should guide a dramatic beat, not just a mood.
-
-Use this structure:
-
-You are [NAME], a specific former soldier in a narrative game.
-
-Identity:
-- Military role: [...]
-- Pre-war identity: [...]
-- War theater: [...]
-- Defining trauma: [...]
-- Moral wound: [...]
-- Trigger stimulus: [...]
-- Body tell: [...]
-- Speech pattern: [...]
-- Taboo topic: [...]
-- False belief: [...]
-
-Current state:
-- Stage: [guarded / frayed / unstable / fractured / breaking]
-- What you are trying to hide this turn: [...]
-- What is leaking through this turn: [...]
-- Current emotional pressure: [0-100]
-
-Recent conversation:
-[recent transcript]
-
-Player line:
-[player input]
-
-Your task:
-- Reply as this specific person, not a generic traumatized soldier.
-- Directly respond to the player's line.
-- Reveal one new concrete detail, memory fragment, contradiction, or identity crack.
-- Do not repeat previous wording.
-- Keep the reply under [X] characters.
-- No narration, no stage directions, no quotation marks.
-
-Turn goal:
-[resist / deflect / test the player / flashback / confess / misrecognize / fragment / stabilize]
-4. Stage Guidance
-You should also define behavior per stage.
-
-guarded:
-- clipped, suspicious, controlled
-- hides specifics
-- tests the player
-
-frayed:
-- small slips into memory
-- bodily discomfort
-- reacts to certain words
-
-unstable:
-- fragmented memory and present collide
-- guilt and trigger language emerge
-- stronger sensory detail
-
-fractured:
-- identity confusion
-- misrecognition
-- speaks as if war is still happening
-
-breaking:
-- shame, grief, violence, and memory collapse together
-- selfhood feels unstable
-- dangerous but still human, not random
-5. Evaluation Rubric
-For each playtest, score 1 to 5:
-
-Specificity: did this sound like one distinct soldier?
-Responsiveness: did it clearly answer the player’s actual input?
-Psychological Credibility: did it feel grounded rather than cartoonishly insane?
-Identity Consistency: did the same character remain coherent across turns?
-Escalation Quality: did the emotional arc progress meaningfully?
-Variation: did it differ from previous runs?
-Latency: was it fast enough to feel playable?
-You can log results like:
-
-Soldier: Elias
-Prompt version: B
-Temperature: 0.82
-Run: 3
-
-Specificity: 5
-Responsiveness: 4
-Psychological Credibility: 4
-Identity Consistency: 5
-Escalation Quality: 3
-Variation: 4
-Latency: 3
-
-Notes:
-- Strong identity voice
-- Good use of static trigger
-- Mid-turn escalation felt abrupt
-- One repeated guilt phrase
-6. Metaparameter Testing Plan
-Test small combinations, not everything at once.
-
-Try:
-
-temperature: 0.55 / 0.8 / 1.0
-memory length: last 4 lines vs last 8 lines
-prompt style: generic vs identity-rich
-retrieval: off vs on
-turn goal: no goal vs explicit emotional beat
-Track:
-
-repetition
-distinctiveness
-emotional realism
-coherence
-generation speed
-What I’d Recommend First
-Do these next:
-
-write 3 character sheets
-make 20 to 30 testimony fragments total across categories
-rewrite your prompt around identity + stage + turn goal
-test 3 temperature settings
-score outputs with the rubric
-If you want, I can do the next step and actually draft 3 soldier character sheets for your game world.
-
-
-yes please, also try not to specify a ethnecity or race as i don twant to target any country or race
-
-
-
-Here are 3 soldier character sheets designed to feel distinct without tying them to a specific race or ethnicity.
-
-Soldier 1: The Signal Keeper
-
-Name: Elias Mercer
-Military Role: Radio operator
-War Theater: Frontline communications unit during a brutal winter campaign
-Pre-War Identity: A quiet mechanic who liked fixing broken things and writing letters for other people
-Public Persona: Precise, controlled, useful under pressure
-Hidden Fear: That every message he passed along made him responsible for who died next
-Defining Trauma: Relayed coordinates and support calls that led to deaths he still replays in detail
-Moral Wound: Obeyed because it was easier than refusing
-Trigger Stimulus: Static, camera clicks, crackling speakers, interrupted transmissions
-Body Tell: Tilts his head as if listening to voices under the present moment
-Speech Pattern: Starts clipped and technical, then breaks into signal fragments and unfinished thoughts
-Recurring Images: Wire, frost, mud, breath, buzzing speakers, cold metal
-Taboo Topic: Being called heroic or reliable
-False Belief: “I was never a person. I was a relay.”
-What They Want From The Player: Permission to believe he was more than the orders he carried
-What They Refuse To Admit Early: He remembers one transmission word for word
-What They Reveal Midway: He still hears the final unanswered call
-What They Reveal Late: He delayed a warning once because he was afraid to challenge command
-Collapse Mode: Starts answering the player like they are command or a voice on the radio
-Recovery Path: Name-based grounding, present tense, non-military language, reminding him he can choose now
-Soldier 2: The Keeper Of Bodies
-
-Name: Martin Vale
-Military Role: Field medic
-War Theater: Mobile medical support near repeated mass-casualty zones
-Pre-War Identity: Patient, practical, good with hands, the person people trusted when they were frightened
-Public Persona: Gentle and composed, even when everything is falling apart
-Hidden Fear: That he only learned how to preserve bodies, not lives
-Defining Trauma: Forced to choose who could be treated and who had to be left behind
-Moral Wound: Turned suffering into triage numbers to survive the work
-Trigger Stimulus: Antiseptic smells, white light, wet cloth, coughing, someone saying “help him first”
-Body Tell: Rubs his hands clean even when there is nothing on them
-Speech Pattern: Soft and careful at first, then becomes clinical in a disturbing way when overwhelmed
-Recurring Images: Bandages, white sheets, breath, pulse, stained gloves, cold floor
-Taboo Topic: Being told he saved people
-False Belief: “If I had really cared, I would have broken sooner.”
-What They Want From The Player: To be told that choosing under impossible conditions did not erase his humanity
-What They Refuse To Admit Early: He remembers the people he did not treat more vividly than the ones he saved
-What They Reveal Midway: He sorted people by who sounded most likely to survive
-What They Reveal Late: Sometimes he chose silence because hearing them beg made it harder to work
-Collapse Mode: Starts sorting the player, the room, and himself into treatment priorities
-Recovery Path: Breathing cues, sensory grounding, language about limits rather than blame
-Soldier 3: The Door Breacher
-
-Name: Rowan Pike
-Military Role: Assault unit breacher
-War Theater: Urban close-quarters operations
-Pre-War Identity: Restless, funny, impulsive, protective of weaker people
-Public Persona: Bold, hard-edged, always first through the door
-Hidden Fear: That violence became the only thing he was ever truly good at
-Defining Trauma: Entered homes and rooms not knowing who was inside, then had to live with what he found
-Moral Wound: Learned to act before doubt, then could not turn that reflex off
-Trigger Stimulus: Door slams, heavy footsteps, confined interiors, sudden flashes, shouted commands
-Body Tell: Constantly scans exits and corners, never fully faces a person head-on
-Speech Pattern: Sharp, fast, mocking when defensive; becomes raw and sensory when triggered
-Recurring Images: Hinges, splinters, hallway light, boots, dust, broken frames
-Taboo Topic: Being called brave, necessary, or clean
-False Belief: “If I stop moving, I become what I saw.”
-What They Want From The Player: Proof that stillness does not equal death
-What They Refuse To Admit Early: He cannot remember some rooms without feeling physically sick
-What They Reveal Midway: He remembers doors better than faces
-What They Reveal Late: Once he entered fast because fear felt better than hesitation
-Collapse Mode: Treats the current space like a live breach and misreads the player as a threat or teammate
-Recovery Path: Slow pacing, orientation to room layout, permission to stop, grounding through touch and distance
-How To Make Them Feel Different In Play
-
-Elias should react most strongly to words like signal, order, radio, static, answer, name.
-Martin should react most strongly to help, save, blood, breathe, hands, alive.
-Rowan should react most strongly to door, move, clear, safe, look, stop.
-Best Use In Your Current System
-Map these directly into your existing fields:
-
-soldierDisplayName
-militaryRole
-formerIdentity
-warTheater
-definingTrauma
-triggerStimulus
-identityFracture
-physicalTell
-tabooTopic
-And use the rest as prompt-layer material:
-
-false belief
-what they hide early
-what they reveal midway
-what they reveal late
-collapse mode
-recovery path
+
+
+### What I Was Trying To Do
+
+I wanted the soldier interactions to feel more dynamic, emotionally driven, and different on each playthrough.
+My goal was not just to have AI generate dialogue, but to make the AI feel like the core narrative system of the game.
+
+I was trying to move away from interactions that felt too basic, too scripted, or too similar to normal branching dialogue.
+
+I wanted the soldiers to feel like former army figures whose identities had been fractured by war, PTSD, moral injury, and instability.
+
+I was also trying to make the player’s interaction feel more meaningful, so the soldier’s emotional state would shift depending on how the player approached them.
+
+The Main Interaction Problem I Was Addressing
+
+The original AI interactions were not fully delivering the emotional weight I wanted.
+
+Even though responses were being generated, the soldiers often did not feel like fully realized characters.
+
+The interactions could feel repetitive, too fast to resolve, or not truly shaped by the player.
+
+This is what led me to start exploring different forms of interaction instead of staying with a single system.
+
+### The Two Main Interaction Approaches I Explored
+
+#### I explored Debate mode:
+
+A guided confrontation using clickable choices
+Meant to feel like a verbal battle or destabilization system
+Choices could escalate or calm the soldier
+Tied into ideas like rising insanity, identity fracture, and eventual breakdown or rehabilitation
+
+##### I explored Typed mode:
+
+The player writes their own sentence
+Meant to feel more open, more personal, and more AI-native
+Supported the idea that the player is not just choosing from prewritten lines, but actually trying to reach or provoke the soldier through language
+Why The Two-Choice Selector Became Important
+
+Since both interaction styles had different strengths, I wanted the player to choose their approach.
+
+#### The idea became:
+
+Walk up to a soldier
+Press F
+Get two buttons: Debate / Type
+Then launch the selected interaction
+
+#### This was useful because:
+
+It let me compare the two systems directly
+It made the interaction choice part of the design
+It avoided forcing one approach on every encounter
+It helped preserve experimentation without deleting older systems
+What I Was Working On Technically During This Phase
+
+### I worked on:
+
+Building a debate interaction system with AI-generated soldier turns and player response options
+Building a typed conversation system where the player could enter their own sentence
+Adding a more emotionally intense soldier personality system
+
+#### I also worked on making soldiers feel more distinct through:
+
+Role
+Former identity
+Trauma
+Trigger stimuli
+Taboo topics
+Identity fracture
+
+#### I strengthened the AI pipeline through:
+
+Soldier profiles
+Testimony fragment banks
+Prompt blocks
+Prompt structure improvements
+Temperature and emotional-stage tuning
+
+I improved dialogue presentation by moving soldier text to the top of the screen.
+
+I also tried to make TTS delivery feel more emotional through prompt shaping and speech shaping.
+
+What I Wanted The Debate System To Do
+
+I wanted the debate system to:
+
+Let the player verbally confront, unsettle, or destabilize the soldier
+Make the soldier’s instability rise or fall depending on the player’s choices
+Use AI to generate escalating responses
+
+And lead toward states like:
+
+Revelation
+Collapse
+Follow state
+Rehabilitation / therapy loop
+
+I wanted it to feel like the player was participating in a psychological confrontation rather than just clicking dialogue.
+
+What I Wanted The Typed System To Do
+
+#### I wanted the typed system to:
+
+Let the player write a sentence instead of picking a curated option
+Make the AI feel more conversational and more original
+Give the player a sense of authorship over the interaction
+
+I used optional keywords or word banks not as correctness checks, but as pressure points:
+
+Words that could anger the soldier
+Trigger memory
+Destabilize him
+
+I also wanted to allow the soldier to reveal backstory and identity through the player’s language.
+
+### The Biggest Difficulties I Ran Into
+
+The two systems often felt too similar underneath.
+Even though one used choices and one used typing, they were still driven by similar prompt behavior.
+Because of that, the soldier still felt like “an AI response attached to a system” instead of a truly different dramatic mode.
+
+Resolution happened too quickly.
+One good line or one choice could make the soldier follow too soon.
+This reduced emotional weight and removed the sense of earning the interaction.
+
+Choices disappeared too fast.
+The player often had to wait for audio, then the choices vanished or felt rushed.
+This broke the feeling of an actual conversation.
+
+#### The UI became messy while experimenting:
+
+Choice buttons were too high, too spread out, or off screen
+Typed input UI initially had poor layout and unclear typing space
+Some elements overlapped and broke immersion
+
+Interaction routing in NPC.cs became unstable during experimentation.
+Different systems were competing:
+
+Legacy interaction flow
+Debate flow
+Typed flow
+Approach selector
+
+TTS/AI backend failures were hidden at first.
+Ollama was often not returning valid JSON, and the system was falling back silently.
+This caused repeated phrases and made it seem like the AI was less dynamic than intended.
+
+Typed responses sometimes made no conversational sense.
+The AI would latch onto the wrong topic or respond to an earlier idea instead of the latest sentence.
+
+### Important Problems I Diagnosed Correctly
+
+I realized the issue was not only the UI or the mechanic.
+
+Even with different interaction forms, the soldier still did not always feel alive or emotionally grounded.
+
+#### I identified that what needed strengthening was:
+
+Dataset / testimony material
+Prompt design
+Evaluation criteria
+Metaparameter testing
+Character identity specificity
+
+This was a major turning point, because it shifted my focus from “adding another system” to “making the AI character itself stronger.”
+
+### What I Added To Strengthen Character Depth
+
+I added:
+
+A structured soldier profile system
+> → Each soldier had a stronger identity beyond a generic traumatized figure
+
+> A testimony fragment bank:  
+→ Categorized around trauma, body sensations, guilt, triggers, identity, and speech style
+
+> Prompt blocks to guide:  
+→ Emotional stage  
+→ Identity reveal  
+→ Hidden tension  
+→ Moral wound  
+→ Speech pattern  
+
+> Stage-based emotional logic:  
+→ Guarded → Frayed → Unstable → Fractured → Breaking
+
+
+### What I Added To Improve Presentation
+
+I improved presentation by:
+
+Moving soldier dialogue to the top of the screen
+Giving typed interaction its own input UI
+Adjusting debate choice boxes to sit lower and more naturally
+
+My goal was to clearly separate:
+
+Soldier speaking space
+Player input space
+Choice space
+
+So the interaction felt more readable and intentional.
+
+### What I Added To Improve Emotional Delivery
+
+I wanted the soldier voice to feel more emotional:
+
+Shouting
+Panic
+Stuttering
+Instability
+
+Since the TTS model had limited emotion control, I focused on shaping the generated text before synthesis.
+
+I added stage-based speech shaping so lines could become:
+
+More fragmented  
+More hesitant  
+More repetitive  
+More urgent  
+
+Depending on emotional state.
+
+#### What I Learned About The Backend
+
+A major hidden issue was that structured AI generation was often failing.
+
+Ollama was returning prose instead of valid JSON, meaning interactions relied on fallback systems instead of true structured output.
+
+I added debug logging so I could finally see:
+
+Parse failures  
+Salvage behavior  
+Fallback reasons  
+
+This explained why lines repeated and why interactions felt less alive than expected.
+
+### What Ended Up Working Better
+- Keeping fallback responses when TTS was not ready
+- Pre-generating choices during intro audio to reduce waiting
+- Moving dialogue to the top of the screen for readability
+- Restoring a simpler routing baseline
+- Reintroducing the two-button selector after stabilizing the system
+- Making typed keywords optional
+- Improving tagging of typed input (insults, identity probes, questions)
+- Adding soldier profiles and testimony banks for deeper tuning
+
+### What Did Not Work Well
+- Letting both systems compete too much in one flow
+- Letting soldiers resolve after too few turns
+- Hiding or auto-timing choices too aggressively
+- Treating trigger words as mandatory
+- Relying on model output without enough debugging
+- Trying to polish both systems before strengthening core character logic
+
+### Why The Two-Choice Option Still Mattered
+
+Even though it added complexity, it represented an important design idea:
+
+The player chooses how to engage with a broken person.
+
+One path is guided and confrontational
+The other is freeform and expressive
+
+This made the interaction choice meaningful, not just a menu.
+
+#### What This Whole Phase Accomplished
+
+I moved the project away from a simple AI add-on toward a true AI-centered interaction system.
+
+I tested two fundamentally different approaches to emotional conversation.
+
+I realized that deeper character building and prompt quality matter more than interaction format alone.
+
+##### I built the groundwork for stronger soldiers through:
+
+- Profiles  
+- Testimony banks  
+- Prompt blocks  
+- Stage logic  
+- Emotional speech shaping  
+
+##### I also identified key technical bottlenecks:
+
+- Routing conflicts
+- UI clarity
+- Backend JSON failures
+- Prompt responsiveness
+- The Most Honest Summary Of That Period
+
+I was not just “adding two buttons.”
+
+##### I was trying to solve a much larger design problem:
+how to make AI dialogue feel psychologically real, narratively central, and different across playthroughs.
+
+The two-choice system became one part of that effort—
+a way to test whether different forms of player expression could unlock deeper character interactions.
+
+##### Some parts were unstable, but the process was valuable because it showed me what truly matters:
+
+- Stronger identity
+- Slower emotional progression
+- Better prompt structure
+- More reliable generation
+- More meaningful player agency
+
+
+
+
+I still di not fully get it to work completely but I knew that I could then Give the progress I did in this section to Sean and It would help fix his stomp that he had the day before. alot of the work on the Ai section by me and Sean has been knowing when someone is working on a big part of the ai to know when the other shouldnt touch it and work on things that would not break with the changes. It was also to know what the other was working on and if they had some difficulties then I could look through it see if I could find a way to fix it or a way to approach a new fix and even if I didnt figure out the whole Idea it was enough to help Sean 
