@@ -1716,3 +1716,5 @@ Videos of examples and playthrough
 
 https://drive.google.com/drive/folders/1RHv_ZtYVUdzumljjGpqdJPKTvsGSvqFN?usp=sharing
  
+
+ All in all, I loved this class and what a fun and interestung time I had ! may continue to use this journal processs!!!!
