@@ -1671,7 +1671,21 @@ I still di not fully get it to work completely but I knew that I could then Give
 
 This was an interesting thing to do. I quite enjoyed the process of having the weekly journals t document my idea or progress, it was very helpfull and made me rethink on what i did during the week. I was also happy to be able to mix this with my ai class, as i wasnt that interesting in a project for that ai class but finding a way to implemnte in a game made it more interesting, it also made me work alot on this project which was fun. there are alot of parts of the game that I think needs fixing or refinment. The story lign needs to be strenghten and polished .
 
-I saldy missed the last class where we showed the game because I was with paremedics after an episode during hte end of my class. I was sad to not be there in person and experience the others games. I loved the class and found that the concept of prototyping was a very fun way to approached assignmnet, it made meless stress inperfection as we know that prototyping and trying to evolve and make your game better through multiple steps, i feel like i learned alot approaching this game that way in addition t the journals. 
+I saldy missed the last class where we showed the game because I was with paremedics after an episode during hte end of my class. I was sad to not be there in person and experience the others games. I loved the class and found that the concept of prototyping was a very fun way to approached assignmnet, it made meless stress inperfection as we know that prototyping and trying to evolve and make your game better through multiple steps, i feel like i learned alot approaching this game that way in addition to the journals. 
+I did not have time t fix the game as i was working on hte report more and also still had some health situation but i did askfor what we had received in coment from my teamates : 
+
+The teacher said that the shooting mechanics was a little disorienting in the sense because why are we attacking the ghosts if we are trying to free their soul and from classmates it was that our AI game when talking to the soldiers was difficult and hard to figure out what to do exactly
+ff.w. — 4/13/26, 11:19 AM
+Yes, and only one of them could luring the solider to the therapy room
+ff.w. — 4/13/26, 11:23 AM
+also, the refinement for the game could be put in the last week prototype (which is optional) , while this week propotype is a kind of a overall reflection of the game , or course or overall journal ( if I didn't understand wrong) 
+
+
+I did check and everything worked for me so we may have fixed that, i show it in the videao in the google drive link. anyway there is still so many bugs and problem, the text and the boxes not being in or the same look everythime, like some is vertical or bugge rthen the box. i was able. but we had other problem but i found that with ai you need alot more time of bug fixes and trials. 
+
+
+We did try to make some of the actions better or more refined a bit after that day like some text is green or black to help show if it will help there sanity or not, therefore will they be lured or break, that i show in the videos, in the google drive link. 
+
 
 #### Final Reflections (responding to teh prompt of last week)
 Looking back at the semester, I think this project really became the accumulation of all the prototypes we had to do before. At the beginning, the idea felt very broad and there were many directions it could go in. I knew I wanted something with a strong atmosphere and a more emotional concept, and I also knew I was very interested in seeing how AI could be used in a game for more than just something extra or gimmicky. But I do not think I understood at first how much the idea would change through each weekly prototype.
