@@ -1665,3 +1665,40 @@ a way to test whether different forms of player expression could unlock deeper c
 
 
 I still di not fully get it to work completely but I knew that I could then Give the progress I did in this section to Sean and It would help fix his stomp that he had the day before. alot of the work on the Ai section by me and Sean has been knowing when someone is working on a big part of the ai to know when the other shouldnt touch it and work on things that would not break with the changes. It was also to know what the other was working on and if they had some difficulties then I could look through it see if I could find a way to fix it or a way to approach a new fix and even if I didnt figure out the whole Idea it was enough to help Sean. Alot of changes was made this week as the final week so i did not have the time to explain in detail so i tired to make bullet points when I remembered as I was non stop working on this as it ws for 2 classes . 
+
+
+# Final Reflection 
+
+This was an interesting thing to do. I quite enjoyed the process of having the weekly journals t document my idea or progress, it was very helpfull and made me rethink on what i did during the week. I was also happy to be able to mix this with my ai class, as i wasnt that interesting in a project for that ai class but finding a way to implemnte in a game made it more interesting, it also made me work alot on this project which was fun. there are alot of parts of the game that I think needs fixing or refinment. The story lign needs to be strenghten and polished .
+
+I saldy missed the last class where we showed the game because I was with paremedics after an episode during hte end of my class. I was sad to not be there in person and experience the others games. I loved the class and found that the concept of prototyping was a very fun way to approached assignmnet, it made meless stress inperfection as we know that prototyping and trying to evolve and make your game better through multiple steps, i feel like i learned alot approaching this game that way in addition t the journals. 
+
+#### Final Reflections (responding to teh prompt of last week)
+Looking back at the semester, I think this project really became the accumulation of all the prototypes we had to do before. At the beginning, the idea felt very broad and there were many directions it could go in. I knew I wanted something with a strong atmosphere and a more emotional concept, and I also knew I was very interested in seeing how AI could be used in a game for more than just something extra or gimmicky. But I do not think I understood at first how much the idea would change through each weekly prototype.
+
+What I found interesting is that every week did not just bring us closer to a final result, but also forced us to understand the project differently. At first, I was thinking a lot in terms of what would be cool to add or what kind of interaction we could make, but over time I realized that the more important question was what kind of experience we actually wanted the player to have. That changed the way I started thinking about the project. It became less about just making systems work and more about whether those systems actually supported the emotional and narrative feeling we were aiming for.
+
+I also feel like this project made me realize how much prototyping is about discovering the project, not just building it. Some things that sounded really interesting in theory did not always work as well once we actually implemented and tested them. There were moments where certain interactions felt too generic, too awkward, or not emotionally convincing enough, and that was frustrating, but also very useful. It showed me that each iteration was revealing something important. Instead of thinking of those moments as failures, I now see them more as part of the actual design process.
+
+One of the biggest things I learned is that AI by itself is not enough to make something feel meaningful. At first, there is this idea that if you use AI-generated dialogue then it will automatically feel dynamic, surprising, or alive. But through the project, I learned that the most important part is actually all the structure around it. The lore, the profiles, the fragments, the pacing, the interface, the subtitles, the scene presentation, all of these things mattered just as much as the generated text itself. In a way, the AI became strongest when it was the most supported by intentional design.
+
+I also think the project helped me understand more clearly the difference between a concept and a playable experience. We had a lot of strong ideas, but making them work in a way that felt coherent was much harder. The final prototype is not perfect, but I do feel like it represents a real progression from the earlier prototypes. It has more complexity, more refinement, and more of a clear identity. It feels like something that came out of repeated cycles of testing and revision, which is exactly what the course was trying to push us toward.
+
+#### What I Want to Improve
+If I had more time to keep refining the project, I think the biggest thing I would want to improve is the AI interaction itself. Even though we got many parts working, there were still moments where the dialogue felt too generic, repetitive, or not fully connected to what the player was saying. I would want to keep improving that so the AI feels less like it is generating responses and more like it is embodying a character with a memory, a wound, and a personality.
+
+I would also want to push the difference between the interaction systems more. We experimented with different ways of speaking to the soldiers, like choices, debate, and typing, but I do not think they always felt as different in practice as they did in concept. If I were to continue, I would want each one to have a stronger identity and purpose so that the player really feels the difference in how they are approaching the soldier.
+
+Another thing I would want to improve is the amount of authored context behind the characters. One of the clearest things I noticed is that the more detail we gave the AI in terms of lore, profiles, and fragments, the stronger and more specific the responses became. So if I kept going, I would want to expand that even more and give each soldier more distinct emotional material, triggers, contradictions, and reveal stages.
+
+I would also want more time for polishing the overall experience. There are still many small things that could make the project feel more cohesive, such as transitions, pacing, visual clarity, and how the consequences of each encounter are shown. Right now, I think the project shows the potential of the idea very clearly, but with more refinement it could feel even more like a fully realized vertical slice rather than a complex experimental prototype.
+
+Overall, I think this project taught me a lot about iteration, refinement, and how ideas change once they are actually made. I feel like the weekly prototype structure was really useful because it forced the project to keep evolving instead of staying stuck as just a concept. Even the parts that did not work the way I wanted still helped shape the final result. I think that is one of the biggest things I am leaving this course with: the understanding that prototyping is not just about testing ideas, but about letting the project slowly reveal what it actually wants to become.
+
+
+
+Me an dsean also work on writing a report for the ai section of the Game which made us revisit and rethink on that aspect of the game : https://docs.google.com/document/d/1DGnpaMsvJVo2-q4f-X2lG8PrO4vUey5q6MyXcIdeo5M/edit?usp=sharing 
+Videos of examples and playthrough 
+
+https://drive.google.com/drive/folders/1RHv_ZtYVUdzumljjGpqdJPKTvsGSvqFN?usp=sharing
+ 
